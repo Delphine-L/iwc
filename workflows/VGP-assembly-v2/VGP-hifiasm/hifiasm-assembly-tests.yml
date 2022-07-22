@@ -1,107 +1,113 @@
-- doc: Test outline for hifiasm-assembly.ga
+- doc: Test outline for HiFi-reads-assembly-with-Hifiasm-(imported-from-uploaded-file)
   job:
-    Bits for bloom filter in hifiasm: 0
-    Genomescope Summary:
-      class: File
-      location: https://zenodo.org/record/6657133/files/genomescope_summary.txt?download=1
     Meryl Database:
       class: File
-      location: https://zenodo.org/record/6657133/files/meryl_database.meryldb?download=1
+      path: https://zenodo.org/record/6657133/files/meryl_database.meryldb?download=1
+      filetype: meryldb
+    Genomescope Summary:
+      asserts:
+        has_text:
+          text: "135 bp"
     Pacbio Reads Collection:
       class: Collection
       collection_type: list
       elements:
       - class: File
-        identifier: pacbio_reads
-        location: https://zenodo.org/record/6657133/files/pacbio_reads.fasta.gz?download=1
+        identifier: pacbio_read
+        path:  https://zenodo.org/record/6657133/files/pacbio_reads.fasta.gz?download=1
+    Bits for bloom filter in hifiasm: '37'
+    Is genome large (> 100Mp) ?: 'true'
   outputs:
-    Cutadapt output:
-      class: Collection
-      collection_type: list
-      elements:
-        - identifier: pacbio_reads
-          asserts:
-            has_size: 
-              value: 1439916
-              delta: 250
     Hifiasm processed unitigs:
-      class: File
-      file: test-data/hifiasm_processed_unitigs.gfa1
-      filetype: gfa1
+      path: test-data/hifiasm_processed_unitigs.gfa1
     Hifiasm raw unitigs:
-      class: File
-      file: test-data/hifiasm_raw_unitigs.gfa1
-      filetype: gfa1
-    Hifiasm primary contigs:
-      class: File
-      file: test-data/hifiasm_primary_contigs.gfa1
-      filetype: gfa1
-    Hifiasm primary assembly (FASTA):
-      class: File
-      file: test-data/hifiasm_primary_assembly.fasta
-    BUSCO short summary:
-      asserts:
-        has_text:
-          text: 'BUSCO was run in mode: genome'
-        has_text:
-          text: 'Gene predictor used: metaeuk'
-        has_text:
-          text: 'n:3354'
-    BUSCO full table:
+      path: test-data/hifiasm_raw_unitigs.gfa1
+    Hifiasm alternate contigs:
       asserts:
         has_n_lines:
-          n: 3354
+          n: 0
+    Hifiasm primary contigs:
+      path: test-data/hifiasm_primary_contigs.gfa1
+    Estimated genome size:
+      path: test-data/Estimated genome size.expression.json
+    QUAST HTML report:
+      asserts:
+        has_size:
+          value: 360809
+          delta: 1500
+    QUAST log file:
+      asserts:
         has_text:
-          text: 'The lineage dataset is: vertebrata_odb10'
+          text: 'NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0'
+    QUAST PDF report:
+      asserts:
+        has_size:
+          value: 26609
+          delta: 1500
+    BUSCO summary image:
+      path: test-data/BUSCO summary image.png
+    BUSCO full table:
+      asserts:
         has_text:
-          text: 'number of genomes: 67, number of BUSCOs: 3354'
+          text: "C:0.0%[S:0.0%,D:0.0%],F:0.0%,M:100.0%,n:3354"
     BUSCO missing genes:
       asserts:
         has_n_lines:
           n: 3354
-        has_text:
-          text: 'The lineage dataset is: vertebrata_odb10'
-        has_text:
-          text: 'number of genomes: 67, number of BUSCOs: 3354'
-    Merqury stats files:
-      class: Collection
-      collection_type: list
-      elements:
-        - class: File
-          identifier: output_merqury.competeness
-          file: test-data/merqury_stats.tabular
-          filetype: tabular
-    Merqury QV files:
-      class: Collection
-      collection_type: list
-      elements:
-        - class: File
-          identifier: output_merqury
-          asserts:
-            has_n_lines:
-              n: 3
-            has_text:
-              text: 'assembly_01  0 59036'
-    Merqury plots:
-      class: Collection
-      collection_type: list
-      elements:
-        - identifier: output_merqury.spectra-cn.st
-          asserts:
-            has_size: 
-              value: 91113
-              delta: 1500
-        - identifier: output_merqury.spectra-cn.st
-          asserts:
-            has_size: 
-              value: 94319
-              delta: 1500
-    QUAST log file:
-      class: File
-      file: test-data/QUAST_log_file.txt
-      lines_diff: 16
-    QUAST PDF report:
+    BUSCO full table:
       asserts:
-        has_size: 
-          value: 27009
-          delta: 1500
+        has_n_lines:
+          n: 3354
+    Hifiasm primary assembly (FASTA):
+      path: test-data/hifiasm_primary_assembly.fasta
+    Hifiasm alternate assembly:
+      asserts:
+        has_n_lines:
+          n: 0
+    Assembly stats on alternate assembly:
+      asserts:
+        has_text:
+          text: "Average segment length  nan"
+    Assembly stats on primary assembly:
+      asserts:
+        has_text:
+          text: "Total segment length    59076"
+    Cutadapt output:
+      element_tests:
+        pacbio_read:
+          asserts:
+            has_size:
+              value: 1439916
+              delta: 200000
+    Merqury size files:
+      element_tests: {}
+    Merqury plots:
+      element_tests:
+        output_merqury.assembly_01.spectra-cn.fl:
+          path: test-data/Merqury plots_output_merqury.assembly_01.spectra-cn.fl.png
+        output_merqury.assembly_01.spectra-cn.ln:
+          path: test-data/Merqury plots_output_merqury.assembly_01.spectra-cn.ln.png
+        output_merqury.assembly_01.spectra-cn.st:
+          path: test-data/Merqury plots_output_merqury.assembly_01.spectra-cn.st.png
+        output_merqury.assembly_02.spectra-cn.ln:
+          path: test-data/Merqury plots_output_merqury.assembly_02.spectra-cn.ln.png
+        output_merqury.spectra-asm.ln:
+          path: test-data/Merqury plots_output_merqury.spectra-asm.ln.png
+        output_merqury.spectra-cn.fl:
+          path: test-data/Merqury plots_output_merqury.spectra-cn.fl.png
+        output_merqury.spectra-cn.ln:
+          path: test-data/Merqury plots_output_merqury.spectra-cn.ln.png
+        output_merqury.spectra-cn.st:
+          path: test-data/Merqury plots_output_merqury.spectra-cn.st.png
+    Merqury QV files:
+      element_tests:
+        output_merqury.assembly_01:
+          path: test-data/Merqury QV files_output_merqury.assembly_01.tabular
+        output_merqury.assembly_02:
+          path: test-data/Merqury QV files_output_merqury.assembly_02.tabular
+        output_merqury:
+          path: test-data/Merqury QV files_output_merqury.tabular
+    Merqury stats files:
+      element_tests:
+        output_merqury.completeness:
+          path: test-data/merqury_stats.tabular
