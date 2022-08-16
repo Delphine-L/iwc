@@ -1,0 +1,8 @@
+version: 1
+workflows:
+  - subclass: GALAXY
+    primaryDescriptorPath: /Galaxy-Workflow-VGP_assembly_decontamination_pipeline.ga
+    testParameterFiles: /Galaxy-Workflow-VGP_assembly_decontamination_pipeline-tests.yml
+    authors:
+      - name: Nadolina Brajuka
+        email: nbrajuka@rockefeller.edu
