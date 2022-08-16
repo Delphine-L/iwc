@@ -1,0 +1,39 @@
+- doc: Test outline for VGP-assembly-decontamination-pipeline-(imported-from-uploaded-file)
+  job:
+    Scaffolded assembly (fasta):
+      class: File
+      location: https://zenodo.org/record/6998486/files/scaffolds.fasta.gz?download=1
+      filetype: fasta
+  outputs:
+    uppercase transformed fasta:
+      asserts:
+        has_text:
+            text: 'SCAFFOLD_1100'
+    hard-masked fasta:
+      asserts:
+        has_line:
+          line: 'ATTGGTGCCGATATAGGGGATAGCTGAGAGGAGGTTTGTAATGACTGTGGCTCCTCAAAA'
+    contaminant scaffold names:
+      path: test-data/contaminant scaffold names.fasta
+    Cumulative coverage report from mito blast:
+      path: test-data/Cumulative coverage report from mito blast.tabular
+    Mitochondria scaffolds on input dataset(s):
+      path: test-data/Mitochondria scaffolds on input dataset(s).txt
+    reformat contaminant scaffold names:
+      path: test-data/reformat contaminant scaffold names.csv
+    'formatted mitochondrial scaffolds ':
+      path: test-data/formatted mitochondrial scaffolds .txt
+    isolate contaminant scaffold names:
+      path: test-data/isolate contaminant scaffold names.csv
+    full contaminant + mito scaffold list:
+      path: test-data/full contaminant + mito scaffold list.csv
+    final decontaminated assembly:
+        checksum: "sha1$70a3351156b45e1961e7b986f330527a175f9794"
+    soft-masked fasta:
+        checksum: "sha1$058693913adad31167fece0562b8e82011e1dad4"
+    Kraken2 classification scores:
+        checksum: "sha1$2e3466897f5f143ca25b1d1155285c1778086ddc"
+    contaminants (fasta):
+      path: test-data/contaminants (fasta).fasta
+    blast table (format 6) against mito DB:
+      path: test-data/blast table (format 6) against mito DB.tabular
