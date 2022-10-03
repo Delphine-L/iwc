@@ -1,0 +1,148 @@
+Expected genome size	879
+# scaffolds	0
+Total scaffold length	0
+Average scaffold length	nan
+Scaffold N50	0
+Scaffold auN	0.00
+Scaffold L50	0
+Scaffold NG50	0
+Scaffold auNG	0.00
+Scaffold LG50	0
+Largest scaffold	0
+Smallest scaffold	0
+# contigs	0
+Total contig length	0
+Average contig length	nan
+Contig N50	0
+Contig auN	0.00
+Contig L50	0
+Contig NG50	0
+Contig auNG	0.00
+Contig LG50	0
+Largest contig	0
+Smallest contig	0
+# gaps in scaffolds	0
+Total gap length in scaffolds	0
+Average gap length in scaffolds	0.00
+Gap N50 in scaffolds	0
+Gap auN in scaffolds	0.00
+Gap L50 in scaffolds	0
+Largest gap in scaffolds	0
+Smallest gap in scaffolds	0
+Base composition (A:C:G:T)	0:0:0:0
+GC content %	nan
+# soft-masked bases	0
+# segments	40
+Total segment length	12208507
+Average segment length	305212.68
+# gaps	0
+# paths	0
+# edges	8
+Average degree	0.20
+# connected components	1
+Largest connected component length	915880
+# dead ends	74
+# disconnected components	35
+Total length disconnected components	11292627
+# separated components	36
+# bubbles	0
+Scaffold N10	0
+Scaffold N20	0
+Scaffold N30	0
+Scaffold N40	0
+Scaffold N50	0
+Scaffold N60	0
+Scaffold N70	0
+Scaffold N80	0
+Scaffold N90	0
+Scaffold N100	0
+Scaffold L10	0
+Scaffold L20	0
+Scaffold L30	0
+Scaffold L40	0
+Scaffold L50	0
+Scaffold L60	0
+Scaffold L70	0
+Scaffold L80	0
+Scaffold L90	0
+Scaffold L100	0
+Scaffold NG10	0
+Scaffold NG20	0
+Scaffold NG30	0
+Scaffold NG40	0
+Scaffold NG50	0
+Scaffold NG60	0
+Scaffold NG70	0
+Scaffold NG80	0
+Scaffold NG90	0
+Scaffold NG100	0
+Scaffold LG10	0
+Scaffold LG20	0
+Scaffold LG30	0
+Scaffold LG40	0
+Scaffold LG50	0
+Scaffold LG60	0
+Scaffold LG70	0
+Scaffold LG80	0
+Scaffold LG90	0
+Scaffold LG100	0
+Contig N10	0
+Contig N20	0
+Contig N30	0
+Contig N40	0
+Contig N50	0
+Contig N60	0
+Contig N70	0
+Contig N80	0
+Contig N90	0
+Contig N100	0
+Contig L10	0
+Contig L20	0
+Contig L30	0
+Contig L40	0
+Contig L50	0
+Contig L60	0
+Contig L70	0
+Contig L80	0
+Contig L90	0
+Contig L100	0
+Contig NG10	0
+Contig NG20	0
+Contig NG30	0
+Contig NG40	0
+Contig NG50	0
+Contig NG60	0
+Contig NG70	0
+Contig NG80	0
+Contig NG90	0
+Contig NG100	0
+Contig LG10	0
+Contig LG20	0
+Contig LG30	0
+Contig LG40	0
+Contig LG50	0
+Contig LG60	0
+Contig LG70	0
+Contig LG80	0
+Contig LG90	0
+Contig LG100	0
+Gap N10	0
+Gap N20	0
+Gap N30	0
+Gap N40	0
+Gap N50	0
+Gap N60	0
+Gap N70	0
+Gap N80	0
+Gap N90	0
+Gap N100	0
+Gap L10	0
+Gap L20	0
+Gap L30	0
+Gap L40	0
+Gap L50	0
+Gap L60	0
+Gap L70	0
+Gap L80	0
+Gap L90	0
+Gap L100	0

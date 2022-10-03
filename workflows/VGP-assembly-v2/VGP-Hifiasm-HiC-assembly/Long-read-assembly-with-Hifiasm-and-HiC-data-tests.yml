@@ -1,0 +1,72 @@
+- doc: Test outline for Long-read-assembly-with-Hifiasm-and-HiC-data
+  job:
+    HiC forward reads:
+      class: File
+      location: https://www.dropbox.com/s/o50n8j16lb39huw/HiC%20forward%20reads.fastqsanger?dl=1
+      filetype: fastqsanger
+    HiC reverse reads:
+      class: File
+      location: https://www.dropbox.com/s/5fpqybd1w6tm0px/HiC%20reverse%20reads.fastqsanger?dl=1
+      filetype: fastqsanger
+    Genomescope Summary:
+      class: File
+      path: test-data/Genomescope Summary.txt
+      filetype: txt
+    Meryl Database:
+      class: File
+      location: https://www.dropbox.com/s/f05nyf28cashvxn/Meryl%20Database.meryldb?dl=1
+      filetype: meryldb
+    Pacbio Reads Collection:
+      class: Collection
+      collection_type: list
+      elements:
+      - class: File
+        identifier: SRR13577846.30x.wgaps.fastq
+        location: https://www.dropbox.com/s/l50ihxim7pmstle/Pacbio%20Reads%20Collection_SRR13577846.30x.wgaps.fastq.fastq?dl=1
+  outputs:
+    Hifiasm HiC hap1:
+      asserts:
+        has_n_lines:
+          n: 80
+    Hap2 Size Plot:
+      file: test-data/Hap2 Size Plot.png
+      compare: sim_size
+      delta: 3
+    Hap2 Nx Plot:
+      file: test-data/Hap2 Nx Plot.png
+      compare: sim_size
+      delta: 3
+    Hifiasm HiC hap2:
+      asserts:
+        has_n_lines:
+          n: 78
+    Estimated Genome size:
+      file: test-data/Estimated Genome size.expression.json
+      compare: diff
+      lines_diff: 0
+    Assembly stats for hap1:
+      file: test-data/Assembly stats for hap1.tabular
+      compare: diff
+      lines_diff: 3
+    Hap1 Nx Plot:
+      file: test-data/Hap1 Nx Plot.png
+      compare: sim_size
+      delta: 3
+    Hap1 Size Plot:
+      file: test-data/Hap1 Size Plot.png
+      compare: sim_size
+      delta: 3
+    Contig sizes for hap1:
+      file: test-data/Contig sizes for hap1.tabular
+      compare: diff
+      lines_diff: 3
+    Contig sizes for hap2:
+      file: test-data/Contig sizes for hap2.tabular
+      compare: diff
+      lines_diff: 3
+    Assembly stats for hap2:
+      path: test-data/Assembly stats for hap2.tabular
+    'Cutadapt on input dataset(s): Read 1 Output':
+      element_tests:
+        SRR13577846.30x.wgaps.fastq:
+          checksum: 'sha1$79c20b7352beca0df79455693d3ffe8c19d072b3'
