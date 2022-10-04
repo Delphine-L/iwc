@@ -28,14 +28,6 @@
       asserts:
         has_n_lines:
           n: 80
-    Hap2 Size Plot:
-      file: test-data/Hap2 Size Plot.png
-      compare: sim_size
-      delta: 3
-    Hap2 Nx Plot:
-      file: test-data/Hap2 Nx Plot.png
-      compare: sim_size
-      delta: 3
     Hifiasm HiC hap2:
       asserts:
         has_n_lines:
@@ -48,14 +40,6 @@
       file: test-data/Assembly stats for hap1.tabular
       compare: diff
       lines_diff: 3
-    Hap1 Nx Plot:
-      file: test-data/Hap1 Nx Plot.png
-      compare: sim_size
-      delta: 3
-    Hap1 Size Plot:
-      file: test-data/Hap1 Size Plot.png
-      compare: sim_size
-      delta: 3
     Contig sizes for hap1:
       file: test-data/Contig sizes for hap1.tabular
       compare: diff
