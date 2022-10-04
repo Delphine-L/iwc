@@ -5,6 +5,3 @@ workflows:
   subclass: Galaxy
   testParameterFiles:
   - /Long-read-assembly-with-Hifiasm-and-HiC-data-tests.yml
-- name: main
-  primaryDescriptorPath: /Long-read-assembly-with-Hifiasm-and-HiC-data-auto.ga
-  subclass: Galaxy
