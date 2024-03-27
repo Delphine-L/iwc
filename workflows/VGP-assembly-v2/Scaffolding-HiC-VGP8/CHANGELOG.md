@@ -1,5 +1,13 @@
 # Changelog
 
+
+## [0.2.3] 2024-03-27
+
+### Manual update
+
+- Add GFF output to Busco
+
+
 ## [0.2.2] 2024-02-05
 
 ### Manual update
