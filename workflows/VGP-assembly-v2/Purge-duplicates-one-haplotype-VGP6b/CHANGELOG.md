@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1] 2024-03-27
+
+
+### Manual Updates
+
+- Add Busco Gff output
+- Add Merqury Hist output 
+
 ## [0.4] 2024-03-25
 
 ### Automatic update

@@ -15,7 +15,7 @@
     ],
     "format-version": "0.1",
     "license": "CC-BY-4.0",
-    "release": "0.4",
+    "release": "0.4.1",
     "name": "Purging-duplicates-one-haplotype-VGP6b ",
     "steps": {
         "0": {
@@ -35,7 +35,7 @@
             "outputs": [],
             "position": {
                 "left": 0,
-                "top": 36.02430839035473
+                "top": 53.8155828196508
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": \"\"}",
@@ -62,7 +62,7 @@
             "outputs": [],
             "position": {
                 "left": 558.0468791193098,
-                "top": 408.0208291659224
+                "top": 425.81210359521845
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": \"\", \"collection_type\": \"list\"}",
@@ -89,7 +89,7 @@
             "outputs": [],
             "position": {
                 "left": 432.94921875,
-                "top": 938.5
+                "top": 956.2912744292961
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"fasta\"], \"tag\": \"\"}",
@@ -116,7 +116,7 @@
             "outputs": [],
             "position": {
                 "left": 1972.4566892558003,
-                "top": 271.05034258817113
+                "top": 288.8416170174672
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": \"\"}",
@@ -143,7 +143,7 @@
             "outputs": [],
             "position": {
                 "left": 1693.6113702942387,
-                "top": 1061.0416654868025
+                "top": 1078.8329399160984
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": \"\"}",
@@ -170,7 +170,7 @@
             "outputs": [],
             "position": {
                 "left": 1972.4566892558003,
-                "top": 390.9983098916077
+                "top": 408.7895843209037
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": \"\"}",
@@ -197,7 +197,7 @@
             "outputs": [],
             "position": {
                 "left": 2540.373300171866,
-                "top": 362.02259306689524
+                "top": 379.8138674961913
             },
             "tool_id": null,
             "tool_state": "{\"default\": \"Alternate\", \"parameter_type\": \"text\", \"optional\": true}",
@@ -224,7 +224,7 @@
             "outputs": [],
             "position": {
                 "left": 2540.373300171866,
-                "top": 502.00524759962667
+                "top": 519.7965220289227
             },
             "tool_id": null,
             "tool_state": "{\"default\": \"Primary\", \"parameter_type\": \"text\", \"optional\": true}",
@@ -256,7 +256,7 @@
             ],
             "position": {
                 "left": 279.14929817609004,
-                "top": 31.006954533047733
+                "top": 48.7982289623438
             },
             "post_job_actions": {
                 "HideDatasetActionout_file1": {
@@ -314,7 +314,7 @@
             ],
             "position": {
                 "left": 836.9531477685715,
-                "top": 384.010453083438
+                "top": 401.80172751273403
             },
             "post_job_actions": {
                 "ChangeDatatypeActionalignment_output": {
@@ -371,7 +371,7 @@
             ],
             "position": {
                 "left": 835.7031135648554,
-                "top": 705.9723141493163
+                "top": 723.7635885786124
             },
             "post_job_actions": {
                 "HideDatasetActionsplit_fasta": {
@@ -416,7 +416,7 @@
             ],
             "position": {
                 "left": 1972.4566892558003,
-                "top": 1035.0261487504602
+                "top": 1052.8174231797561
             },
             "post_job_actions": {
                 "HideDatasetActioninteger_param": {
@@ -462,7 +462,7 @@
             ],
             "position": {
                 "left": 2261.4845426800953,
-                "top": 641.9271334385338
+                "top": 659.7184078678299
             },
             "post_job_actions": {
                 "HideDatasetActionstats": {
@@ -507,7 +507,7 @@
             ],
             "position": {
                 "left": 558.0468791193098,
-                "top": 31.006954533047733
+                "top": 48.7982289623438
             },
             "post_job_actions": {
                 "HideDatasetActionout_file1": {
@@ -546,7 +546,7 @@
             ],
             "position": {
                 "left": 558.0468791193098,
-                "top": 223.0382102565407
+                "top": 240.82948468583677
             },
             "post_job_actions": {
                 "HideDatasetActionout_file1": {
@@ -598,7 +598,7 @@
             ],
             "position": {
                 "left": 1123.36328125,
-                "top": 693.65625
+                "top": 711.4475244292961
             },
             "post_job_actions": {
                 "ChangeDatatypeActionalignment_output": {
@@ -649,7 +649,7 @@
             ],
             "position": {
                 "left": 2263.41796875,
-                "top": 986.73828125
+                "top": 1004.5295556792961
             },
             "post_job_actions": {
                 "HideDatasetActionstats": {
@@ -688,7 +688,7 @@
             "outputs": [],
             "position": {
                 "left": 2540.373300171866,
-                "top": 641.9271334385338
+                "top": 659.7184078678299
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -1071,7 +1071,7 @@
             ],
             "position": {
                 "left": 836.9531477685715,
-                "top": 0
+                "top": 17.791274429296063
             },
             "post_job_actions": {
                 "HideDatasetActioninteger_param": {
@@ -1131,7 +1131,7 @@
             ],
             "position": {
                 "left": 836.9531477685715,
-                "top": 191.9791860478278
+                "top": 209.77046047712386
             },
             "post_job_actions": {
                 "HideDatasetActioninteger_param": {
@@ -1170,7 +1170,7 @@
             ],
             "position": {
                 "left": 2540.373300171866,
-                "top": 1010.0260981547028
+                "top": 1027.8173725839988
             },
             "post_job_actions": {
                 "HideDatasetActionoutfile": {
@@ -1248,7 +1248,7 @@
             ],
             "position": {
                 "left": 1125.9375626626565,
-                "top": 6.9618163142784795
+                "top": 24.753090743574543
             },
             "post_job_actions": {
                 "TagDatasetActioncalcuts_cutoff": {
@@ -1366,7 +1366,7 @@
             ],
             "position": {
                 "left": 1414.6961876965902,
-                "top": 574.0018060167882
+                "top": 591.7930804460843
             },
             "post_job_actions": {
                 "TagDatasetActionpurge_dups_bed": {
@@ -1420,7 +1420,7 @@
             ],
             "position": {
                 "left": 1693.6113702942387,
-                "top": 660.9722592757281
+                "top": 678.7635337050242
             },
             "post_job_actions": {
                 "TagDatasetActionoutput": {
@@ -1484,7 +1484,7 @@
             ],
             "position": {
                 "left": 1972.4566892558003,
-                "top": 761.8837658237778
+                "top": 779.6750402530739
             },
             "post_job_actions": {
                 "RenameDatasetActionget_seqs_hap": {
@@ -1537,14 +1537,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Purged assembly",
-                    "output_name": "get_seqs_purged",
-                    "uuid": "0fb19650-ae22-41da-8ccf-fc12842b8d6b"
-                },
-                {
                     "label": "Removed haplotigs",
                     "output_name": "get_seqs_hap",
                     "uuid": "0593d60a-a6ec-48c0-a1dc-c2a4bc5bd537"
+                },
+                {
+                    "label": "Purged assembly",
+                    "output_name": "get_seqs_purged",
+                    "uuid": "0fb19650-ae22-41da-8ccf-fc12842b8d6b"
                 }
             ]
         },
@@ -1589,13 +1589,17 @@
                     "type": "input"
                 },
                 {
+                    "name": "hist_files",
+                    "type": "input"
+                },
+                {
                     "name": "log_file",
                     "type": "txt"
                 }
             ],
             "position": {
-                "left": 2254.25,
-                "top": 148.1914074209294
+                "left": 2257.1153423339656,
+                "top": 0.0
             },
             "post_job_actions": {
                 "HideDatasetActionlog_file": {
@@ -1614,6 +1618,13 @@
                     },
                     "action_type": "TagDatasetAction",
                     "output_name": "bed_files"
+                },
+                "TagDatasetActionhist_files": {
+                    "action_arguments": {
+                        "tags": "name:purged,merqury_purged_hist"
+                    },
+                    "action_type": "TagDatasetAction",
+                    "output_name": "hist_files"
                 },
                 "TagDatasetActionpng_files": {
                     "action_arguments": {
@@ -1658,7 +1669,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"label\": \"output_merqury\", \"mode\": {\"options\": \"default\", \"__current_case__\": 0, \"meryldb_F1\": {\"__class__\": \"ConnectedValue\"}, \"assembly_options\": {\"number_assemblies\": \"two\", \"__current_case__\": 1, \"assembly_01\": {\"__class__\": \"ConnectedValue\"}, \"assembly_02\": {\"__class__\": \"ConnectedValue\"}}}, \"output_add_headers\": false, \"output_selector\": [\"qv\", \"plots\", \"stats\", \"log\"], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"label\": \"output_merqury\", \"mode\": {\"options\": \"default\", \"__current_case__\": 0, \"meryldb_F1\": {\"__class__\": \"RuntimeValue\"}, \"assembly_options\": {\"number_assemblies\": \"two\", \"__current_case__\": 1, \"assembly_01\": {\"__class__\": \"RuntimeValue\"}, \"assembly_02\": {\"__class__\": \"RuntimeValue\"}}}, \"output_add_headers\": false, \"output_selector\": [\"qv\", \"plots\", \"stats\", \"log\", \"hist\"], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.3+galaxy3",
             "type": "tool",
             "uuid": "4c0ee7aa-643d-4583-b507-0def031e329b",
@@ -1668,6 +1679,11 @@
                     "label": "Merqury on Phased assemblies: stats",
                     "output_name": "stats_files",
                     "uuid": "c07cd28e-86b5-4e4f-87fa-bc2b3b65da33"
+                },
+                {
+                    "label": "Merqury on Phased assemblies: Hist",
+                    "output_name": "hist_files",
+                    "uuid": "6de8dd20-d759-497d-96a0-5529e391a7c8"
                 },
                 {
                     "label": "Merqury on Phased assemblies: Images",
@@ -1698,7 +1714,7 @@
             ],
             "position": {
                 "left": 2267.44140625,
-                "top": 815.45703125
+                "top": 833.2483056792961
             },
             "post_job_actions": {
                 "HideDatasetActionstats": {
@@ -1739,7 +1755,12 @@
                     "output_name": "get_seqs_purged"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Busco",
+                    "name": "input"
+                }
+            ],
             "label": null,
             "name": "Busco",
             "outputs": [
@@ -1758,13 +1779,24 @@
                 {
                     "name": "summary_image",
                     "type": "png"
+                },
+                {
+                    "name": "busco_gff",
+                    "type": "gff3"
                 }
             ],
             "position": {
-                "left": 2271.07421875,
-                "top": 1169.796875
+                "left": 2271.468889783281,
+                "top": 1138.229188199017
             },
             "post_job_actions": {
+                "TagDatasetActionbusco_gff": {
+                    "action_arguments": {
+                        "tags": "name:purged,busco_purged_gff"
+                    },
+                    "action_type": "TagDatasetAction",
+                    "output_name": "busco_gff"
+                },
                 "TagDatasetActionbusco_missing": {
                     "action_arguments": {
                         "tags": "busco_purged_missing, #purged"
@@ -1801,7 +1833,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"adv\": {\"evalue\": \"0.001\", \"limit\": \"3\", \"contig_break\": \"10\"}, \"busco_mode\": {\"mode\": \"geno\", \"__current_case__\": 0, \"miniprot\": false, \"use_augustus\": {\"use_augustus_selector\": \"no\", \"__current_case__\": 0}}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"lineage\": {\"lineage_mode\": \"select_lineage\", \"__current_case__\": 1, \"lineage_dataset\": \"vertebrata_odb10\"}, \"lineage_conditional\": {\"selector\": \"download\", \"__current_case__\": 1}, \"outputs\": [\"short_summary\", \"missing\", \"image\"], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"adv\": {\"evalue\": \"0.001\", \"limit\": \"3\", \"contig_break\": \"10\"}, \"busco_mode\": {\"mode\": \"geno\", \"__current_case__\": 0, \"miniprot\": false, \"use_augustus\": {\"use_augustus_selector\": \"no\", \"__current_case__\": 0}}, \"input\": {\"__class__\": \"RuntimeValue\"}, \"lineage\": {\"lineage_mode\": \"select_lineage\", \"__current_case__\": 1, \"lineage_dataset\": \"vertebrata_odb10\"}, \"lineage_conditional\": {\"selector\": \"download\", \"__current_case__\": 1}, \"outputs\": [\"short_summary\", \"missing\", \"image\", \"gff\"], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "5.5.0+galaxy0",
             "type": "tool",
             "uuid": "73b62ef3-0002-418e-9f10-22076c1e48f3",
@@ -1811,6 +1843,11 @@
                     "label": "Busco on Purged Primary assembly: short summary",
                     "output_name": "busco_sum",
                     "uuid": "b366e7f7-02f9-47e0-b2b3-7bfc3265951d"
+                },
+                {
+                    "label": "Busco on Purged Primary Assembly : gff",
+                    "output_name": "busco_gff",
+                    "uuid": "bb562a36-6d83-4106-917c-883d693e82f3"
                 },
                 {
                     "label": "Busco on Purged Primary assembly: summary image",
@@ -1824,63 +1861,6 @@
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.6+galaxy0",
             "errors": null,
             "id": 28,
-            "input_connections": {
-                "input_file": {
-                    "id": 24,
-                    "output_name": "get_seqs_purged"
-                },
-                "mode_condition|statistics_condition|expected_genomesize": {
-                    "id": 11,
-                    "output_name": "integer_param"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "gfastats",
-            "outputs": [
-                {
-                    "name": "stats",
-                    "type": "tabular"
-                }
-            ],
-            "position": {
-                "left": 2261.8984375,
-                "top": 1687.4235851553044
-            },
-            "post_job_actions": {
-                "TagDatasetActionstats": {
-                    "action_arguments": {
-                        "tags": "gfastats_purged"
-                    },
-                    "action_type": "TagDatasetAction",
-                    "output_name": "stats"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.6+galaxy0",
-            "tool_shed_repository": {
-                "changeset_revision": "3ef480892a9f",
-                "name": "gfastats",
-                "owner": "bgruening",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"input_file\": {\"__class__\": \"ConnectedValue\"}, \"mode_condition\": {\"selector\": \"statistics\", \"__current_case__\": 1, \"statistics_condition\": {\"selector\": \"assembly\", \"__current_case__\": 2, \"expected_genomesize\": {\"__class__\": \"ConnectedValue\"}}, \"locale\": true, \"tabular\": true, \"discover_paths\": false}, \"target_condition\": {\"target_option\": \"false\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.3.6+galaxy0",
-            "type": "tool",
-            "uuid": "ff2b02d1-f6dc-4cd6-bd4a-a70e4d97492c",
-            "when": null,
-            "workflow_outputs": [
-                {
-                    "label": "Purged assembly statistics",
-                    "output_name": "stats",
-                    "uuid": "c98fd03e-3a3d-472b-8b13-f13479fc4dad"
-                }
-            ]
-        },
-        "29": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.6+galaxy0",
-            "errors": null,
-            "id": 29,
             "input_connections": {
                 "input_file": {
                     "id": 24,
@@ -1903,7 +1883,7 @@
             ],
             "position": {
                 "left": 2539.288422879884,
-                "top": 1237.8733156931864
+                "top": 1255.6645901224824
             },
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
@@ -1941,6 +1921,63 @@
                 }
             ]
         },
+        "29": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.6+galaxy0",
+            "errors": null,
+            "id": 29,
+            "input_connections": {
+                "input_file": {
+                    "id": 24,
+                    "output_name": "get_seqs_purged"
+                },
+                "mode_condition|statistics_condition|expected_genomesize": {
+                    "id": 11,
+                    "output_name": "integer_param"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "gfastats",
+            "outputs": [
+                {
+                    "name": "stats",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 2274.654475356379,
+                "top": 1835.3528316154877
+            },
+            "post_job_actions": {
+                "TagDatasetActionstats": {
+                    "action_arguments": {
+                        "tags": "gfastats_purged"
+                    },
+                    "action_type": "TagDatasetAction",
+                    "output_name": "stats"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.6+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "3ef480892a9f",
+                "name": "gfastats",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"input_file\": {\"__class__\": \"ConnectedValue\"}, \"mode_condition\": {\"selector\": \"statistics\", \"__current_case__\": 1, \"statistics_condition\": {\"selector\": \"assembly\", \"__current_case__\": 2, \"expected_genomesize\": {\"__class__\": \"ConnectedValue\"}}, \"locale\": true, \"tabular\": true, \"discover_paths\": false}, \"target_condition\": {\"target_option\": \"false\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.3.6+galaxy0",
+            "type": "tool",
+            "uuid": "ff2b02d1-f6dc-4cd6-bd4a-a70e4d97492c",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Purged assembly statistics",
+                    "output_name": "stats",
+                    "uuid": "c98fd03e-3a3d-472b-8b13-f13479fc4dad"
+                }
+            ]
+        },
         "30": {
             "annotation": "",
             "id": 30,
@@ -1957,7 +1994,7 @@
             "outputs": [],
             "position": {
                 "left": 2540.373300171866,
-                "top": 813.0121828374843
+                "top": 830.8034572667804
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -2325,7 +2362,7 @@
             "id": 31,
             "input_connections": {
                 "infile": {
-                    "id": 28,
+                    "id": 29,
                     "output_name": "stats"
                 }
             },
@@ -2340,7 +2377,7 @@
             ],
             "position": {
                 "left": 2540.373300171866,
-                "top": 1596.97919245039
+                "top": 1614.770466879686
             },
             "post_job_actions": {
                 "HideDatasetActionoutfile": {
@@ -2394,7 +2431,7 @@
             "outputs": [],
             "position": {
                 "left": 2839.1842345748423,
-                "top": 720.9896475213042
+                "top": 738.7809219506003
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -2890,14 +2927,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Nx Plot",
-                    "output_name": "Nx Plot",
-                    "uuid": "f0d394c3-27d8-4286-a6ea-6c3f1b6fed81"
-                },
-                {
                     "label": "Size Plot",
                     "output_name": "Size Plot",
                     "uuid": "17b84f94-3fd6-4722-ac27-17998f5da324"
+                },
+                {
+                    "label": "Nx Plot",
+                    "output_name": "Nx Plot",
+                    "uuid": "f0d394c3-27d8-4286-a6ea-6c3f1b6fed81"
                 }
             ]
         },
@@ -2927,7 +2964,7 @@
             ],
             "position": {
                 "left": 2839.1842345748423,
-                "top": 1040.0087291593652
+                "top": 1057.8000035886612
             },
             "post_job_actions": {
                 "TagDatasetActionoutput": {
@@ -2962,6 +2999,6 @@
     "tags": [
         "VGP_curated"
     ],
-    "uuid": "8bc1fd02-cd63-4750-8856-7286a10ef14d",
-    "version": 15
+    "uuid": "b1ecc8fb-fe43-4af5-a755-e142b255accb",
+    "version": 1
 }
