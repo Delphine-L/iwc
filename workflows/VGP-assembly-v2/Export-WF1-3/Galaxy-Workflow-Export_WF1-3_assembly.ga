@@ -21,8 +21,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 14.35088290881979,
-                "top": 713.2918941977812
+                "left": 0.0,
+                "top": 312.8114201007775
             },
             "tool_id": null,
             "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
@@ -48,8 +48,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 2.17516482046811,
-                "top": 892.2222269044271
+                "left": 25.493206781476772,
+                "top": 401.6451329538543
             },
             "tool_id": null,
             "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
@@ -75,8 +75,8 @@
                 }
             ],
             "position": {
-                "left": 0.1383648789464571,
-                "top": 1014.9374420045654
+                "left": 66.58351264837472,
+                "top": 477.088307896888
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
@@ -100,37 +100,10 @@
             ]
         },
         "3": {
-            "annotation": "With dataset tag : genomescope_tr_log",
-            "content_id": null,
-            "errors": null,
-            "id": 3,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : genomescope_tr_log",
-                    "name": "Genomescope transformed Log plot"
-                }
-            ],
-            "label": "Genomescope transformed Log plot",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1081.0087479648023,
-                "top": 176.8125
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"png\"], \"tag\": \"genomescope_tr_log\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "461bee6e-30f8-4345-81cf-db22832682a2",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "4": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 4,
+            "id": 3,
             "input_connections": {},
             "inputs": [],
             "label": "Haplotype : Not set",
@@ -142,8 +115,8 @@
                 }
             ],
             "position": {
-                "left": 0,
-                "top": 1132.0643078141582
+                "left": 106.20894456932518,
+                "top": 572.5909556415593
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
@@ -166,6 +139,33 @@
                 }
             ]
         },
+        "4": {
+            "annotation": "With dataset tag : genomescope_tr_log",
+            "content_id": null,
+            "errors": null,
+            "id": 4,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "With dataset tag : genomescope_tr_log",
+                    "name": "Genomescope transformed Log plot"
+                }
+            ],
+            "label": "Genomescope transformed Log plot",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1426.9470290566012,
+                "top": 176.8125
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"png\"], \"tag\": \"genomescope_tr_log\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "461bee6e-30f8-4345-81cf-db22832682a2",
+            "when": null,
+            "workflow_outputs": []
+        },
         "5": {
             "annotation": "With dataset tag : genomescope_params",
             "content_id": null,
@@ -182,7 +182,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1079.0243729648023,
+                "left": 1424.9626540566012,
                 "top": 489.28125
             },
             "tool_id": null,
@@ -209,7 +209,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1408.9149979648023,
+                "left": 1754.8532790566012,
                 "top": 192.9375
             },
             "tool_id": null,
@@ -236,7 +236,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1412.0243729648023,
+                "left": 1757.9626540566012,
                 "top": 502.0625
             },
             "tool_id": null,
@@ -263,7 +263,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1010.0087479648022,
+                "left": 1355.947029056601,
                 "top": 1294.25
             },
             "tool_id": null,
@@ -275,64 +275,10 @@
             "workflow_outputs": []
         },
         "9": {
-            "annotation": "With dataset tag : genomescope_log",
-            "content_id": null,
-            "errors": null,
-            "id": 9,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : genomescope_log",
-                    "name": "Genomescope Log plot"
-                }
-            ],
-            "label": "Genomescope Log plot",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1736.5087479648023,
-                "top": 179.5
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"png\"], \"tag\": \"genomescope_log\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "126a1e49-b47c-4ac6-9c54-ff1bd716ab7a",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "10": {
-            "annotation": "With dataset tag : genomescope_model",
-            "content_id": null,
-            "errors": null,
-            "id": 10,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : genomescope_model",
-                    "name": "Genomescope Model"
-                }
-            ],
-            "label": "Genomescope Model",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1696.9618729648023,
-                "top": 469.1875
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"txt\"], \"tag\": \"genomescope_model\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "c45a6a86-39cc-419d-bbe1-c7ce7a59fed3",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "11": {
             "annotation": "With dataset tag : hifiasm_primary_gfa",
             "content_id": null,
             "errors": null,
-            "id": 11,
+            "id": 9,
             "input_connections": {},
             "inputs": [
                 {
@@ -344,7 +290,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 729.8993729648022,
+                "left": 1075.837654056601,
                 "top": 1720.28125
             },
             "tool_id": null,
@@ -352,6 +298,60 @@
             "tool_version": null,
             "type": "data_input",
             "uuid": "5390df88-675a-4ad0-8ca0-77cc45bd7a5e",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "10": {
+            "annotation": "With dataset tag : genomescope_log",
+            "content_id": null,
+            "errors": null,
+            "id": 10,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "With dataset tag : genomescope_log",
+                    "name": "Genomescope Log plot"
+                }
+            ],
+            "label": "Genomescope Log plot",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 2082.4470290566014,
+                "top": 179.5
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"png\"], \"tag\": \"genomescope_log\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "126a1e49-b47c-4ac6-9c54-ff1bd716ab7a",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "11": {
+            "annotation": "With dataset tag : genomescope_model",
+            "content_id": null,
+            "errors": null,
+            "id": 11,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "With dataset tag : genomescope_model",
+                    "name": "Genomescope Model"
+                }
+            ],
+            "label": "Genomescope Model",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 2042.9001540566012,
+                "top": 469.1875
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"txt\"], \"tag\": \"genomescope_model\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "c45a6a86-39cc-419d-bbe1-c7ce7a59fed3",
             "when": null,
             "workflow_outputs": []
         },
@@ -371,7 +371,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1022.0087479648021,
+                "left": 1367.947029056601,
                 "top": 1591.25
             },
             "tool_id": null,
@@ -383,37 +383,10 @@
             "workflow_outputs": []
         },
         "13": {
-            "annotation": "With dataset tag : genomescope_linear",
-            "content_id": null,
-            "errors": null,
-            "id": 13,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : genomescope_linear",
-                    "name": "Genomescope Linear plot"
-                }
-            ],
-            "label": "Genomescope Linear plot",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 2016.5712479648023,
-                "top": 194.3125
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"png\"], \"tag\": \"genomescope_linear\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "aeffae29-6895-44dd-bb2f-b6e11b080358",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "14": {
             "annotation": "With dataset tag : hifiasm_alternate_gfa",
             "content_id": null,
             "errors": null,
-            "id": 14,
+            "id": 13,
             "input_connections": {},
             "inputs": [
                 {
@@ -425,7 +398,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 727.9774979648022,
+                "left": 1073.915779056601,
                 "top": 2003.265625
             },
             "tool_id": null,
@@ -433,6 +406,33 @@
             "tool_version": null,
             "type": "data_input",
             "uuid": "f7750b4b-7b8c-4dee-8845-59d52a6ef3a6",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "14": {
+            "annotation": "With dataset tag : genomescope_linear",
+            "content_id": null,
+            "errors": null,
+            "id": 14,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "With dataset tag : genomescope_linear",
+                    "name": "Genomescope Linear plot"
+                }
+            ],
+            "label": "Genomescope Linear plot",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 2362.5095290566014,
+                "top": 194.3125
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"png\"], \"tag\": \"genomescope_linear\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "aeffae29-6895-44dd-bb2f-b6e11b080358",
             "when": null,
             "workflow_outputs": []
         },
@@ -452,7 +452,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1785.2587479648023,
+                "left": 2131.1970290566014,
                 "top": 1221.453125
             },
             "tool_id": null,
@@ -479,7 +479,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 2048.5399979648023,
+                "left": 2394.4782790566014,
                 "top": 852.25
             },
             "tool_id": null,
@@ -506,7 +506,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1502.5087479648023,
+                "left": 1848.4470290566012,
                 "top": 1901.6875
             },
             "tool_id": null,
@@ -518,64 +518,10 @@
             "workflow_outputs": []
         },
         "18": {
-            "annotation": "With dataset tag : busco_c1_missing",
-            "content_id": null,
-            "errors": null,
-            "id": 18,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : busco_c1_missing",
-                    "name": "Busco on Hifiasm Primary assembly: Missing"
-                }
-            ],
-            "label": "Busco on Hifiasm Primary assembly: Missing",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 2103.6337479648023,
-                "top": 1240.6875
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"tabular\"], \"tag\": \"busco_c1_missing\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "76a2cd82-ead2-44fa-88c5-7c3807e028fe",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "19": {
-            "annotation": "With dataset tag : busco_c1_summ",
-            "content_id": null,
-            "errors": null,
-            "id": 19,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : busco_c1_summ",
-                    "name": "Busco on Hifiasm Primary assembly: Short Summary"
-                }
-            ],
-            "label": "Busco on Hifiasm Primary assembly: Short Summary",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 2319.6337479648023,
-                "top": 873.40625
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"txt\"], \"tag\": \"busco_c1_summ\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "5b0fcd5a-47dd-45bf-b71f-24b6505c2dc1",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "20": {
             "annotation": "With dataset tag : hifiasm_alternate",
             "content_id": null,
             "errors": null,
-            "id": 20,
+            "id": 18,
             "input_connections": {},
             "inputs": [
                 {
@@ -587,7 +533,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1035.8212479648023,
+                "left": 1381.7595290566012,
                 "top": 2349.59375
             },
             "tool_id": null,
@@ -595,6 +541,60 @@
             "tool_version": null,
             "type": "data_input",
             "uuid": "8acc98ad-937c-40db-92d0-660232487b35",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "19": {
+            "annotation": "With dataset tag : busco_c1_missing",
+            "content_id": null,
+            "errors": null,
+            "id": 19,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "With dataset tag : busco_c1_missing",
+                    "name": "Busco on Hifiasm Primary assembly: Missing"
+                }
+            ],
+            "label": "Busco on Hifiasm Primary assembly: Missing",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 2449.5720290566014,
+                "top": 1240.6875
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"tabular\"], \"tag\": \"busco_c1_missing\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "76a2cd82-ead2-44fa-88c5-7c3807e028fe",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "20": {
+            "annotation": "With dataset tag : busco_c1_summ",
+            "content_id": null,
+            "errors": null,
+            "id": 20,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "With dataset tag : busco_c1_summ",
+                    "name": "Busco on Hifiasm Primary assembly: Short Summary"
+                }
+            ],
+            "label": "Busco on Hifiasm Primary assembly: Short Summary",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 2665.5720290566014,
+                "top": 873.40625
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"txt\"], \"tag\": \"busco_c1_summ\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "5b0fcd5a-47dd-45bf-b71f-24b6505c2dc1",
             "when": null,
             "workflow_outputs": []
         },
@@ -614,7 +614,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1545.1943959937537,
+                "left": 1891.1326770855526,
                 "top": 2255.366346732148
             },
             "tool_id": null,
@@ -641,7 +641,7 @@
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
-                "left": 1152.1962479648023,
+                "left": 1498.1345290566012,
                 "top": 2727.6875
             },
             "tool_id": null,
@@ -668,7 +668,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1974.5389714493829,
+                "left": 2320.4772525411818,
                 "top": 2262.205720208486
             },
             "tool_id": null,
@@ -695,7 +695,7 @@
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
-                "left": 1153.4618729648023,
+                "left": 1499.4001540566012,
                 "top": 2880.203125
             },
             "tool_id": null,
@@ -707,37 +707,10 @@
             "workflow_outputs": []
         },
         "25": {
-            "annotation": "With dataset tag : meryl_db",
-            "content_id": null,
-            "errors": null,
-            "id": 25,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : meryl_db",
-                    "name": "Meryl Database"
-                }
-            ],
-            "label": "Meryl Database",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 2305.6962479648023,
-                "top": 2271.953125
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"meryldb\"], \"tag\": \"meryl_db\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "1586ec62-1691-4f40-babe-074b25e29059",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "26": {
             "annotation": "With collection tag : merqury_c_stats",
             "content_id": null,
             "errors": null,
-            "id": 26,
+            "id": 25,
             "input_connections": {},
             "inputs": [
                 {
@@ -749,7 +722,7 @@
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
-                "left": 1158.6649979648023,
+                "left": 1504.6032790566012,
                 "top": 3044.34375
             },
             "tool_id": null,
@@ -757,6 +730,33 @@
             "tool_version": null,
             "type": "data_collection_input",
             "uuid": "4b218105-97ac-4e73-a188-36823a48c3f5",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "26": {
+            "annotation": "With dataset tag : meryl_db",
+            "content_id": null,
+            "errors": null,
+            "id": 26,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "With dataset tag : meryl_db",
+                    "name": "Meryl Database"
+                }
+            ],
+            "label": "Meryl Database",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 2651.6345290566014,
+                "top": 2271.953125
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"meryldb\"], \"tag\": \"meryl_db\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "1586ec62-1691-4f40-babe-074b25e29059",
             "when": null,
             "workflow_outputs": []
         },
@@ -776,7 +776,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 2297.5712479648023,
+                "left": 2643.5095290566014,
                 "top": 2640.5
             },
             "tool_id": null,
@@ -803,7 +803,7 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 2327.6337479648023,
+                "left": 2673.5720290566014,
                 "top": 2929.5
             },
             "tool_id": null,
@@ -829,7 +829,7 @@
             "name": "Sanitise parameter",
             "outputs": [],
             "position": {
-                "left": 279.97359171480224,
+                "left": 625.9118728066012,
                 "top": 617.33984375
             },
             "subworkflow": {
@@ -1015,7 +1015,7 @@
             "name": "Sanitise parameter",
             "outputs": [],
             "position": {
-                "left": 259.82121762005664,
+                "left": 605.7594987118555,
                 "top": 830.4763340509181
             },
             "subworkflow": {
@@ -1207,7 +1207,7 @@
                 }
             ],
             "position": {
-                "left": 1240.2274979648023,
+                "left": 1586.1657790566012,
                 "top": 1232.4375
             },
             "post_job_actions": {
@@ -1245,7 +1245,7 @@
             "id": 32,
             "input_connections": {
                 "input": {
-                    "id": 11,
+                    "id": 9,
                     "output_name": "output"
                 }
             },
@@ -1259,7 +1259,7 @@
                 }
             ],
             "position": {
-                "left": 1017.4462479648021,
+                "left": 1363.384529056601,
                 "top": 1707.625
             },
             "post_job_actions": {
@@ -1304,7 +1304,7 @@
                 }
             ],
             "position": {
-                "left": 1267.0868729648023,
+                "left": 1613.0251540566012,
                 "top": 1493.5
             },
             "post_job_actions": {
@@ -1335,7 +1335,7 @@
             "id": 34,
             "input_connections": {
                 "input": {
-                    "id": 14,
+                    "id": 13,
                     "output_name": "output"
                 }
             },
@@ -1349,7 +1349,7 @@
                 }
             ],
             "position": {
-                "left": 968.5712479648022,
+                "left": 1314.509529056601,
                 "top": 1916.703125
             },
             "post_job_actions": {
@@ -1401,7 +1401,7 @@
                 }
             ],
             "position": {
-                "left": 1735.4149979648023,
+                "left": 2081.3532790566014,
                 "top": 1689.0625
             },
             "post_job_actions": {
@@ -1432,7 +1432,7 @@
             "id": 36,
             "input_connections": {
                 "input": {
-                    "id": 20,
+                    "id": 18,
                     "output_name": "output"
                 }
             },
@@ -1446,7 +1446,7 @@
                 }
             ],
             "position": {
-                "left": 1276.4600736615785,
+                "left": 1622.3983547533774,
                 "top": 2169.5497758230254
             },
             "post_job_actions": {
@@ -1498,7 +1498,7 @@
                 }
             ],
             "position": {
-                "left": 1735.2153226374844,
+                "left": 2081.1536037292835,
                 "top": 2358.2051873416085
             },
             "post_job_actions": {
@@ -1543,13 +1543,13 @@
                 }
             ],
             "position": {
-                "left": 1513.8837479648023,
+                "left": 1859.8220290566012,
                 "top": 2701.265625
             },
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
                     "action_arguments": {
-                        "newname": "/species/${species_full_name}/${species_id}/assembly_vgp_trio_2.0/evaluation/merqury/${species_id}_qv"
+                        "newname": "/species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_qv"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output"
@@ -1590,7 +1590,7 @@
                 }
             ],
             "position": {
-                "left": 2114.980321569687,
+                "left": 2460.918602661486,
                 "top": 2366.846484154903
             },
             "post_job_actions": {
@@ -1635,13 +1635,13 @@
                 }
             ],
             "position": {
-                "left": 1502.9149979648023,
+                "left": 1848.8532790566012,
                 "top": 2898.28125
             },
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
                     "action_arguments": {
-                        "newname": "/species/${species_full_name}/${species_id}/assembly_vgp_trio_2.0/evaluation/merqury/${species_id}_png"
+                        "newname": "/species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_png"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output"
@@ -1668,7 +1668,7 @@
             "id": 41,
             "input_connections": {
                 "input": {
-                    "id": 26,
+                    "id": 25,
                     "output_name": "output"
                 }
             },
@@ -1682,13 +1682,13 @@
                 }
             ],
             "position": {
-                "left": 1508.1649979648023,
+                "left": 1854.1032790566012,
                 "top": 3048.265625
             },
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
                     "action_arguments": {
-                        "newname": "/species/${species_full_name}/${species_id}/assembly_vgp_trio_2.0/evaluation/merqury/${species_id}_stats"
+                        "newname": "/species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_stats"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output"
@@ -1718,7 +1718,7 @@
                     "output_name": "out1"
                 },
                 "Haplotype": {
-                    "id": 4,
+                    "id": 3,
                     "input_subworkflow_step_id": 3,
                     "output_name": "out1"
                 },
@@ -1738,7 +1738,7 @@
             "name": "VGP Paths creation",
             "outputs": [],
             "position": {
-                "left": 333.9841817287856,
+                "left": 679.9224628205845,
                 "top": 1043.2896324841786
             },
             "subworkflow": {
@@ -3677,7 +3677,7 @@
                 }
             ],
             "position": {
-                "left": 1841.2118729648023,
+                "left": 2187.1501540566014,
                 "top": 2671.890625
             },
             "post_job_actions": {},
@@ -3725,7 +3725,7 @@
                 }
             ],
             "position": {
-                "left": 1849.6337479648023,
+                "left": 2195.5720290566014,
                 "top": 2862.625
             },
             "post_job_actions": {},
@@ -3773,7 +3773,7 @@
                 }
             ],
             "position": {
-                "left": 1844.8993729648023,
+                "left": 2190.8376540566014,
                 "top": 3053.890625
             },
             "post_job_actions": {
@@ -3818,7 +3818,7 @@
                 }
             ],
             "position": {
-                "left": 1078.7899979648023,
+                "left": 1424.7282790566012,
                 "top": 0
             },
             "post_job_actions": {
@@ -3863,7 +3863,7 @@
                 }
             ],
             "position": {
-                "left": 1078.7899979648023,
+                "left": 1424.7282790566012,
                 "top": 312.640625
             },
             "post_job_actions": {
@@ -3908,7 +3908,7 @@
                 }
             ],
             "position": {
-                "left": 1405.7899979648023,
+                "left": 1751.7282790566012,
                 "top": 10.875
             },
             "post_job_actions": {
@@ -3940,51 +3940,6 @@
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 42,
-                    "output_name": "Genomescope path"
-                }
-            },
-            "inputs": [],
-            "label": "Genomescope Summary path",
-            "name": "Compose text parameter value",
-            "outputs": [
-                {
-                    "name": "out1",
-                    "type": "expression.json"
-                }
-            ],
-            "position": {
-                "left": 1408.8212479648023,
-                "top": 321.53125
-            },
-            "post_job_actions": {
-                "HideDatasetActionout1": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "out1"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "tool_shed_repository": {
-                "changeset_revision": "e188c9826e0f",
-                "name": "compose_text_param",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"Summary.txt\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.1.1",
-            "type": "tool",
-            "uuid": "96f66340-1473-4062-8f86-67ca5e4bc2c1",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "50": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "errors": null,
-            "id": 50,
-            "input_connections": {
-                "components_0|param_type|component_value": {
-                    "id": 42,
                     "output_name": "HIfiasm Path"
                 }
             },
@@ -3998,7 +3953,7 @@
                 }
             ],
             "position": {
-                "left": 1011.6962479648022,
+                "left": 1357.634529056601,
                 "top": 1109.703125
             },
             "post_job_actions": {
@@ -4019,6 +3974,51 @@
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "ad76a1e9-92e1-45d3-b94a-13deb403345f",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "50": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "errors": null,
+            "id": 50,
+            "input_connections": {
+                "components_0|param_type|component_value": {
+                    "id": 42,
+                    "output_name": "Genomescope path"
+                }
+            },
+            "inputs": [],
+            "label": "Genomescope Summary path",
+            "name": "Compose text parameter value",
+            "outputs": [
+                {
+                    "name": "out1",
+                    "type": "expression.json"
+                }
+            ],
+            "position": {
+                "left": 1754.7595290566012,
+                "top": 321.53125
+            },
+            "post_job_actions": {
+                "HideDatasetActionout1": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out1"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "tool_shed_repository": {
+                "changeset_revision": "e188c9826e0f",
+                "name": "compose_text_param",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"Summary.txt\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.1",
+            "type": "tool",
+            "uuid": "96f66340-1473-4062-8f86-67ca5e4bc2c1",
             "when": null,
             "workflow_outputs": []
         },
@@ -4043,7 +4043,7 @@
                 }
             ],
             "position": {
-                "left": 726.8296968758453,
+                "left": 1072.7679779676441,
                 "top": 1534.0359555876203
             },
             "post_job_actions": {
@@ -4075,11 +4075,11 @@
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 42,
-                    "output_name": "Genomescope path"
+                    "output_name": "HIfiasm Path"
                 }
             },
             "inputs": [],
-            "label": "Genomescope Log plot path",
+            "label": "Hifiasm haplotype resolved processed unitig graph path",
             "name": "Compose text parameter value",
             "outputs": [
                 {
@@ -4088,8 +4088,8 @@
                 }
             ],
             "position": {
-                "left": 1725.7743729648023,
-                "top": 21.8125
+                "left": 1365.634529056601,
+                "top": 1413.6875
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -4105,10 +4105,10 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"Log_Plot.png\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"haplotype_resolved_processed_unitig_graph.gfa.gz\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.1",
             "type": "tool",
-            "uuid": "29f7aa40-8b03-4673-bbcc-6831d6fd9d21",
+            "uuid": "0f88b6bf-4d5c-46f2-8f52-abc130267262",
             "when": null,
             "workflow_outputs": []
         },
@@ -4133,7 +4133,7 @@
                 }
             ],
             "position": {
-                "left": 1700.9040158125688,
+                "left": 2046.8422969043677,
                 "top": 320.5954336310779
             },
             "post_job_actions": {
@@ -4165,11 +4165,11 @@
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 42,
-                    "output_name": "HIfiasm Path"
+                    "output_name": "Genomescope path"
                 }
             },
             "inputs": [],
-            "label": "Hifiasm haplotype resolved processed unitig graph path",
+            "label": "Genomescope Log plot path",
             "name": "Compose text parameter value",
             "outputs": [
                 {
@@ -4178,8 +4178,8 @@
                 }
             ],
             "position": {
-                "left": 1019.6962479648021,
-                "top": 1413.6875
+                "left": 2071.7126540566014,
+                "top": 21.8125
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -4195,10 +4195,10 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"haplotype_resolved_processed_unitig_graph.gfa.gz\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"Log_Plot.png\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.1",
             "type": "tool",
-            "uuid": "0f88b6bf-4d5c-46f2-8f52-abc130267262",
+            "uuid": "29f7aa40-8b03-4673-bbcc-6831d6fd9d21",
             "when": null,
             "workflow_outputs": []
         },
@@ -4223,7 +4223,7 @@
                 }
             ],
             "position": {
-                "left": 726.5868729648022,
+                "left": 1072.525154056601,
                 "top": 1824.6875
             },
             "post_job_actions": {
@@ -4268,7 +4268,7 @@
                 }
             ],
             "position": {
-                "left": 2020.9462479648023,
+                "left": 2366.8845290566014,
                 "top": 22.9375
             },
             "post_job_actions": {
@@ -4313,7 +4313,7 @@
                 }
             ],
             "position": {
-                "left": 1784.3993729648023,
+                "left": 2130.3376540566014,
                 "top": 1038.140625
             },
             "post_job_actions": {
@@ -4345,51 +4345,6 @@
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 42,
-                    "output_name": "Busco  c path"
-                }
-            },
-            "inputs": [],
-            "label": "Busco on Hifiasm Primary assembly: Full Table path",
-            "name": "Compose text parameter value",
-            "outputs": [
-                {
-                    "name": "out1",
-                    "type": "expression.json"
-                }
-            ],
-            "position": {
-                "left": 2043.2274979648025,
-                "top": 677.375
-            },
-            "post_job_actions": {
-                "HideDatasetActionout1": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "out1"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "tool_shed_repository": {
-                "changeset_revision": "e188c9826e0f",
-                "name": "compose_text_param",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"busco_full_table.tab\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.1.1",
-            "type": "tool",
-            "uuid": "4ce090b5-6110-4d9c-b25e-fdd3319f05fb",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "59": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "errors": null,
-            "id": 59,
-            "input_connections": {
-                "components_0|param_type|component_value": {
-                    "id": 42,
                     "output_name": "Intermediates path"
                 },
                 "components_1|param_type|component_value": {
@@ -4407,7 +4362,7 @@
                 }
             ],
             "position": {
-                "left": 1488.1246396406593,
+                "left": 1834.0629207324582,
                 "top": 1621.6123157247803
             },
             "post_job_actions": {
@@ -4428,6 +4383,51 @@
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "ee062bc5-7608-463c-ba46-1b3e4f0ca421",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "59": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "errors": null,
+            "id": 59,
+            "input_connections": {
+                "components_0|param_type|component_value": {
+                    "id": 42,
+                    "output_name": "Busco  c path"
+                }
+            },
+            "inputs": [],
+            "label": "Busco on Hifiasm Primary assembly: Full Table path",
+            "name": "Compose text parameter value",
+            "outputs": [
+                {
+                    "name": "out1",
+                    "type": "expression.json"
+                }
+            ],
+            "position": {
+                "left": 2389.1657790566014,
+                "top": 677.375
+            },
+            "post_job_actions": {
+                "HideDatasetActionout1": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out1"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "tool_shed_repository": {
+                "changeset_revision": "e188c9826e0f",
+                "name": "compose_text_param",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"busco_full_table.tab\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.1",
+            "type": "tool",
+            "uuid": "4ce090b5-6110-4d9c-b25e-fdd3319f05fb",
             "when": null,
             "workflow_outputs": []
         },
@@ -4456,7 +4456,7 @@
                 }
             ],
             "position": {
-                "left": 1034.2011730747925,
+                "left": 1380.1394541665913,
                 "top": 2090.3350162831707
             },
             "post_job_actions": {
@@ -4501,7 +4501,7 @@
                 }
             ],
             "position": {
-                "left": 2099.9149979648023,
+                "left": 2445.8532790566014,
                 "top": 1046.875
             },
             "post_job_actions": {
@@ -4546,7 +4546,7 @@
                 }
             ],
             "position": {
-                "left": 2317.3837479648023,
+                "left": 2663.3220290566014,
                 "top": 690.0625
             },
             "post_job_actions": {
@@ -4595,7 +4595,7 @@
                 }
             ],
             "position": {
-                "left": 1540.2291000331993,
+                "left": 1886.1673811249982,
                 "top": 2012.7954087577712
             },
             "post_job_actions": {
@@ -4644,7 +4644,7 @@
                 }
             ],
             "position": {
-                "left": 1966.303388279084,
+                "left": 2312.241669370883,
                 "top": 2016.3062098969417
             },
             "post_job_actions": {
@@ -4689,7 +4689,7 @@
                 }
             ],
             "position": {
-                "left": 2312.3368729648023,
+                "left": 2658.2751540566014,
                 "top": 2117.875
             },
             "post_job_actions": {
@@ -4734,7 +4734,7 @@
                 }
             ],
             "position": {
-                "left": 2310.6337479648023,
+                "left": 2656.5720290566014,
                 "top": 2463.5
             },
             "post_job_actions": {},
@@ -4779,7 +4779,7 @@
                 }
             ],
             "position": {
-                "left": 2332.6337479648023,
+                "left": 2678.5720290566014,
                 "top": 2764.5
             },
             "post_job_actions": {
@@ -4810,7 +4810,7 @@
             "id": 68,
             "input_connections": {
                 "export_type|datasets_0|infile": {
-                    "id": 13,
+                    "id": 14,
                     "output_name": "output"
                 },
                 "export_type|datasets_0|name": {
@@ -4830,7 +4830,7 @@
                     "output_name": "output_file"
                 },
                 "export_type|datasets_11|name": {
-                    "id": 59,
+                    "id": 58,
                     "output_name": "out1"
                 },
                 "export_type|datasets_12|infile": {
@@ -4842,7 +4842,7 @@
                     "output_name": "out1"
                 },
                 "export_type|datasets_13|infile": {
-                    "id": 19,
+                    "id": 20,
                     "output_name": "output"
                 },
                 "export_type|datasets_13|name": {
@@ -4854,11 +4854,11 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_14|name": {
-                    "id": 58,
+                    "id": 59,
                     "output_name": "out1"
                 },
                 "export_type|datasets_15|infile": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "output"
                 },
                 "export_type|datasets_15|name": {
@@ -4874,7 +4874,7 @@
                     "output_name": "out1"
                 },
                 "export_type|datasets_17|infile": {
-                    "id": 25,
+                    "id": 26,
                     "output_name": "output"
                 },
                 "export_type|datasets_17|name": {
@@ -4898,11 +4898,11 @@
                     "output_name": "out1"
                 },
                 "export_type|datasets_1|infile": {
-                    "id": 9,
+                    "id": 10,
                     "output_name": "output"
                 },
                 "export_type|datasets_1|name": {
-                    "id": 52,
+                    "id": 54,
                     "output_name": "out1"
                 },
                 "export_type|datasets_20|infile": {
@@ -4930,7 +4930,7 @@
                     "output_name": "out1"
                 },
                 "export_type|datasets_3|infile": {
-                    "id": 3,
+                    "id": 4,
                     "output_name": "output"
                 },
                 "export_type|datasets_3|name": {
@@ -4938,7 +4938,7 @@
                     "output_name": "out1"
                 },
                 "export_type|datasets_4|infile": {
-                    "id": 10,
+                    "id": 11,
                     "output_name": "output"
                 },
                 "export_type|datasets_4|name": {
@@ -4950,7 +4950,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_5|name": {
-                    "id": 49,
+                    "id": 50,
                     "output_name": "out1"
                 },
                 "export_type|datasets_6|infile": {
@@ -4966,7 +4966,7 @@
                     "output_name": "output_file"
                 },
                 "export_type|datasets_7|name": {
-                    "id": 50,
+                    "id": 49,
                     "output_name": "out1"
                 },
                 "export_type|datasets_8|infile": {
@@ -4974,7 +4974,7 @@
                     "output_name": "output_file"
                 },
                 "export_type|datasets_8|name": {
-                    "id": 54,
+                    "id": 52,
                     "output_name": "out1"
                 },
                 "export_type|datasets_9|infile": {
@@ -5001,7 +5001,7 @@
                 }
             ],
             "position": {
-                "left": 2905.0868729648023,
+                "left": 3251.0251540566014,
                 "top": 1030.015625
             },
             "post_job_actions": {
@@ -5012,7 +5012,7 @@
                 }
             },
             "tool_id": "export_remote",
-            "tool_state": "{\"d_uri\": {\"__class__\": \"RuntimeValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 4, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 5, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 6, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 7, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 8, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 9, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 10, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 11, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 12, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 13, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 14, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 15, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 16, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 17, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 18, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 19, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 20, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 21, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": true, \"invalid_chars\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"d_uri\": {\"__class__\": \"RuntimeValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 4, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 5, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 6, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 7, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 8, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 9, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 10, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 11, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 12, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 13, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 14, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 15, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 16, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 17, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 18, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 19, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 20, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 21, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": true, \"invalid_chars\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.0",
             "type": "tool",
             "uuid": "41d3085c-bf7d-491d-a770-d4f9ef9c32b0",
@@ -5027,6 +5027,6 @@
         }
     },
     "tags": [],
-    "uuid": "9af340a2-fe63-40a0-a0c9-0bc874da5658",
-    "version": 9
+    "uuid": "faf8f363-3ccf-437e-ade1-8cb9e9e9191d",
+    "version": 11
 }
