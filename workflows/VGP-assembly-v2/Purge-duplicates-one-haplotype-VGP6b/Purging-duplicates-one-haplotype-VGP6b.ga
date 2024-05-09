@@ -1626,7 +1626,7 @@
                     "uuid": "c07cd28e-86b5-4e4f-87fa-bc2b3b65da33"
                 },
                 {
-                    "label": "qv_files",
+                    "label": "Merqury on Phased assemblies: QV",
                     "output_name": "qv_files",
                     "uuid": "9fb50959-0da7-4838-9f0e-9c945f04c1f6"
                 }
