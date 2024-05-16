@@ -1809,7 +1809,7 @@
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
                     "action_arguments": {
-                        "newname": "/species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_qv"
+                        "newname": "species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_qv"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output"
@@ -1856,7 +1856,7 @@
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
                     "action_arguments": {
-                        "newname": "/species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_png"
+                        "newname": "species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_png"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output"
@@ -1903,7 +1903,7 @@
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
                     "action_arguments": {
-                        "newname": "/species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_stats"
+                        "newname": "species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_stats"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output"
@@ -1979,7 +1979,7 @@
                         "name": "Input parameter",
                         "outputs": [],
                         "position": {
-                            "left": 0.0,
+                            "left": 0,
                             "top": 1412.1079716128102
                         },
                         "tool_id": null,
@@ -2119,7 +2119,7 @@
                             "owner": "iuc",
                             "tool_shed": "toolshed.g2.bx.psu.edu"
                         },
-                        "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"/species/\"}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"/\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"/assembly_vgp_\"}}, {\"__index__\": 5, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 6, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_2.0/\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+                        "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"species/\"}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"/\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"/assembly_vgp_\"}}, {\"__index__\": 5, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 6, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_2.0/\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
                         "tool_version": "0.1.1",
                         "type": "tool",
                         "uuid": "b86485d7-063e-4c28-ba5d-cfd34922cf28",
@@ -3858,7 +3858,7 @@
                     }
                 },
                 "tags": "",
-                "uuid": "f6cb26b6-4417-4526-bafd-0114ecca435c"
+                "uuid": "b217526e-f8f5-491c-ab6a-252ad3359b89"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -5605,6 +5605,6 @@
         }
     },
     "tags": [],
-    "uuid": "e0267f0a-11a1-416d-8da0-a0898ba6e214",
-    "version": 5
+    "uuid": "265b3c49-46fd-4429-823f-2951ae38a80b",
+    "version": 6
 }
