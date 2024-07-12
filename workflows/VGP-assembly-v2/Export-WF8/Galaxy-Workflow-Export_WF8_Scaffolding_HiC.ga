@@ -419,10 +419,10 @@
             "inputs": [
                 {
                     "description": "With dataset tag : sorted_merged_alignments_s1 ",
-                    "name": "Sorted Merged alignments on s1"
+                    "name": "Merged alignments on s1"
                 }
             ],
-            "label": "Sorted Merged alignments on s1",
+            "label": "Merged alignments on s1",
             "name": "Input dataset",
             "outputs": [],
             "position": {
@@ -430,7 +430,7 @@
                 "top": 2613.1946607913787
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bed\"], \"tag\": \"sorted_merged_alignments_s1\"}",
+            "tool_state": "{\"optional\": false, \"format\": [\"bed\"], \"tag\": \"merged_alignments_s1\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "1187e1a1-5d85-428e-85d1-8eba44b72bbf",
@@ -3665,7 +3665,7 @@
                 }
             },
             "inputs": [],
-            "label": "Sorted Merged alignments on s1 path",
+            "label": "Merged alignments on s1 path",
             "name": "Compose text parameter value",
             "outputs": [
                 {
@@ -4024,6 +4024,6 @@
         }
     },
     "tags": [],
-    "uuid": "00d53d01-2fe5-4d2c-94f8-7bb7746b6cae",
-    "version": 3
+    "uuid": "eb914c93-5322-4d7b-b909-c039fa7afea5",
+    "version": 4
 }
