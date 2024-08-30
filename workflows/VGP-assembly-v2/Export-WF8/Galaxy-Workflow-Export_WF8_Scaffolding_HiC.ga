@@ -4,6 +4,9 @@
     "comments": [],
     "format-version": "0.1",
     "name": "Export WF8 Scaffolding HiC",
+    "report": {
+        "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+    },
     "steps": {
         "0": {
             "annotation": "Full name of the assembled species without space. e.g. Taeniopygia_guttata",
@@ -411,14 +414,14 @@
             "workflow_outputs": []
         },
         "15": {
-            "annotation": "With dataset tag : sorted_merged_alignments_s1 ",
+            "annotation": "With dataset tag : merged_alignments_s1 ",
             "content_id": null,
             "errors": null,
             "id": 15,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "With dataset tag : sorted_merged_alignments_s1 ",
+                    "description": "With dataset tag : merged_alignments_s1 ",
                     "name": "Merged alignments on s1"
                 }
             ],
@@ -430,7 +433,7 @@
                 "top": 2613.1946607913787
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bed\"], \"tag\": \"merged_alignments_s1\"}",
+            "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"merged_alignments_s1\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "1187e1a1-5d85-428e-85d1-8eba44b72bbf",
@@ -701,7 +704,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "767b69d1-a08f-4004-ae5a-1149d9d74c88"
             },
             "tool_id": null,
@@ -893,7 +896,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "767b69d1-a08f-4004-ae5a-1149d9d74c88"
             },
             "tool_id": null,
@@ -1085,7 +1088,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "767b69d1-a08f-4004-ae5a-1149d9d74c88"
             },
             "tool_id": null,
@@ -3132,7 +3135,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "2aef0ad6-123e-4d2a-9214-3ad000c402f1"
             },
             "tool_id": null,
@@ -3698,7 +3701,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_s1.bed\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_s1.bam\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "395cf2a1-7277-4f52-b542-b6785b35d167",
@@ -4024,6 +4027,6 @@
         }
     },
     "tags": [],
-    "uuid": "eb914c93-5322-4d7b-b909-c039fa7afea5",
-    "version": 4
+    "uuid": "5e1df3f6-5c7e-4ba7-88a8-1c41e2a6476a",
+    "version": 3
 }
