@@ -4,6 +4,9 @@
     "comments": [],
     "format-version": "0.1",
     "name": "Export WF2-5 Assembly Trio",
+    "report": {
+        "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+    },
     "steps": {
         "0": {
             "annotation": "Full species name with underscores instead of white spaces. e.g. Taeniopygia_guttata",
@@ -950,14 +953,14 @@
             "workflow_outputs": []
         },
         "34": {
-            "annotation": "With dataset tag : meryl_db_parent2 ",
+            "annotation": "With dataset tag : meryl_db_mat ",
             "content_id": null,
             "errors": null,
             "id": 34,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "With dataset tag : meryl_db_parent2 ",
+                    "description": "With dataset tag : meryl_db_mat ",
                     "name": "Meryl Database : Maternal"
                 }
             ],
@@ -969,7 +972,7 @@
                 "top": 2061.337155565529
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"meryldb\"], \"tag\": \"meryl_db_parent2\"}",
+            "tool_state": "{\"optional\": false, \"format\": [\"meryldb\"], \"tag\": \"meryl_db_mat\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "cf34b4cc-ca26-4e13-933a-837ac7434a85",
@@ -977,14 +980,14 @@
             "workflow_outputs": []
         },
         "35": {
-            "annotation": "With dataset tag : meryl_db_parent1 ",
+            "annotation": "With dataset tag : meryl_db_pat",
             "content_id": null,
             "errors": null,
             "id": 35,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "With dataset tag : meryl_db_parent1 ",
+                    "description": "With dataset tag : meryl_db_pat",
                     "name": "Meryl Database : Paternal"
                 }
             ],
@@ -996,7 +999,7 @@
                 "top": 2493.805905565529
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"meryldb\"], \"tag\": \"meryl_db_parent1\"}",
+            "tool_state": "{\"optional\": false, \"format\": [\"meryldb\"], \"tag\": \"meryl_db_pat\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "e314a51f-2180-4016-9589-42e9b9994f73",
@@ -1186,7 +1189,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "767b69d1-a08f-4004-ae5a-1149d9d74c88"
             },
             "tool_id": null,
@@ -1378,7 +1381,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "767b69d1-a08f-4004-ae5a-1149d9d74c88"
             },
             "tool_id": null,
@@ -3857,7 +3860,7 @@
                         ]
                     }
                 },
-                "tags": "",
+                "tags": [],
                 "uuid": "88019a93-095c-4586-8242-3555820deea4"
             },
             "tool_id": null,
@@ -5605,6 +5608,6 @@
         }
     },
     "tags": [],
-    "uuid": "21d48acc-3e73-462b-9923-1a36f1a8272b",
-    "version": 4
+    "uuid": "dc40ea25-f3eb-48db-a810-401dff1b255c",
+    "version": 3
 }
