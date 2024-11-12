@@ -11,8 +11,8 @@ The structure is as follows:
 * please, only use lower case and `-` in directory names.
 * workflow repository directories contain:
 
-  * the `.ga` workflow file, e.g., `consensus-from-variation.ga`;
-  * a [Planemo test file](https://planemo.readthedocs.io/en/latest/test_format.html), with the same name as the workflow file, but with a `-tests.yml` extension, e.g., `consensus-from-variation-tests.yml`;
+  * at least one `.ga` workflow file, e.g., `consensus-from-variation.ga`;
+  * as many [Planemo test file](https://planemo.readthedocs.io/en/latest/test_format.html) as workflow files, with the same name as the workflow file, but with a `-tests.yml` extension, e.g., `consensus-from-variation-tests.yml`;
   * a `test-data` directory with the test data used by Planemo (optional);
   * a [Dockstore](https://dockstore.org) [metadata file](https://docs.dockstore.org/en/develop/getting-started/github-apps/github-apps.html#workflow-yml-file) named `.dockstore.yml`;
   * a `README.md` and a `CHANGELOG.md` file.
@@ -61,9 +61,18 @@ Create a new directory under one of the directories that represent categories. I
 Name the directory that contains your workflow(s) appropriately, as it will become the name of the repository deployed to [iwc-workflows github organization](https://github.com/iwc-workflows). Only use lower-case and `-` in names of categories and repositories.
 
 Execute the workflow on your Galaxy server using the smallest input data you can generate.
-Go to the workflow invocations page (User > Workflow Invocations), open the most recent item and find the invocation id:
+Go to the workflow invocations page:
+- Before 24.0: (User > Workflow Invocations)
+- In 24.0: (Data > Workflow Invocations)
+- Above 24.1: In the activity bar in Workflow Invocation.
+
+Open the most recent item and find the invocation id:
+
+In below 24.0, you can get it here:
 
 ![Workflow Invocations GUI](../static/wf-invocations.png)
+
+If you have the activity bar, you can find the workflow invocation id from the URL. For example, `https://usegalaxy.org/workflows/invocations/be5c48c113145dd5?from_panel=true` means that the workflow invocation id is `be5c48c113145dd5`.
 
 You will also need your Galaxy API key. To copy it, or generate it if you don't have one yet, go to User > Preferences > Manage API Key. Then run:
 
@@ -76,7 +85,7 @@ You may still want to remove test files and edit the test comparisons so that te
 will pass reliably. For example, you could consider using assertions to test the
 outputs, rather than comparing the entire output file with test data.
 Also, if some outputs are large, it is better to use assertions than storing the whole output file to the iwc repository.
-
+The description of assertion can be find in [the documentation](https://docs.galaxyproject.org/en/latest/dev/schema.html#tool-tests-test-output-assert-contents). Do not hesitate to look at different test files in the repo for examples.
 
 #### Manually write test for workflow
 
@@ -142,7 +151,9 @@ planemo test --galaxy_url <your_prefered_galaxy_server> --galaxy_user_key <your_
 
 If your tests are not passing because you made an error into your test file you can modify your test file and use planemo to check that the test is valid against the same invocation.
 
-planemo workflow_test_on_invocation --galaxy_url <your_prefered_galaxy_server --galaxy_user_key <your_api_key> <workflow-tests.yml> <invocation_id>
+```bash
+planemo workflow_test_on_invocation --galaxy_url <your_prefered_galaxy_server> --galaxy_user_key <your_api_key> <workflow-tests.yml> <invocation_id>
+```
 
 Note: If your workflow is using build-in indexes, note that the CI will use CVMFS. You can browse the available indexes at http://datacache.galaxyproject.org/. 
 
@@ -177,6 +188,14 @@ With a text editor of your choice make this change:
 At this point you can commit the new files and open a pull request.
 If you are encountering difficulties at any point don't hesitate to ask for help on [gitter](https://gitter.im/galaxyproject/iwc).
 
+### Multiple directories or multiple workflows into the same directory
+
+The submitter is free to choose what will match the best its case.
+When multiple workflows are in the same directory, the submitter must know that:
+- The CHANGELOG.md is common and all workflows must constantly have the same version.
+- Workflowhub does not support multiple 'main' workflows in the same directory. One of the workflow will be considred as the main one while all others will be considered as subworkflows. However, this is not an issue for dockstore which will publish each workflow listed in the dockstore file as main.
+- If you want to decide which one is the main, you should write the `.workflowhub.yml` manually.
+
 ## RO-Crate Metadata
 
 [RO-Crate](https://doi.org/10.3233/DS-210053) is a format for packaging research artifacts along with their metadata in a machine readable manner. The base RO-Crate specification is complemented by a set of _profiles_ tailored to more specific domains: in particular, [Workflow RO-Crate](https://about.workflowhub.eu/Workflow-RO-Crate/) can be used to package computational workflows, and [Workflow Testing RO-Crate](https://crs4.github.io/life_monitor/workflow_testing_ro_crate) further describes how to add metadata related to workflow testing.
@@ -184,3 +203,26 @@ If you are encountering difficulties at any point don't hesitate to ask for help
 Workflow Testing RO-Crate metadata is automatically generated and added to the workflow repository after a PR is merged, before the repository is deployed to [iwc-workflows](https://github.com/iwc-workflows). RO-Crate metadata is based on [Schema.org](https://schema.org/) annotations in [JSON-LD](https://json-ld.org/) ([example](https://github.com/iwc-workflows/parallel-accession-download/blob/7971b6dc0ee246262a1898e7c7016143ff63007c/ro-crate-metadata.json)). The Workflow Testing RO-Crate representation of the repository ensures its compatibility with the [WorkflowHub](https://workflowhub.eu) registry and the [LifeMonitor](https://www.lifemonitor.eu) workflow health monitoring service.
 
 To ensure that the RO-Crate metadata generation succeeds, make sure you apply the best practices described in the [section on adding workflows](#adding-workflows). In particular, the conversion tool expects to find the workflow file and the Planemo test file; a `README.md` file is not expected, but it will be included if found. The workflow file should specify a `license`, a `release` and one or more `creator`s among its metadata.
+
+## Workflow auto-update
+
+### Code links and steps
+
+The workflows submitted to iwc are updated automatically. We describe here where you can find the code of each step of this process and what they are doing today (2024-06-23).
+
+- Once a week the github workflow described [here](https://github.com/planemo-autoupdate/autoupdate/blob/main/.github/workflows/autoupdate.yml) will be run:
+  - The fork of iwc of the planemo-autoupdate author ([here](https://github.com/planemo-autoupdate/iwc/)) is cloned.
+  - For each workflow directory like  `workflows/data-fetching/parallel-accession-download`:
+    - If there is already a PR by planemo-autodupdate for this workflow, the git is checkout to the corresponding branch. If there is no PR the potential existing branch is deleted and the new branch is created.
+    - `planemo autoupdate` is run in the directory using the [skip list](https://github.com/planemo-autoupdate/autoupdate/blob/main/galaxyproject_iwc_skip_list).
+      - Toolshed updates are checked for all tools used in the workflow. If there are updates, the new version will be used and parameter values will be kept if they stay in the same section with the same name.
+    - If there is a change in the workflow.
+      - The `CHANGELOG.md` is updated using the [python script](https://github.com/planemo-autoupdate/autoupdate/blob/main/pr_text_iwc.py): the log of `planemo autoupdate` is analysed and if there is no PR opened the CHANGELOG file is updated, on top is written the release number and the date. Then under the Automatic update title is written a list of the changes.
+      - If there is a closed PR with the same title. Then everything is cancelled.
+      - If a PR was already opened, the title is updated (but the CHANGELOG has not been updated).
+      - If no PR was opened, a new PR is opened.
+
+### FAQ
+- A workflow has not been updated while it has tools that have newer versions available?
+  - Check the [autoupdate actions](https://github.com/planemo-autoupdate/autoupdate/actions). Maybe one workflow raise an error while updating and this prevents other workflows to be updated. Please report this to the matrix channel.
+  - Check that there is no closed PR named 'Updating blabla from xx to xx' corresponding to your workflow. This would prevent any automatic update. If this is the case, leave a comment into this PR so IWC reopen it.

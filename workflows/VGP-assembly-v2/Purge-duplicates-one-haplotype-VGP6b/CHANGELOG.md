@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.7.1] 2024-08-13
+
+- Expose Busco parameters : 
+  - Lineage database 
+  - Lineage
+
+## [0.7] 2024-07-24
+
+### Added
+
+- Workflow report
+
+### Changed
+
+- Fix bug where the columns of the assembly statistics didn't join properly.
+- Rename some outputs for clarity
+
 ## [0.6] 2024-04-23
 
 ### Changed

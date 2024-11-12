@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.2.2] 2024-08-07
+
+- Expose parameter: Busco lineage database
+
+## [0.2.1] 2024-07-29
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.8+galaxy1` was updated to `toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.9+galaxy1`
+- `toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.19.8+galaxy1` was updated to `toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.19.9+galaxy0`
+
+## [0.2] 2024-07-12
+
+### Added 
+
+- Workflow report
+
+### Changed
+
+- Fix bug where the columns of the assembly statistics didn't join properly. 
+  
+
+## [0.1.11] 2024-05-20
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.8+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.8+galaxy1`
+
 
 
 ## [0.1.10] 2024-04-23

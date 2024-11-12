@@ -81,7 +81,7 @@
     ],
     "format-version": "0.1",
     "license": "MIT",
-    "release": "1.0",
+    "release": "1.2",
     "name": "Get Confident Peaks From ATAC or CUTandRUN replicates",
     "steps": {
         "0": {
@@ -194,7 +194,7 @@
         },
         "4": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.30.0+galaxy2",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.31.1+galaxy0",
             "errors": null,
             "id": 4,
             "input_connections": {
@@ -223,15 +223,15 @@
                     "output_name": "output"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.30.0+galaxy2",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.31.1+galaxy0",
             "tool_shed_repository": {
-                "changeset_revision": "a1a923cd89e8",
+                "changeset_revision": "64e2edfe7a2c",
                 "name": "bedtools",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"ed_score\": false, \"input\": {\"__class__\": \"ConnectedValue\"}, \"option\": \"\", \"split\": false, \"tag\": null, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "2.30.0+galaxy2",
+            "tool_version": "2.31.1+galaxy0",
             "type": "tool",
             "uuid": "b62c338c-eb40-4ea5-b5e6-819f39790c07",
             "when": null,
@@ -239,7 +239,7 @@
         },
         "5": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.15.1+galaxy2",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.20+galaxy3",
             "errors": null,
             "id": 5,
             "input_connections": {
@@ -268,15 +268,15 @@
                     "output_name": "outputcnt"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.15.1+galaxy2",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.20+galaxy3",
             "tool_shed_repository": {
-                "changeset_revision": "6be888be75f9",
+                "changeset_revision": "32dc5f781059",
                 "name": "samtools_view",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"addref_cond\": {\"addref_select\": \"no\", \"__current_case__\": 0}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"mode\": {\"outtype\": \"all_reads\", \"__current_case__\": 0, \"output_options\": {\"reads_report_type\": \"count\", \"__current_case__\": 1}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.15.1+galaxy2",
+            "tool_version": "1.20+galaxy3",
             "type": "tool",
             "uuid": "9cff58b2-123e-42df-b562-3b2a4a553934",
             "when": null,
@@ -481,7 +481,7 @@
         },
         "9": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multiintersectbed/2.30.0",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multiintersectbed/2.31.1",
             "errors": null,
             "id": 9,
             "input_connections": {
@@ -515,15 +515,15 @@
                     "output_name": "output"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multiintersectbed/2.30.0",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_multiintersectbed/2.31.1",
             "tool_shed_repository": {
-                "changeset_revision": "fe5b4cb8356c",
+                "changeset_revision": "64e2edfe7a2c",
                 "name": "bedtools",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"cluster\": false, \"empty\": {\"empty_selector\": \"\", \"__current_case__\": 1}, \"filler\": \"0\", \"header\": false, \"tag\": {\"tag_select\": \"tag\", \"__current_case__\": 0, \"inputs\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "2.30.0",
+            "tool_version": "2.31.1",
             "type": "tool",
             "uuid": "9edd1aab-eb4c-4fd4-b9f6-a6dbcae46dd2",
             "when": null,
@@ -886,7 +886,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -900,7 +900,7 @@
         },
         "18": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.5.1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.5.2",
             "errors": null,
             "id": 18,
             "input_connections": {
@@ -934,15 +934,15 @@
                     "output_name": "list_output_txt"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.5.1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.5.2",
             "tool_shed_repository": {
-                "changeset_revision": "baabc30154cd",
+                "changeset_revision": "2dae863c8f42",
                 "name": "split_file_to_collection",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"split_parms\": {\"select_ftype\": \"txt\", \"__current_case__\": 5, \"input\": {\"__class__\": \"ConnectedValue\"}, \"select_mode\": {\"mode\": \"chunk\", \"__current_case__\": 0, \"chunksize\": \"1\"}, \"newfilenames\": \"split_file\", \"select_allocate\": {\"allocate\": \"byrow\", \"__current_case__\": 2}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.5.1",
+            "tool_version": "0.5.2",
             "type": "tool",
             "uuid": "7db836a5-793a-403e-8db1-b97f619f4c69",
             "when": null,
@@ -989,7 +989,7 @@
         },
         "20": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.15.1+galaxy2",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.20+galaxy3",
             "errors": null,
             "id": 20,
             "input_connections": {
@@ -1022,15 +1022,15 @@
                     "output_name": "outputsam"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.15.1+galaxy2",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.20+galaxy3",
             "tool_shed_repository": {
-                "changeset_revision": "6be888be75f9",
+                "changeset_revision": "32dc5f781059",
                 "name": "samtools_view",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"addref_cond\": {\"addref_select\": \"no\", \"__current_case__\": 0}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"mode\": {\"outtype\": \"selected_reads\", \"__current_case__\": 1, \"filter_config\": {\"cond_region\": {\"select_region\": \"no\", \"__current_case__\": 0}, \"cond_rg\": {\"select_rg\": \"no\", \"__current_case__\": 0}, \"quality\": null, \"library\": null, \"cigarcons\": null, \"inclusive_filter\": null, \"exclusive_filter\": null, \"exclusive_filter_all\": null, \"tag\": null, \"qname_file\": {\"__class__\": \"RuntimeValue\"}}, \"subsample_config\": {\"subsampling_mode\": {\"select_subsample\": \"target\", \"__current_case__\": 1, \"target\": {\"__class__\": \"ConnectedValue\"}, \"seed\": \"1\"}}, \"output_options\": {\"reads_report_type\": \"retained\", \"__current_case__\": 0, \"complementary_output\": false, \"adv_output\": {\"readtags\": [], \"collapsecigar\": false}, \"output_format\": {\"oformat\": \"bam\", \"__current_case__\": 2}}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.15.1+galaxy2",
+            "tool_state": "{\"addref_cond\": {\"addref_select\": \"no\", \"__current_case__\": 0}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"mode\": {\"outtype\": \"selected_reads\", \"__current_case__\": 1, \"filter_config\": {\"cond_region\": {\"select_region\": \"no\", \"__current_case__\": 0}, \"cond_rg\": {\"select_rg\": \"no\", \"__current_case__\": 0}, \"cond_expr\": {\"select_expr\": \"no\", \"__current_case__\": 0}, \"quality\": null, \"library\": null, \"cigarcons\": null, \"inclusive_filter\": null, \"exclusive_filter\": null, \"exclusive_filter_all\": null, \"tag\": null, \"qname_file\": {\"__class__\": \"RuntimeValue\"}}, \"subsample_config\": {\"subsampling_mode\": {\"select_subsample\": \"target\", \"__current_case__\": 1, \"target\": {\"__class__\": \"ConnectedValue\"}, \"seed\": \"1\"}}, \"output_options\": {\"reads_report_type\": \"retained\", \"__current_case__\": 0, \"complementary_output\": false, \"adv_output\": {\"readtags\": [], \"collapsecigar\": false}, \"output_format\": {\"oformat\": \"bam\", \"__current_case__\": 2}}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.20+galaxy3",
             "type": "tool",
             "uuid": "36713e3f-6110-41f7-8df1-9a9966400fab",
             "when": null,
@@ -1038,7 +1038,7 @@
         },
         "21": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.30.0+galaxy2",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.31.1+galaxy0",
             "errors": null,
             "id": 21,
             "input_connections": {
@@ -1067,15 +1067,15 @@
                     "output_name": "output"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.30.0+galaxy2",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_bamtobed/2.31.1+galaxy0",
             "tool_shed_repository": {
-                "changeset_revision": "a1a923cd89e8",
+                "changeset_revision": "64e2edfe7a2c",
                 "name": "bedtools",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"ed_score\": false, \"input\": {\"__class__\": \"ConnectedValue\"}, \"option\": \"\", \"split\": false, \"tag\": null, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "2.30.0+galaxy2",
+            "tool_version": "2.31.1+galaxy0",
             "type": "tool",
             "uuid": "7521eb4d-6cb9-463b-8c03-91ac64396ac3",
             "when": null,
@@ -1172,7 +1172,7 @@
         },
         "23": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0+galaxy1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.31.1+galaxy0",
             "errors": null,
             "id": 23,
             "input_connections": {
@@ -1210,15 +1210,15 @@
                     "output_name": "output"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.30.0+galaxy1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_intersectbed/2.31.1+galaxy0",
             "tool_shed_repository": {
-                "changeset_revision": "a1a923cd89e8",
+                "changeset_revision": "64e2edfe7a2c",
                 "name": "bedtools",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"bed\": false, \"count\": false, \"fraction_cond\": {\"fraction_select\": \"default\", \"__current_case__\": 0}, \"genome_file_opts\": {\"genome_file_opts_selector\": \"loc\", \"__current_case__\": 0, \"genome\": null}, \"header\": false, \"inputA\": {\"__class__\": \"ConnectedValue\"}, \"invert\": false, \"once\": false, \"overlap_mode\": [\"-wa\", \"-wb\"], \"reduce_or_iterate\": {\"reduce_or_iterate_selector\": \"iterate\", \"__current_case__\": 0, \"inputB\": {\"__class__\": \"ConnectedValue\"}}, \"sorted\": false, \"split\": false, \"strand\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "2.30.0+galaxy1",
+            "tool_version": "2.31.1+galaxy0",
             "type": "tool",
             "uuid": "d6183a41-f78c-49fc-b826-f8aa95ff84cb",
             "when": null,
@@ -1226,7 +1226,7 @@
         },
         "24": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.24.1+galaxy0",
             "errors": null,
             "id": 24,
             "input_connections": {
@@ -1244,12 +1244,12 @@
             "name": "MultiQC",
             "outputs": [
                 {
-                    "name": "stats",
-                    "type": "input"
-                },
-                {
                     "name": "html_report",
                     "type": "html"
+                },
+                {
+                    "name": "stats",
+                    "type": "tabular"
                 }
             ],
             "position": {
@@ -1263,15 +1263,15 @@
                     "output_name": "stats"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.24.1+galaxy0",
             "tool_shed_repository": {
-                "changeset_revision": "abfd8a6544d7",
+                "changeset_revision": "f7e2f1eb3a16",
                 "name": "multiqc",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"comment\": \"\", \"export\": false, \"flat\": false, \"results\": [{\"__index__\": 0, \"software_cond\": {\"software\": \"macs2\", \"__current_case__\": 16, \"input\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"software_cond\": {\"software\": \"macs2\", \"__current_case__\": 16, \"input\": {\"__class__\": \"ConnectedValue\"}}}], \"saveLog\": false, \"title\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.11+galaxy1",
+            "tool_state": "{\"comment\": \"\", \"export\": false, \"flat\": false, \"results\": [{\"__index__\": 0, \"software_cond\": {\"software\": \"macs2\", \"__current_case__\": 16, \"input\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"software_cond\": {\"software\": \"macs2\", \"__current_case__\": 16, \"input\": {\"__class__\": \"ConnectedValue\"}}}], \"saveLog\": \"false\", \"title\": \"\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.24.1+galaxy0",
             "type": "tool",
             "uuid": "f7d74248-16e3-4020-8156-caae0e7682ef",
             "when": null,
@@ -1403,7 +1403,7 @@
             },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sorted_uniq/9.3+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "86755160afbf",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
