@@ -1,11 +1,12 @@
 ## Decontamination Workflow
 
-Decontamination (foreign contaminants and mitochondrial sequences) of genome assembly after scaffolding step. Part of the VGP Suite. 
+Decontamination (foreign contaminants and mitochondrial sequences) of genome assembly. Part of the VGP Suite. 
 
 ### Inputs
 
 - Genome Assembly [fasta]
-- Database for Kraken2. Database containing the possible contaminants.
+- Taxonomic Identifier
+- Species Binomial name
 
 ### Ouput
 

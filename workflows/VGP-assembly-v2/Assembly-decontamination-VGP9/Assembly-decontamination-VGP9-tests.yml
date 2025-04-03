@@ -2,20 +2,40 @@
   job:
     Scaffolded assembly (fasta):
       class: File
-      location: https://zenodo.org/records/13327557/files/Scaffolded_assembly.fasta?download=1
+      location: https://zenodo.org/records/15121584/files/assembly.fasta
       filetype: fasta
-    Database for Kraken2: viral2019-03
+    Taxonomic Identifier: "9606"
+    Species Binomial Name: "Homo Sapiens"
   outputs:
-    mito_scaff_names:
+    Adaptor Report:
       asserts:
         has_text: 
-          text: "scaffold_82"
-    final decontaminated assembly:
+          text: "seq_00001	230276	ACTION_TRIM	1..58"
+        has_text: 
+          text: "seq_00006	270219	ACTION_TRIM	100001..100058"
+    Masking Action Report:
+      asserts:
+        has_text: 
+          text: "seq_00001	230276	ACTION_TRIM	1..58"
+        has_text: 
+          text: "seq_00006	270219	FIX	100001..100058"
+    Final Decontaminated Assembly:
       decompress: true
       asserts:
         not_has_text: 
-          text: "scaffold_200"
-    contaminants_table:
+          text: "seq_00001"
+        not_has_text: 
+          text: "seq_00500"
+    Taxonomy Report:
+      asserts:
+        has_n_lines: 
+          n: 420
+    Contaminants sequences:
       asserts:
         has_text: 
-          text: "scaffold_200"
+          text: "seq_00001"
+    Mitochondrial Scaffolds:
+      asserts:
+        has_text: 
+          text: "seq_00500"
+

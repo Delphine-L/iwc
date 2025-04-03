@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0] - 2025-04-01
+
+### Changes 
+
+- Replace Kraken2 by the NCBI [FCS](https://github.com/ncbi/fcs) suite for contaminants and adaptor screening
+
+
 ## [0.4] - 2025-03-17
 
 ### Automatic update
