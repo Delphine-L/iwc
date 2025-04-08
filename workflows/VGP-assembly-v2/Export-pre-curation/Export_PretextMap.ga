@@ -32,8 +32,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 0.0,
-                "top": 0.0
+                "left": 0,
+                "top": 0
             },
             "tool_id": null,
             "tool_state": "{\"multiple\": false, \"validators\": [{\"message\": \"Please do not use blank spaces\", \"expression\": \"^\\\\S+$\", \"negate\": false, \"type\": \"regex\"}], \"parameter_type\": \"text\", \"optional\": false}",
@@ -71,13 +71,18 @@
             "workflow_outputs": []
         },
         "2": {
-            "annotation": "",
+            "annotation": "Select the GenomeArk repository, the files will be created under the species/Species_name/Species_ID/assembly_curated/intermediates/ repository",
             "content_id": null,
             "errors": null,
             "id": 2,
             "input_connections": {},
-            "inputs": [],
-            "label": null,
+            "inputs": [
+                {
+                    "description": "Select the GenomeArk repository, the files will be created under the species/Species_name/Species_ID/assembly_curated/intermediates/ repository",
+                    "name": "Destination "
+                }
+            ],
+            "label": "Destination ",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -112,7 +117,7 @@
                 "top": 281.72979153400394
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": null}",
+            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"Gaps\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "9251d281-d25e-41fd-86dc-3b2ccdc67c21",
@@ -135,11 +140,11 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1006.0553142294762,
-                "top": 612.6684446411726
+                "left": 995.142804608413,
+                "top": 610.8410614184171
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": null}",
+            "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"coverage\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "466a3f29-c284-496a-baba-aa6ed1a14dec",
@@ -166,7 +171,7 @@
                 "top": 946.749097134517
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": null}",
+            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"Telomeres\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "aee73f45-2ef9-46d9-80e6-d28980be2cf6",
@@ -689,7 +694,7 @@
             },
             "post_job_actions": {},
             "tool_id": "export_remote",
-            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.0",
             "type": "tool",
             "uuid": "62a1c3e8-1769-4bb2-9eb2-21a8aa442196",
@@ -698,6 +703,6 @@
         }
     },
     "tags": [],
-    "uuid": "f591c342-8b3d-4981-8404-58300129473f",
-    "version": 1
+    "uuid": "0c826484-5f62-47e9-8fe5-4ad44fef9d88",
+    "version": 7
 }
