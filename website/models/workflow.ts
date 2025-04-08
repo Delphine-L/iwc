@@ -16,7 +16,12 @@ export interface Workflow {
     definition: WorkflowDefinition;
     readme: string;
     changelog: string;
+    updated: string;
+    diagrams: string;
     trsID: string;
+    categories: string[];
+    collections: string[];
+    doi?: string;
 }
 
 // Define the interface for an author

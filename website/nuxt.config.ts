@@ -1,9 +1,24 @@
 import { defineNuxtConfig } from "nuxt/config";
-import path from "path";
-import { promises as fs } from "fs";
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    devtools: { enabled: true },
-    modules: ["@nuxt/ui", "@nuxt/content"],
+    modules: ["@nuxt/ui", "@pinia/nuxt", "@nuxt/icon"],
+
+    css: [
+        "@fontsource/atkinson-hyperlegible/400.css",
+        "@fontsource/atkinson-hyperlegible/700.css",
+        "@fontsource/atkinson-hyperlegible/400-italic.css",
+        "@fontsource/atkinson-hyperlegible/700-italic.css",
+    ],
+
+    colorMode: {
+        preference: "light",
+    },
+
+    app: {
+        head: {
+            link: [{ rel: "icon", type: "image/png", href: "/iwc_logo_white.png" }],
+        },
+    },
+
+    compatibilityDate: "2025-03-03",
 });
