@@ -52,10 +52,10 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "Species ID"
+                    "name": "Assembly ID"
                 }
             ],
-            "label": "Species ID",
+            "label": "Assembly ID",
             "name": "Input parameter",
             "outputs": [],
             "position": {
@@ -71,10 +71,37 @@
             "workflow_outputs": []
         },
         "2": {
-            "annotation": "Select the GenomeArk repository, the files will be created under the species/Species_name/Species_ID/assembly_curated/intermediates/ repository",
+            "annotation": "Format: YYYYMMDD",
             "content_id": null,
             "errors": null,
             "id": 2,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Format: YYYYMMDD",
+                    "name": "Date"
+                }
+            ],
+            "label": "Date",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "left": 19.37227048573532,
+                "top": 203.85614445156992
+            },
+            "tool_id": null,
+            "tool_state": "{\"multiple\": false, \"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "761e8bfc-e594-4e47-933d-130801e717d3",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "3": {
+            "annotation": "Select the GenomeArk repository, the files will be created under the species/Species_name/Species_ID/assembly_curated/intermediates/ repository",
+            "content_id": null,
+            "errors": null,
+            "id": 3,
             "input_connections": {},
             "inputs": [
                 {
@@ -86,41 +113,14 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 26.59520167358869,
-                "top": 191.9827234207008
+                "left": 46.819516882967704,
+                "top": 290.89214423418406
             },
             "tool_id": null,
             "tool_state": "{\"validators\": [], \"parameter_type\": \"directory_uri\", \"optional\": false}",
             "tool_version": null,
             "type": "parameter_input",
             "uuid": "30aeebfb-66fc-4c25-8b7c-6c767843013a",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "3": {
-            "annotation": "",
-            "content_id": null,
-            "errors": null,
-            "id": 3,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "",
-                    "name": "Gaps Bedgraph"
-                }
-            ],
-            "label": "Gaps Bedgraph",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1007.1216961794303,
-                "top": 281.72979153400394
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"Gaps\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "9251d281-d25e-41fd-86dc-3b2ccdc67c21",
             "when": null,
             "workflow_outputs": []
         },
@@ -133,21 +133,21 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "Genome Coverage Bigwig"
+                    "name": "Gaps Bedgraph"
                 }
             ],
-            "label": "Genome Coverage Bigwig",
+            "label": "Gaps Bedgraph",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 995.142804608413,
-                "top": 610.8410614184171
+                "left": 979.8088004591864,
+                "top": 90.54804597333256
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"coverage\"}",
+            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"Gaps\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "466a3f29-c284-496a-baba-aa6ed1a14dec",
+            "uuid": "9251d281-d25e-41fd-86dc-3b2ccdc67c21",
             "when": null,
             "workflow_outputs": []
         },
@@ -160,21 +160,21 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "Telomeres Bedgraph file "
+                    "name": "Genome Coverage Bigwig"
                 }
             ],
-            "label": "Telomeres Bedgraph file ",
+            "label": "Genome Coverage Bigwig",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 996.105937890934,
-                "top": 946.749097134517
+                "left": 990.8139612968253,
+                "top": 506.81263050400304
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"Telomeres\"}",
+            "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"coverage\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "aee73f45-2ef9-46d9-80e6-d28980be2cf6",
+            "uuid": "466a3f29-c284-496a-baba-aa6ed1a14dec",
             "when": null,
             "workflow_outputs": []
         },
@@ -187,6 +187,33 @@
             "inputs": [
                 {
                     "description": "",
+                    "name": "Telomeres Bedgraph file "
+                }
+            ],
+            "label": "Telomeres Bedgraph file ",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 993.2556390420334,
+                "top": 940.7721963275159
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"Telomeres\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "aee73f45-2ef9-46d9-80e6-d28980be2cf6",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "7": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 7,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
                     "name": "Pretext file with Coverage, telomeres and gaps"
                 }
             ],
@@ -194,8 +221,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1004.633350736171,
-                "top": 1291.6909348173206
+                "left": 1002.8957457124717,
+                "top": 1392.577938206861
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"pretext\"], \"tag\": null}",
@@ -205,9 +232,9 @@
             "when": null,
             "workflow_outputs": []
         },
-        "7": {
+        "8": {
             "annotation": "",
-            "id": 7,
+            "id": 8,
             "input_connections": {
                 "Species ID": {
                     "id": 1,
@@ -225,8 +252,8 @@
             "name": "TreevalGal Path creation",
             "outputs": [],
             "position": {
-                "left": 698.8115227736264,
-                "top": 570.5386664659094
+                "left": 699.3701618462875,
+                "top": 573.3975127747094
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -263,7 +290,13 @@
                         "type": "parameter_input",
                         "uuid": "5af2d287-537a-4df9-bf39-7446c7caada4",
                         "when": null,
-                        "workflow_outputs": []
+                        "workflow_outputs": [
+                            {
+                                "label": null,
+                                "output_name": "output",
+                                "uuid": "c1a29be7-189a-4aa4-91ff-467127e77e82"
+                            }
+                        ]
                     },
                     "1": {
                         "annotation": "",
@@ -290,7 +323,13 @@
                         "type": "parameter_input",
                         "uuid": "6eb50044-58a7-4ccf-a32f-259b3bcf003d",
                         "when": null,
-                        "workflow_outputs": []
+                        "workflow_outputs": [
+                            {
+                                "label": null,
+                                "output_name": "output",
+                                "uuid": "6a4c18cd-076e-498d-b997-35f900ebdef8"
+                            }
+                        ]
                     },
                     "2": {
                         "annotation": "",
@@ -468,18 +507,22 @@
             "when": null,
             "workflow_outputs": []
         },
-        "8": {
+        "9": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 8,
+            "id": 9,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 7,
+                    "id": 8,
                     "output_name": "Tracks path"
                 },
                 "components_1|param_type|component_value": {
                     "id": 1,
+                    "output_name": "output"
+                },
+                "components_3|param_type|component_value": {
+                    "id": 2,
                     "output_name": "output"
                 }
             },
@@ -493,8 +536,8 @@
                 }
             ],
             "position": {
-                "left": 1001.4080942584259,
-                "top": 364.4147160843095
+                "left": 989.6712762389069,
+                "top": 165.2235695442144
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
@@ -504,25 +547,29 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_gaps.bedgraph\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".HiC.combined.decontam.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".gaps.bedgraph\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "d5a8fdad-c6eb-4ede-b466-2647dd3c6338",
             "when": null,
             "workflow_outputs": []
         },
-        "9": {
+        "10": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 9,
+            "id": 10,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 7,
+                    "id": 8,
                     "output_name": "Tracks path"
                 },
                 "components_1|param_type|component_value": {
                     "id": 1,
+                    "output_name": "output"
+                },
+                "components_3|param_type|component_value": {
+                    "id": 2,
                     "output_name": "output"
                 }
             },
@@ -536,8 +583,8 @@
                 }
             ],
             "position": {
-                "left": 998.0904704794762,
-                "top": 706.1918821411726
+                "left": 992.8987122746523,
+                "top": 626.5796588841926
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
@@ -547,25 +594,29 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_genome_coverage.bigwig\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".combined.decontam.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".coverage.bigwige\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "a3e6d77b-d653-42b8-8876-bf33c1113c51",
             "when": null,
             "workflow_outputs": []
         },
-        "10": {
+        "11": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 10,
+            "id": 11,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 7,
+                    "id": 8,
                     "output_name": "Tracks path"
                 },
                 "components_1|param_type|component_value": {
                     "id": 1,
+                    "output_name": "output"
+                },
+                "components_3|param_type|component_value": {
+                    "id": 2,
                     "output_name": "output"
                 }
             },
@@ -579,8 +630,8 @@
                 }
             ],
             "position": {
-                "left": 997.1959392294762,
-                "top": 1038.2748747079736
+                "left": 1008.33437472322,
+                "top": 1064.814636038401
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
@@ -590,22 +641,30 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_telomeres.bed\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".combined.decontam.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".telomeres.bed\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "6443ab57-6b89-40e3-84aa-42fd95e53582",
             "when": null,
             "workflow_outputs": []
         },
-        "11": {
+        "12": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 11,
+            "id": 12,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 7,
+                    "id": 8,
                     "output_name": "Pretextmap path"
+                },
+                "components_1|param_type|component_value": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "components_3|param_type|component_value": {
+                    "id": 2,
+                    "output_name": "output"
                 }
             },
             "inputs": [],
@@ -618,8 +677,8 @@
                 }
             ],
             "position": {
-                "left": 1010.1573769100085,
-                "top": 1412.6808857182689
+                "left": 1008.6607866055317,
+                "top": 1501.5490274879994
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
@@ -629,53 +688,53 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"PretextMap_with_tracks.pretext\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".HiC.combined.decontam.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".pretext\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "1df26ba8-5036-411e-81ea-3645505e5f39",
             "when": null,
             "workflow_outputs": []
         },
-        "12": {
+        "13": {
             "annotation": "",
             "content_id": "export_remote",
             "errors": null,
-            "id": 12,
+            "id": 13,
             "input_connections": {
                 "d_uri": {
-                    "id": 2,
-                    "output_name": "output"
-                },
-                "export_type|datasets_0|infile": {
-                    "id": 6,
-                    "output_name": "output"
-                },
-                "export_type|datasets_0|name": {
-                    "id": 11,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_1|infile": {
                     "id": 3,
                     "output_name": "output"
                 },
-                "export_type|datasets_1|name": {
-                    "id": 8,
+                "export_type|datasets_0|infile": {
+                    "id": 7,
+                    "output_name": "output"
+                },
+                "export_type|datasets_0|name": {
+                    "id": 12,
                     "output_name": "out1"
                 },
-                "export_type|datasets_2|infile": {
+                "export_type|datasets_1|infile": {
                     "id": 4,
                     "output_name": "output"
                 },
-                "export_type|datasets_2|name": {
+                "export_type|datasets_1|name": {
                     "id": 9,
                     "output_name": "out1"
                 },
-                "export_type|datasets_3|infile": {
+                "export_type|datasets_2|infile": {
                     "id": 5,
                     "output_name": "output"
                 },
-                "export_type|datasets_3|name": {
+                "export_type|datasets_2|name": {
                     "id": 10,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_3|infile": {
+                    "id": 6,
+                    "output_name": "output"
+                },
+                "export_type|datasets_3|name": {
+                    "id": 11,
                     "output_name": "out1"
                 }
             },
@@ -703,6 +762,6 @@
         }
     },
     "tags": [],
-    "uuid": "0c826484-5f62-47e9-8fe5-4ad44fef9d88",
-    "version": 7
+    "uuid": "1b0a57f1-0aaa-4908-8add-0ae1cf9515a1",
+    "version": 6
 }
