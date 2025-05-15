@@ -594,7 +594,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".combined.decontam.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".coverage.bigwige\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".HiC.combined.decontam.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".coverage.bigwig\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "a3e6d77b-d653-42b8-8876-bf33c1113c51",
@@ -641,7 +641,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".combined.decontam.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".telomeres.bed\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".HiC..combined.decontam.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".telomeres.bed\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "6443ab57-6b89-40e3-84aa-42fd95e53582",
@@ -762,6 +762,6 @@
         }
     },
     "tags": [],
-    "uuid": "1b0a57f1-0aaa-4908-8add-0ae1cf9515a1",
-    "version": 6
+    "uuid": "10ea8e8b-6eea-4c39-b065-5ae71b632f9d",
+    "version": 8
 }
