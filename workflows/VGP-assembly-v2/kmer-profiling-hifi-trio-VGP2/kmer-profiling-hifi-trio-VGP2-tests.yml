@@ -1,5 +1,7 @@
 - doc: Test outline for kmer-profiling-hifi-trio-VGP2.ga
   job:
+    Species Name: Homo Sapiens
+    Assembly Name: hg12
     Maternal reads:
       class: Collection
       collection_type: list

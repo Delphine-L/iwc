@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2] - 2025-05-16
+
+### Changes
+- Add Rdeval for reads evaluation
 
 ## [0.1.6] - 2025-04-30
 

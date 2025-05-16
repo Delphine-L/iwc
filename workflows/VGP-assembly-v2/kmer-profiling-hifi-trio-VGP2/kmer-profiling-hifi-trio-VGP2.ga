@@ -1,6 +1,6 @@
 {
     "a_galaxy_workflow": "true",
-    "annotation": "Create Meryl Database used for the estimation of assembly parameters and quality control with Merqury. Part of the VGP pipeline.",
+    "annotation": "Evaluation of Pacbio Hifi Reads and genome profiling. Create Meryl Database used for the estimation of assembly parameters and quality control with Merqury. Part of the VGP pipeline.",
     "comments": [],
     "creator": [
         {
@@ -15,17 +15,82 @@
     ],
     "format-version": "0.1",
     "license": "CC-BY-4.0",
-    "release": "0.1.6",
-    "name": "kmer-profiling-hifi-trio-VGP2",
+    "name": "kmer profiling and reads statistics for trio data VGP2",
     "report": {
-        "markdown": "# Workflow 2 : Kmer Profiling \n\n## GenomeScope profiles of the sequenced individual\n\n### Linear Plot\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope linear plot (child)\")\n```\n\n### Log Plot\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope log plot (child)\")\n```\n\n### Transformed linear Plot\n\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope transformed linear plot (child)\")\n```\n\n\n### Transformed log Plot\n\n\r\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope transformed log plot (child)\")\n```\r\n\n\n## GenomeScope profiles of the maternal individual\n\n### Linear Plot\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope linear plot (maternal)\")\n```\n\n### Log Plot\n\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope log plot (maternal)\")\n```\n\n\n## GenomeScope profiles of the paternal individual\n\n### Linear Plot\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope linear plot (paternal)\")\n```\n\n### Log Plot\n\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope log plot (paternal)\")\n```"
+        "markdown": "# Workflow 2: Kmer Profiling and reads statistics for trio assembly\n\nSpecies:\n```galaxy\nhistory_dataset_embedded(output=\"Species for report\")\n```\n\nAssembly:\n\n\n```galaxy\nhistory_dataset_embedded(output=\"Assembly for report\")\n```\n\n\nk-mer length:\n\n\n```galaxy\nhistory_dataset_embedded(output=\"K-mer length for report\")\n```\n\n\n## Rdeval results\n\n\n```galaxy\nhistory_dataset_as_table(output=\"Reads Statistics\")\n```\n\n\n## GenomeScope results for the sequenced individual\n\nEstimated Genome Size:\n```galaxy\nhistory_dataset_embedded(output=\"Estimated Genome Size File\")\n```\n\nHomozygous read coverage:\n\n```galaxy\nhistory_dataset_embedded(output=\"Homozygous Read Coverage\")\n```\n\n\n### Linear Plot\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope linear plot (child)\")\n```\n\n### Log Plot\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope log plot (child)\")\n```\n\n### Transformed linear Plot\n\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope transformed linear plot (child)\")\n```\n\n\n### Transformed log Plot\n\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope transformed log plot (child)\")\n```\n\n\n## GenomeScope profile of the maternal individual\n\n### Linear Plot\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope linear plot (maternal)\")\n```\n\n### Log Plot\n\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope log plot (maternal)\")\n```\n\n\n## GenomeScope profile of the paternal individual\n\n### Linear Plot\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope linear plot (paternal)\")\n```\n\n### Log Plot\n\n\n```galaxy\nhistory_dataset_as_image(output=\"GenomeScope log plot (paternal)\")\n```"
     },
     "steps": {
         "0": {
-            "annotation": "",
+            "annotation": "For Workflow report. ",
             "content_id": null,
             "errors": null,
             "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "For Workflow report. ",
+                    "name": "Species Name"
+                }
+            ],
+            "label": "Species Name",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "left": 0,
+                "top": 0
+            },
+            "tool_id": null,
+            "tool_state": "{\"multiple\": false, \"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "b4409477-4009-441c-93d4-e1b11b27bd50",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "2790ee08-5823-4c5f-b4b1-7d235603b6e2"
+                }
+            ]
+        },
+        "1": {
+            "annotation": "For Workflow report. ",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "For Workflow report. ",
+                    "name": "Assembly Name"
+                }
+            ],
+            "label": "Assembly Name",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "left": 40.88988222759508,
+                "top": 251.25804708766145
+            },
+            "tool_id": null,
+            "tool_state": "{\"multiple\": false, \"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "0d2fe2f7-1726-469f-8497-c5be7f54e375",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "668fa577-57d8-4b1c-b032-7a0cfbfd2035"
+                }
+            ]
+        },
+        "2": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 2,
             "input_connections": {},
             "inputs": [
                 {
@@ -37,8 +102,8 @@
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
-                "left": 0,
-                "top": 251.26255108421145
+                "left": 99.51442294489789,
+                "top": 466.8035128985277
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"fastq\"], \"tag\": null, \"collection_type\": \"list\"}",
@@ -48,11 +113,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "1": {
+        "3": {
             "annotation": "Collection of Illumina reads for the father of the Individual sequenced with Pacbio Hifi.",
             "content_id": null,
             "errors": null,
-            "id": 1,
+            "id": 3,
             "input_connections": {},
             "inputs": [
                 {
@@ -64,8 +129,8 @@
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
-                "left": 16.83203125,
-                "top": 399.546875
+                "left": 116.34645419489789,
+                "top": 615.0878368143162
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"fastq\"], \"tag\": \"\", \"collection_type\": \"list\"}",
@@ -75,11 +140,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "2": {
+        "4": {
             "annotation": "Collection of Illumina reads for the mother of the Individual sequenced with Pacbio Hifi.",
             "content_id": null,
             "errors": null,
-            "id": 2,
+            "id": 4,
             "input_connections": {},
             "inputs": [
                 {
@@ -91,8 +156,8 @@
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
-                "left": 18.07421875,
-                "top": 541.590674999974
+                "left": 117.58864169489789,
+                "top": 757.1316368142902
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"fastq\"], \"tag\": \"\", \"collection_type\": \"list\"}",
@@ -102,11 +167,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "3": {
+        "5": {
             "annotation": "",
             "content_id": null,
             "errors": null,
-            "id": 3,
+            "id": 5,
             "input_connections": {},
             "inputs": [
                 {
@@ -118,8 +183,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 8.30859375,
-                "top": 660.512549999974
+                "left": 107.82301669489789,
+                "top": 876.0535118142902
             },
             "tool_id": null,
             "tool_state": "{\"default\": 21, \"validators\": [], \"parameter_type\": \"integer\", \"optional\": true}",
@@ -127,13 +192,19 @@
             "type": "parameter_input",
             "uuid": "834ddad6-9ec5-4f3c-a0c6-73093dd5b7f0",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "9d25465d-4444-44b3-ba36-e50a46d88487"
+                }
+            ]
         },
-        "4": {
+        "6": {
             "annotation": "",
             "content_id": null,
             "errors": null,
-            "id": 4,
+            "id": 6,
             "input_connections": {},
             "inputs": [
                 {
@@ -145,8 +216,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 4.04296875,
-                "top": 831.043799999974
+                "left": 103.55739169489789,
+                "top": 1046.5847618142902
             },
             "tool_id": null,
             "tool_state": "{\"default\": 2, \"validators\": [], \"parameter_type\": \"integer\", \"optional\": true}",
@@ -154,16 +225,124 @@
             "type": "parameter_input",
             "uuid": "131b3494-ca33-457c-9f53-9c8c608d319a",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "09896d74-6167-4fba-8146-16ece3199279"
+                }
+            ]
         },
-        "5": {
+        "7": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "errors": null,
+            "id": 7,
+            "input_connections": {
+                "components_0|param_type|component_value": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Compose text parameter value",
+            "outputs": [
+                {
+                    "name": "out1",
+                    "type": "expression.json"
+                }
+            ],
+            "position": {
+                "left": 471.80194346919734,
+                "top": 10.017225227403742
+            },
+            "post_job_actions": {
+                "HideDatasetActionout1": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out1"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "tool_shed_repository": {
+                "changeset_revision": "e188c9826e0f",
+                "name": "compose_text_param",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.1",
+            "type": "tool",
+            "uuid": "9abc9255-e9de-47e4-948c-dbfab1402616",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Species for report",
+                    "output_name": "out1",
+                    "uuid": "459fba4d-a4ce-4f3c-a8cf-5cc02c944b02"
+                }
+            ]
+        },
+        "8": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "errors": null,
+            "id": 8,
+            "input_connections": {
+                "components_0|param_type|component_value": {
+                    "id": 1,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Compose text parameter value",
+            "outputs": [
+                {
+                    "name": "out1",
+                    "type": "expression.json"
+                }
+            ],
+            "position": {
+                "left": 448.0871326629763,
+                "top": 259.64465574930045
+            },
+            "post_job_actions": {
+                "HideDatasetActionout1": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out1"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "tool_shed_repository": {
+                "changeset_revision": "e188c9826e0f",
+                "name": "compose_text_param",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.1",
+            "type": "tool",
+            "uuid": "54226ee8-4480-4ab6-ae66-02cd11e18aa7",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Assembly for report",
+                    "output_name": "out1",
+                    "uuid": "cf12b1ba-65c2-428e-849c-90797a4c0163"
+                }
+            ]
+        },
+        "9": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
             "errors": null,
-            "id": 5,
+            "id": 9,
             "input_connections": {
                 "style_cond|type_cond|pick_from_0|value": {
-                    "id": 3,
+                    "id": 5,
                     "output_name": "output"
                 }
             },
@@ -177,10 +356,16 @@
                 }
             ],
             "position": {
-                "left": 271.5784037973972,
-                "top": 632.6981223972093
+                "left": 371.0924696193212,
+                "top": 847.4202408593256
             },
-            "post_job_actions": {},
+            "post_job_actions": {
+                "HideDatasetActioninteger_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "integer_param"
+                }
+            },
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
             "tool_shed_repository": {
                 "changeset_revision": "b19e21af9c52",
@@ -195,22 +380,27 @@
             "when": null,
             "workflow_outputs": []
         },
-        "6": {
+        "10": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl_count_kmers/meryl_count_kmers/1.3+galaxy7",
             "errors": null,
-            "id": 6,
+            "id": 10,
             "input_connections": {
                 "input_reads": {
-                    "id": 1,
+                    "id": 3,
                     "output_name": "output"
                 },
                 "options_kmer_size|input_kmer_size": {
-                    "id": 5,
+                    "id": 9,
                     "output_name": "integer_param"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Meryl",
+                    "name": "options_kmer_size"
+                }
+            ],
             "label": null,
             "name": "Meryl",
             "outputs": [
@@ -220,8 +410,8 @@
                 }
             ],
             "position": {
-                "left": 939.3740103274155,
-                "top": 110.13449847651007
+                "left": 1038.8884332723133,
+                "top": 325.6754602908263
             },
             "post_job_actions": {
                 "HideDatasetActionread_db": {
@@ -244,79 +434,94 @@
             "when": null,
             "workflow_outputs": []
         },
-        "7": {
+        "11": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy6",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 7,
+            "id": 11,
             "input_connections": {
-                "operation_type|input_reads": {
-                    "id": 2,
-                    "output_name": "output"
-                },
-                "operation_type|options_kmer_size|input_kmer_size": {
-                    "id": 5,
+                "components_0|param_type|component_value": {
+                    "id": 9,
                     "output_name": "integer_param"
                 }
             },
             "inputs": [],
             "label": null,
-            "name": "Meryl",
+            "name": "Compose text parameter value",
             "outputs": [
                 {
-                    "name": "read_db",
-                    "type": "meryldb"
+                    "name": "out1",
+                    "type": "expression.json"
                 }
             ],
             "position": {
-                "left": 908.7621267409064,
-                "top": 1144.9401063508444
+                "left": 614.020867109367,
+                "top": 1293.673307106758
             },
             "post_job_actions": {
-                "HideDatasetActionread_db": {
+                "HideDatasetActionout1": {
                     "action_arguments": {},
                     "action_type": "HideDatasetAction",
-                    "output_name": "read_db"
+                    "output_name": "out1"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy6",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "tool_shed_repository": {
-                "changeset_revision": "29dabd8db6f2",
-                "name": "meryl",
+                "changeset_revision": "e188c9826e0f",
+                "name": "compose_text_param",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"operation_type\": {\"command_type\": \"count-kmers\", \"__current_case__\": 0, \"count_operations\": \"count\", \"input_reads\": {\"__class__\": \"ConnectedValue\"}, \"options_kmer_size\": {\"kmer_size\": \"provide\", \"__current_case__\": 0, \"input_kmer_size\": {\"__class__\": \"ConnectedValue\"}}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.3+galaxy6",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"integer\", \"__current_case__\": 1, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.1",
             "type": "tool",
-            "uuid": "4d9b4be1-8f1a-4457-8955-0649971b6f63",
+            "uuid": "a5fe3ecd-c06e-4b89-8adb-b1aed9583b28",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": "K-mer length for report",
+                    "output_name": "out1",
+                    "uuid": "c2cfab5a-aeeb-4949-a2b6-4b1956d7684f"
+                }
+            ]
         },
-        "8": {
+        "12": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy6",
             "errors": null,
-            "id": 8,
+            "id": 12,
             "input_connections": {
                 "operation_type|child_reads": {
-                    "id": 0,
-                    "output_name": "output"
-                },
-                "operation_type|maternal_reads": {
                     "id": 2,
                     "output_name": "output"
                 },
+                "operation_type|maternal_reads": {
+                    "id": 4,
+                    "output_name": "output"
+                },
                 "operation_type|options_kmer_size|input_kmer_size": {
-                    "id": 5,
+                    "id": 9,
                     "output_name": "integer_param"
                 },
                 "operation_type|paternal_reads": {
-                    "id": 1,
+                    "id": 3,
                     "output_name": "output"
                 }
             },
-            "inputs": [],
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Meryl",
+                    "name": "operation_type"
+                },
+                {
+                    "description": "runtime parameter for tool Meryl",
+                    "name": "operation_type"
+                },
+                {
+                    "description": "runtime parameter for tool Meryl",
+                    "name": "operation_type"
+                }
+            ],
             "label": null,
             "name": "Meryl",
             "outputs": [
@@ -346,8 +551,8 @@
                 }
             ],
             "position": {
-                "left": 1448.4867361305037,
-                "top": 422.4463592843802
+                "left": 1548.0011590754016,
+                "top": 637.9873210986964
             },
             "post_job_actions": {
                 "HideDatasetActionmat_db_hist": {
@@ -422,11 +627,6 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Meryl database : maternal",
-                    "output_name": "mat_db",
-                    "uuid": "66a5ba61-a290-4350-ac33-3b9a878cca67"
-                },
-                {
                     "label": "Meryl database : Child",
                     "output_name": "read_db",
                     "uuid": "69021571-e6a3-4014-8449-94b5ff8af000"
@@ -435,17 +635,76 @@
                     "label": "Meryl database : paternal",
                     "output_name": "pat_db",
                     "uuid": "84990c33-282b-44dc-8a5e-6db7889ca79c"
+                },
+                {
+                    "label": "Meryl database : maternal",
+                    "output_name": "mat_db",
+                    "uuid": "66a5ba61-a290-4350-ac33-3b9a878cca67"
                 }
             ]
         },
-        "9": {
+        "13": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy6",
+            "errors": null,
+            "id": 13,
+            "input_connections": {
+                "operation_type|input_reads": {
+                    "id": 4,
+                    "output_name": "output"
+                },
+                "operation_type|options_kmer_size|input_kmer_size": {
+                    "id": 9,
+                    "output_name": "integer_param"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Meryl",
+                    "name": "operation_type"
+                }
+            ],
+            "label": null,
+            "name": "Meryl",
+            "outputs": [
+                {
+                    "name": "read_db",
+                    "type": "meryldb"
+                }
+            ],
+            "position": {
+                "left": 1008.2765496858043,
+                "top": 1360.4810681651607
+            },
+            "post_job_actions": {
+                "HideDatasetActionread_db": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "read_db"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy6",
+            "tool_shed_repository": {
+                "changeset_revision": "29dabd8db6f2",
+                "name": "meryl",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"operation_type\": {\"command_type\": \"count-kmers\", \"__current_case__\": 0, \"count_operations\": \"count\", \"input_reads\": {\"__class__\": \"ConnectedValue\"}, \"options_kmer_size\": {\"kmer_size\": \"provide\", \"__current_case__\": 0, \"input_kmer_size\": {\"__class__\": \"ConnectedValue\"}}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.3+galaxy6",
+            "type": "tool",
+            "uuid": "4d9b4be1-8f1a-4457-8955-0649971b6f63",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "14": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl_groups_kmers/meryl_groups_kmers/1.3+galaxy7",
             "errors": null,
-            "id": 9,
+            "id": 14,
             "input_connections": {
                 "input_meryldb_02": {
-                    "id": 6,
+                    "id": 10,
                     "output_name": "read_db"
                 }
             },
@@ -459,8 +718,8 @@
                 }
             ],
             "position": {
-                "left": 1301.3547331422744,
-                "top": 25.748345240269117
+                "left": 1400.8691560871723,
+                "top": 241.28930705458535
             },
             "post_job_actions": {
                 "HideDatasetActionread_db": {
@@ -483,67 +742,22 @@
             "when": null,
             "workflow_outputs": []
         },
-        "10": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl_groups_kmers/meryl_groups_kmers/1.3+galaxy7",
-            "errors": null,
-            "id": 10,
-            "input_connections": {
-                "input_meryldb_02": {
-                    "id": 7,
-                    "output_name": "read_db"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "Meryl",
-            "outputs": [
-                {
-                    "name": "read_db",
-                    "type": "meryldb"
-                }
-            ],
-            "position": {
-                "left": 1297.8309419338123,
-                "top": 1231.0599821130284
-            },
-            "post_job_actions": {
-                "HideDatasetActionread_db": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "read_db"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl_groups_kmers/meryl_groups_kmers/1.3+galaxy7",
-            "tool_shed_repository": {
-                "changeset_revision": "c4758f3bf36e",
-                "name": "meryl_groups_kmers",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"groups_operations\": \"union-sum\", \"input_meryldb_02\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.3+galaxy7",
-            "type": "tool",
-            "uuid": "645ecd54-ea5c-4382-a0a3-6b46edb979bc",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "11": {
+        "15": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0.1+galaxy0",
             "errors": null,
-            "id": 11,
+            "id": 15,
             "input_connections": {
                 "input": {
-                    "id": 8,
+                    "id": 12,
                     "output_name": "read_db_hist"
                 },
                 "kmer_length": {
-                    "id": 5,
+                    "id": 9,
                     "output_name": "integer_param"
                 },
                 "ploidy": {
-                    "id": 4,
+                    "id": 6,
                     "output_name": "output"
                 }
             },
@@ -581,8 +795,8 @@
                 }
             ],
             "position": {
-                "left": 2134.73828125,
-                "top": 0
+                "left": 2397.1825808444996,
+                "top": 962.7802736069524
             },
             "post_job_actions": {
                 "TagDatasetActionlinear_plot": {
@@ -649,11 +863,6 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "GenomeScope transformed linear plot (child)",
-                    "output_name": "transformed_linear_plot",
-                    "uuid": "acebbb13-a1bd-4866-9e6f-b15708e7c78d"
-                },
-                {
                     "label": "GenomeScope transformed log plot (child)",
                     "output_name": "transformed_log_plot",
                     "uuid": "bc1789b4-8cc8-4f74-ac92-f6d20c1fbd7f"
@@ -677,17 +886,67 @@
                     "label": "GenomeScope Model Parameters (child)",
                     "output_name": "model_params",
                     "uuid": "3bc4131f-ce9b-4358-a20b-885020d34f09"
+                },
+                {
+                    "label": "GenomeScope transformed linear plot (child)",
+                    "output_name": "transformed_linear_plot",
+                    "uuid": "acebbb13-a1bd-4866-9e6f-b15708e7c78d"
                 }
             ]
         },
-        "12": {
+        "16": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl_groups_kmers/meryl_groups_kmers/1.3+galaxy7",
+            "errors": null,
+            "id": 16,
+            "input_connections": {
+                "input_meryldb_02": {
+                    "id": 13,
+                    "output_name": "read_db"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Meryl",
+            "outputs": [
+                {
+                    "name": "read_db",
+                    "type": "meryldb"
+                }
+            ],
+            "position": {
+                "left": 1397.3453648787101,
+                "top": 1446.6009439273446
+            },
+            "post_job_actions": {
+                "HideDatasetActionread_db": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "read_db"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl_groups_kmers/meryl_groups_kmers/1.3+galaxy7",
+            "tool_shed_repository": {
+                "changeset_revision": "c4758f3bf36e",
+                "name": "meryl_groups_kmers",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"groups_operations\": \"union-sum\", \"input_meryldb_02\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.3+galaxy7",
+            "type": "tool",
+            "uuid": "645ecd54-ea5c-4382-a0a3-6b46edb979bc",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "17": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl_histogram_kmers/meryl_histogram_kmers/1.3+galaxy7",
             "errors": null,
-            "id": 12,
+            "id": 17,
             "input_connections": {
                 "input_meryldb_02": {
-                    "id": 9,
+                    "id": 14,
                     "output_name": "read_db"
                 }
             },
@@ -701,8 +960,8 @@
                 }
             ],
             "position": {
-                "left": 1578.841276483822,
-                "top": 7.625007303688233
+                "left": 1678.3556994287198,
+                "top": 223.16596911800445
             },
             "post_job_actions": {
                 "HideDatasetActionread_db_hist": {
@@ -725,14 +984,492 @@
             "when": null,
             "workflow_outputs": []
         },
-        "13": {
+        "18": {
+            "annotation": "",
+            "id": 18,
+            "input_connections": {
+                "Genomescope model": {
+                    "id": 15,
+                    "input_subworkflow_step_id": 0,
+                    "output_name": "model"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Parse kcov",
+            "outputs": [],
+            "position": {
+                "left": 2900.7299996396,
+                "top": 821.7740459772109
+            },
+            "subworkflow": {
+                "a_galaxy_workflow": "true",
+                "annotation": "",
+                "comments": [],
+                "format-version": "0.1",
+                "name": "Parse kcov",
+                "report": {
+                    "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+                },
+                "steps": {
+                    "0": {
+                        "annotation": "",
+                        "content_id": null,
+                        "errors": null,
+                        "id": 0,
+                        "input_connections": {},
+                        "inputs": [
+                            {
+                                "description": "",
+                                "name": "Genomescope model"
+                            }
+                        ],
+                        "label": "Genomescope model",
+                        "name": "Input dataset",
+                        "outputs": [],
+                        "position": {
+                            "left": 0,
+                            "top": 0
+                        },
+                        "tool_id": null,
+                        "tool_state": "{\"optional\": false, \"tag\": null}",
+                        "tool_version": null,
+                        "type": "data_input",
+                        "uuid": "6f233faf-742a-42c9-9c61-9d39662b4a62",
+                        "when": null,
+                        "workflow_outputs": []
+                    },
+                    "1": {
+                        "annotation": "",
+                        "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/9.5+galaxy0",
+                        "errors": null,
+                        "id": 1,
+                        "input_connections": {
+                            "infile": {
+                                "id": 0,
+                                "output_name": "output"
+                            }
+                        },
+                        "inputs": [],
+                        "label": null,
+                        "name": "Search in textfiles",
+                        "outputs": [
+                            {
+                                "name": "output",
+                                "type": "input"
+                            }
+                        ],
+                        "position": {
+                            "left": 288.41796875,
+                            "top": 65.640625
+                        },
+                        "post_job_actions": {
+                            "HideDatasetActionoutput": {
+                                "action_arguments": {},
+                                "action_type": "HideDatasetAction",
+                                "output_name": "output"
+                            }
+                        },
+                        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/9.5+galaxy0",
+                        "tool_shed_repository": {
+                            "changeset_revision": "6073bb457ec0",
+                            "name": "text_processing",
+                            "owner": "bgruening",
+                            "tool_shed": "toolshed.g2.bx.psu.edu"
+                        },
+                        "tool_state": "{\"__input_ext\": \"input\", \"case_sensitive\": \"-i\", \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\", \"color\": \"NOCOLOR\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"invert\": \"\", \"lines_after\": \"0\", \"lines_before\": \"0\", \"regex_type\": \"-G\", \"url_paste\": \"kmercov [0-9]\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+                        "tool_version": "9.5+galaxy0",
+                        "type": "tool",
+                        "uuid": "f836969c-c2aa-4d01-a53b-af74e2863db5",
+                        "when": null,
+                        "workflow_outputs": []
+                    },
+                    "2": {
+                        "annotation": "",
+                        "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.5+galaxy0",
+                        "errors": null,
+                        "id": 2,
+                        "input_connections": {
+                            "infile": {
+                                "id": 1,
+                                "output_name": "output"
+                            }
+                        },
+                        "inputs": [],
+                        "label": null,
+                        "name": "Replace",
+                        "outputs": [
+                            {
+                                "name": "outfile",
+                                "type": "input"
+                            }
+                        ],
+                        "position": {
+                            "left": 540.1015625,
+                            "top": 13.16796875
+                        },
+                        "post_job_actions": {
+                            "HideDatasetActionoutfile": {
+                                "action_arguments": {},
+                                "action_type": "HideDatasetAction",
+                                "output_name": "outfile"
+                            }
+                        },
+                        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.5+galaxy0",
+                        "tool_shed_repository": {
+                            "changeset_revision": "6073bb457ec0",
+                            "name": "text_processing",
+                            "owner": "bgruening",
+                            "tool_shed": "toolshed.g2.bx.psu.edu"
+                        },
+                        "tool_state": "{\"__input_ext\": \"input\", \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\", \"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"\\\\s+\", \"replace_pattern\": \",\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": true, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+                        "tool_version": "9.5+galaxy0",
+                        "type": "tool",
+                        "uuid": "07bdff1b-e3ca-49de-b273-f92d024b7dbb",
+                        "when": null,
+                        "workflow_outputs": []
+                    },
+                    "3": {
+                        "annotation": "",
+                        "content_id": "Cut1",
+                        "errors": null,
+                        "id": 3,
+                        "input_connections": {
+                            "input": {
+                                "id": 2,
+                                "output_name": "outfile"
+                            }
+                        },
+                        "inputs": [],
+                        "label": null,
+                        "name": "Cut",
+                        "outputs": [
+                            {
+                                "name": "out_file1",
+                                "type": "tabular"
+                            }
+                        ],
+                        "position": {
+                            "left": 770.54296875,
+                            "top": 234.53125
+                        },
+                        "post_job_actions": {
+                            "HideDatasetActionout_file1": {
+                                "action_arguments": {},
+                                "action_type": "HideDatasetAction",
+                                "output_name": "out_file1"
+                            },
+                            "RenameDatasetActionout_file1": {
+                                "action_arguments": {
+                                    "newname": "Homozygous kmer coverage"
+                                },
+                                "action_type": "RenameDatasetAction",
+                                "output_name": "out_file1"
+                            },
+                            "TagDatasetActionout_file1": {
+                                "action_arguments": {
+                                    "tags": "kcov"
+                                },
+                                "action_type": "TagDatasetAction",
+                                "output_name": "out_file1"
+                            }
+                        },
+                        "tool_id": "Cut1",
+                        "tool_state": "{\"__input_ext\": \"csv\", \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\", \"columnList\": \"c2\", \"delimiter\": \"C\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+                        "tool_version": "1.0.2",
+                        "type": "tool",
+                        "uuid": "94bfaecf-65f6-470d-bdfe-6a7cf9aa3e7e",
+                        "when": null,
+                        "workflow_outputs": [
+                            {
+                                "label": "Homozygous kmer coverage",
+                                "output_name": "out_file1",
+                                "uuid": "3e33ad19-1564-4ffc-9930-efe8ad614f45"
+                            }
+                        ]
+                    }
+                },
+                "tags": [],
+                "uuid": "6d260bae-d97d-4507-b0b7-f36279d7b569"
+            },
+            "tool_id": null,
+            "type": "subworkflow",
+            "uuid": "537cf8c0-81c9-4209-a30c-059942b44db7",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "19": {
+            "annotation": "",
+            "id": 19,
+            "input_connections": {
+                "GenomeScope summary": {
+                    "id": 15,
+                    "input_subworkflow_step_id": 0,
+                    "output_name": "summary"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Parse Estimated Genome Size",
+            "outputs": [],
+            "position": {
+                "left": 2840.778097373859,
+                "top": 1573.934593912642
+            },
+            "subworkflow": {
+                "a_galaxy_workflow": "true",
+                "annotation": "",
+                "comments": [],
+                "creator": [
+                    {
+                        "class": "Organization",
+                        "name": "VGP",
+                        "url": "https://vertebrategenomeproject.org"
+                    },
+                    {
+                        "class": "Organization",
+                        "name": "Galaxy"
+                    }
+                ],
+                "format-version": "0.1",
+                "license": "CC-BY-4.0",
+                "name": "Parse Estimated Genome Size",
+                "report": {
+                    "markdown": "\n# Workflow Execution Report\n\n\n```galaxy\ninvocation_time()\n```\n\n\n```galaxy\nhistory_dataset_as_image(output=\"Genomescope on fastk linear plot\")\n```\n\n```galaxy\nhistory_dataset_as_image(output=\"Genomescope on fastk log plot\")\n```\n\n```galaxy\nhistory_dataset_as_image(output=\"Genomescope on fastk transformed linear plot\")\n```\n\n```galaxy\nhistory_dataset_as_image(output=\"Genomescope on fastk transformed log plot\")\n```\n\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+                },
+                "steps": {
+                    "0": {
+                        "annotation": "",
+                        "content_id": null,
+                        "errors": null,
+                        "id": 0,
+                        "input_connections": {},
+                        "inputs": [
+                            {
+                                "description": "",
+                                "name": "GenomeScope summary"
+                            }
+                        ],
+                        "label": "GenomeScope summary",
+                        "name": "Input dataset",
+                        "outputs": [],
+                        "position": {
+                            "left": 0.0,
+                            "top": 56.93242445237047
+                        },
+                        "tool_id": null,
+                        "tool_state": "{\"optional\": false, \"format\": [\"txt\"], \"tag\": null}",
+                        "tool_version": null,
+                        "type": "data_input",
+                        "uuid": "b3667271-ffe5-4773-89bd-df743666c8ef",
+                        "when": null,
+                        "workflow_outputs": []
+                    },
+                    "1": {
+                        "annotation": "",
+                        "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/9.5+galaxy0",
+                        "errors": null,
+                        "id": 1,
+                        "input_connections": {
+                            "infile": {
+                                "id": 0,
+                                "output_name": "output"
+                            }
+                        },
+                        "inputs": [],
+                        "label": null,
+                        "name": "Search in textfiles",
+                        "outputs": [
+                            {
+                                "name": "output",
+                                "type": "input"
+                            }
+                        ],
+                        "position": {
+                            "left": 363.37716382385133,
+                            "top": 192.5549066994197
+                        },
+                        "post_job_actions": {
+                            "HideDatasetActionoutput": {
+                                "action_arguments": {},
+                                "action_type": "HideDatasetAction",
+                                "output_name": "output"
+                            }
+                        },
+                        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/9.5+galaxy0",
+                        "tool_shed_repository": {
+                            "changeset_revision": "6073bb457ec0",
+                            "name": "text_processing",
+                            "owner": "bgruening",
+                            "tool_shed": "toolshed.g2.bx.psu.edu"
+                        },
+                        "tool_state": "{\"case_sensitive\": \"-i\", \"color\": \"NOCOLOR\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"invert\": \"\", \"lines_after\": \"0\", \"lines_before\": \"0\", \"regex_type\": \"-G\", \"url_paste\": \"Haploid\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+                        "tool_version": "9.5+galaxy0",
+                        "type": "tool",
+                        "uuid": "3a30e47c-5c4f-4bc4-9307-e83593f73e50",
+                        "when": null,
+                        "workflow_outputs": []
+                    },
+                    "2": {
+                        "annotation": "",
+                        "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/9.5+galaxy0",
+                        "errors": null,
+                        "id": 2,
+                        "input_connections": {
+                            "infile": {
+                                "id": 1,
+                                "output_name": "output"
+                            }
+                        },
+                        "inputs": [],
+                        "label": null,
+                        "name": "Replace Text",
+                        "outputs": [
+                            {
+                                "name": "outfile",
+                                "type": "input"
+                            }
+                        ],
+                        "position": {
+                            "left": 486.87646915989785,
+                            "top": 0.0
+                        },
+                        "post_job_actions": {
+                            "HideDatasetActionoutfile": {
+                                "action_arguments": {},
+                                "action_type": "HideDatasetAction",
+                                "output_name": "outfile"
+                            }
+                        },
+                        "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/9.5+galaxy0",
+                        "tool_shed_repository": {
+                            "changeset_revision": "6073bb457ec0",
+                            "name": "text_processing",
+                            "owner": "bgruening",
+                            "tool_shed": "toolshed.g2.bx.psu.edu"
+                        },
+                        "tool_state": "{\"infile\": {\"__class__\": \"ConnectedValue\"}, \"replacements\": [{\"__index__\": 0, \"find_pattern\": \"bp\", \"replace_pattern\": null, \"sed_options\": null}, {\"__index__\": 1, \"find_pattern\": \",\", \"replace_pattern\": null, \"sed_options\": null}, {\"__index__\": 2, \"find_pattern\": \"([a-z])\\\\s+([A-Z])\", \"replace_pattern\": \"\\\\1_\\\\2\", \"sed_options\": null}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+                        "tool_version": "9.5+galaxy0",
+                        "type": "tool",
+                        "uuid": "33d26bbe-5d3b-4a90-89cf-e5dd87232049",
+                        "when": null,
+                        "workflow_outputs": []
+                    },
+                    "3": {
+                        "annotation": "",
+                        "content_id": "Convert characters1",
+                        "errors": null,
+                        "id": 3,
+                        "input_connections": {
+                            "input": {
+                                "id": 2,
+                                "output_name": "outfile"
+                            }
+                        },
+                        "inputs": [],
+                        "label": null,
+                        "name": "Convert",
+                        "outputs": [
+                            {
+                                "name": "out_file1",
+                                "type": "tabular"
+                            }
+                        ],
+                        "position": {
+                            "left": 685.4116254098979,
+                            "top": 198.29296875
+                        },
+                        "post_job_actions": {
+                            "HideDatasetActionout_file1": {
+                                "action_arguments": {},
+                                "action_type": "HideDatasetAction",
+                                "output_name": "out_file1"
+                            }
+                        },
+                        "tool_id": "Convert characters1",
+                        "tool_state": "{\"condense\": true, \"convert_from\": \"s\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"strip\": true, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+                        "tool_version": "1.0.0",
+                        "type": "tool",
+                        "uuid": "91f40edb-d824-4b2c-bd95-112b22093feb",
+                        "when": null,
+                        "workflow_outputs": []
+                    },
+                    "4": {
+                        "annotation": "",
+                        "content_id": "Cut1",
+                        "errors": null,
+                        "id": 4,
+                        "input_connections": {
+                            "input": {
+                                "id": 3,
+                                "output_name": "out_file1"
+                            }
+                        },
+                        "inputs": [],
+                        "label": "Estimated Genome Size File",
+                        "name": "Cut",
+                        "outputs": [
+                            {
+                                "name": "out_file1",
+                                "type": "tabular"
+                            }
+                        ],
+                        "position": {
+                            "left": 970.6455844309783,
+                            "top": 31.414320917954683
+                        },
+                        "post_job_actions": {
+                            "HideDatasetActionout_file1": {
+                                "action_arguments": {},
+                                "action_type": "HideDatasetAction",
+                                "output_name": "out_file1"
+                            },
+                            "RenameDatasetActionout_file1": {
+                                "action_arguments": {
+                                    "newname": "Estimated Genome Size"
+                                },
+                                "action_type": "RenameDatasetAction",
+                                "output_name": "out_file1"
+                            }
+                        },
+                        "tool_id": "Cut1",
+                        "tool_state": "{\"columnList\": \"c3\", \"delimiter\": \"T\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+                        "tool_version": "1.0.2",
+                        "type": "tool",
+                        "uuid": "1b0b6fbf-a01d-4a63-a26f-a5dfa3757178",
+                        "when": null,
+                        "workflow_outputs": [
+                            {
+                                "label": "Estimated Genome Size File",
+                                "output_name": "out_file1",
+                                "uuid": "92935638-5d6f-4a0f-b85d-b4a107061a80"
+                            }
+                        ]
+                    }
+                },
+                "tags": [],
+                "uuid": "e78eaea8-c6ea-412c-965f-3746f3d8df49"
+            },
+            "tool_id": null,
+            "type": "subworkflow",
+            "uuid": "08576a9e-1ec7-430b-aad5-de6a31425e02",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Estimated Genome Size File",
+                    "output_name": "Estimated Genome Size File",
+                    "uuid": "9abf5bcc-0531-4a90-9868-0253256d6205"
+                }
+            ]
+        },
+        "20": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/meryl_histogram_kmers/meryl_histogram_kmers/1.3+galaxy7",
             "errors": null,
-            "id": 13,
+            "id": 20,
             "input_connections": {
                 "input_meryldb_02": {
-                    "id": 10,
+                    "id": 16,
                     "output_name": "read_db"
                 }
             },
@@ -746,8 +1483,8 @@
                 }
             ],
             "position": {
-                "left": 1560.0367016837042,
-                "top": 1140.0239514182024
+                "left": 1659.551124628602,
+                "top": 1355.5649132325186
             },
             "post_job_actions": {
                 "HideDatasetActionread_db_hist": {
@@ -770,22 +1507,22 @@
             "when": null,
             "workflow_outputs": []
         },
-        "14": {
+        "21": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0.1+galaxy0",
             "errors": null,
-            "id": 14,
+            "id": 21,
             "input_connections": {
                 "input": {
-                    "id": 12,
+                    "id": 17,
                     "output_name": "read_db_hist"
                 },
                 "kmer_length": {
-                    "id": 5,
+                    "id": 9,
                     "output_name": "integer_param"
                 },
                 "ploidy": {
-                    "id": 4,
+                    "id": 6,
                     "output_name": "output"
                 }
             },
@@ -819,8 +1556,8 @@
                 }
             ],
             "position": {
-                "left": 1851.80078125,
-                "top": 235.52643658225833
+                "left": 1951.315204194898,
+                "top": 451.06739839657456
             },
             "post_job_actions": {
                 "HideDatasetActionmodel": {
@@ -890,6 +1627,11 @@
             "when": null,
             "workflow_outputs": [
                 {
+                    "label": "GenomeScope transformed linear plot (paternal)",
+                    "output_name": "transformed_linear_plot",
+                    "uuid": "2b73811b-e91e-49c6-a122-5065977f9f0e"
+                },
+                {
                     "label": "GenomeScope linear plot (paternal)",
                     "output_name": "linear_plot",
                     "uuid": "bba131ee-0c54-404a-87f8-067faebea46b"
@@ -903,30 +1645,118 @@
                     "label": "GenomeScope log plot (paternal)",
                     "output_name": "log_plot",
                     "uuid": "cc24ee83-d9ee-4759-9353-1be2e7dbb253"
-                },
-                {
-                    "label": "GenomeScope transformed linear plot (paternal)",
-                    "output_name": "transformed_linear_plot",
-                    "uuid": "2b73811b-e91e-49c6-a122-5065977f9f0e"
                 }
             ]
         },
-        "15": {
+        "22": {
+            "annotation": "",
+            "content_id": "param_value_from_file",
+            "errors": null,
+            "id": 22,
+            "input_connections": {
+                "input1": {
+                    "id": 18,
+                    "output_name": "Homozygous kmer coverage"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Parse parameter value",
+            "outputs": [
+                {
+                    "name": "float_param",
+                    "type": "expression.json"
+                }
+            ],
+            "position": {
+                "left": 3261.77304260939,
+                "top": 1018.3067151492734
+            },
+            "post_job_actions": {
+                "RenameDatasetActionfloat_param": {
+                    "action_arguments": {
+                        "newname": "Homozygous Read Coverage"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "float_param"
+                },
+                "TagDatasetActionfloat_param": {
+                    "action_arguments": {
+                        "tags": "homozygous_coverage"
+                    },
+                    "action_type": "TagDatasetAction",
+                    "output_name": "float_param"
+                }
+            },
+            "tool_id": "param_value_from_file",
+            "tool_state": "{\"input1\": {\"__class__\": \"ConnectedValue\"}, \"param_type\": \"float\", \"remove_newlines\": true, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.0",
+            "type": "tool",
+            "uuid": "80358d92-c7f0-4cfb-b63e-6f792c09bfba",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Homozygous Read Coverage",
+                    "output_name": "float_param",
+                    "uuid": "229edc98-1237-4510-9083-00326dadd487"
+                }
+            ]
+        },
+        "23": {
+            "annotation": "",
+            "content_id": "param_value_from_file",
+            "errors": null,
+            "id": 23,
+            "input_connections": {
+                "input1": {
+                    "id": 19,
+                    "output_name": "Estimated Genome Size File"
+                }
+            },
+            "inputs": [],
+            "label": "Estimated Genome Size",
+            "name": "Parse parameter value",
+            "outputs": [
+                {
+                    "name": "integer_param",
+                    "type": "expression.json"
+                }
+            ],
+            "position": {
+                "left": 3141.7398502645415,
+                "top": 1309.5305667273692
+            },
+            "post_job_actions": {
+                "HideDatasetActioninteger_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "integer_param"
+                }
+            },
+            "tool_id": "param_value_from_file",
+            "tool_state": "{\"input1\": {\"__class__\": \"ConnectedValue\"}, \"param_type\": \"integer\", \"remove_newlines\": true, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.0",
+            "type": "tool",
+            "uuid": "5963352f-7796-4345-bcbf-77f1d0b945a0",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "24": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0.1+galaxy0",
             "errors": null,
-            "id": 15,
+            "id": 24,
             "input_connections": {
                 "input": {
-                    "id": 13,
+                    "id": 20,
                     "output_name": "read_db_hist"
                 },
                 "kmer_length": {
-                    "id": 5,
+                    "id": 9,
                     "output_name": "integer_param"
                 },
                 "ploidy": {
-                    "id": 4,
+                    "id": 6,
                     "output_name": "output"
                 }
             },
@@ -960,8 +1790,8 @@
                 }
             ],
             "position": {
-                "left": 1841.77734375,
-                "top": 1187.106299999974
+                "left": 1941.291766694898,
+                "top": 1402.6472618142902
             },
             "post_job_actions": {
                 "HideDatasetActionmodel": {
@@ -1036,19 +1866,142 @@
                     "uuid": "ed208558-8a6f-4405-bd9c-7e6343e9f71d"
                 },
                 {
-                    "label": "GenomeScope log plot (maternal)",
-                    "output_name": "log_plot",
-                    "uuid": "e2ef48ab-bbb8-4a89-8d10-4de7998db481"
-                },
-                {
                     "label": "GenomeScope transformed log plot (maternal)",
                     "output_name": "transformed_log_plot",
                     "uuid": "ebe91290-a02b-498d-adb6-75fab0739fbf"
                 },
                 {
+                    "label": "GenomeScope log plot (maternal)",
+                    "output_name": "log_plot",
+                    "uuid": "e2ef48ab-bbb8-4a89-8d10-4de7998db481"
+                },
+                {
                     "label": "GenomeScope transformed linear plot (maternal)",
                     "output_name": "transformed_linear_plot",
                     "uuid": "7ecb789d-57e3-40f2-81ff-f853b444609b"
+                }
+            ]
+        },
+        "25": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/richard-burhans/rdeval/rdeval/0.0.7+galaxy4",
+            "errors": null,
+            "id": 25,
+            "input_connections": {
+                "expected_gsize": {
+                    "id": 23,
+                    "output_name": "integer_param"
+                },
+                "input_reads": {
+                    "id": 2,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool rdeval",
+                    "name": "input_filter"
+                },
+                {
+                    "description": "runtime parameter for tool rdeval",
+                    "name": "input_filter"
+                }
+            ],
+            "label": "Rdeval Stats",
+            "name": "rdeval",
+            "outputs": [
+                {
+                    "name": "stats_outfile",
+                    "type": "tabular"
+                },
+                {
+                    "name": "rd_outfile",
+                    "type": "binary"
+                }
+            ],
+            "position": {
+                "left": 3388.4940568325887,
+                "top": 1559.6514120579468
+            },
+            "post_job_actions": {
+                "TagDatasetActionstats_outfile": {
+                    "action_arguments": {
+                        "tags": "reads_stats"
+                    },
+                    "action_type": "TagDatasetAction",
+                    "output_name": "stats_outfile"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/richard-burhans/rdeval/rdeval/0.0.7+galaxy4",
+            "tool_shed_repository": {
+                "changeset_revision": "fdad714d7caf",
+                "name": "rdeval",
+                "owner": "richard-burhans",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"expected_gsize\": {\"__class__\": \"ConnectedValue\"}, \"input_compress\": {\"compress_selector\": \"no\", \"__current_case__\": 0}, \"input_filter\": {\"include_list\": {\"__class__\": \"RuntimeValue\"}, \"exclude_list\": {\"__class__\": \"RuntimeValue\"}, \"filter_expression\": {\"filter_selector\": \"no_exp\", \"__current_case__\": 0}}, \"input_reads\": {\"__class__\": \"ConnectedValue\"}, \"input_subsample\": {\"sample\": \"1.0\", \"random_seed\": {\"seed_selector\": \"no\", \"__current_case__\": 0}}, \"output_options\": {\"stats_flavor\": {\"flavor_selector\": \"stats\", \"__current_case__\": 0, \"sequence_report\": false}, \"output_type\": {\"type_selector\": \"rd_file\", \"__current_case__\": 1, \"md5\": false}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.0.7+galaxy4",
+            "type": "tool",
+            "uuid": "83c3f27a-87d9-4c9d-8d34-5854ba1c5ba7",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Reads Statistics",
+                    "output_name": "stats_outfile",
+                    "uuid": "6fe044ee-d7d5-42e2-8588-f7631d079a0f"
+                }
+            ]
+        },
+        "26": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/richard-burhans/rdeval/rdeval_report/0.0.7+galaxy4",
+            "errors": null,
+            "id": 26,
+            "input_connections": {
+                "input_files": {
+                    "id": 25,
+                    "output_name": "rd_outfile"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "rdeval report",
+            "outputs": [
+                {
+                    "name": "outfile",
+                    "type": "html"
+                }
+            ],
+            "position": {
+                "left": 3699.498505597497,
+                "top": 1360.6346252059714
+            },
+            "post_job_actions": {
+                "TagDatasetActionoutfile": {
+                    "action_arguments": {
+                        "tags": "rdeval_report"
+                    },
+                    "action_type": "TagDatasetAction",
+                    "output_name": "outfile"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/richard-burhans/rdeval/rdeval_report/0.0.7+galaxy4",
+            "tool_shed_repository": {
+                "changeset_revision": "fdad714d7caf",
+                "name": "rdeval",
+                "owner": "richard-burhans",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"input_files\": {\"__class__\": \"ConnectedValue\"}, \"interactive\": false, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.0.7+galaxy4",
+            "type": "tool",
+            "uuid": "4ec31730-3a5b-488b-a14d-2b3b75630fe0",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Rdeval report",
+                    "output_name": "outfile",
+                    "uuid": "ed229e2c-8395-4885-a343-22608387328a"
                 }
             ]
         }
@@ -1057,6 +2010,6 @@
         "Reviewed",
         "VGP"
     ],
-    "uuid": "a8867bbf-2a39-4cf1-b530-eb5650961c78",
-    "version": 6
+    "uuid": "402be999-be93-4456-9e83-fc54dfdce7cf",
+    "version": 18
 }
