@@ -375,8 +375,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1905.2967650559456,
-                "top": 1207.8841259162627
+                "left": 1918.13544482902,
+                "top": 1216.402438671774
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": \"compleasm_s2_busco\"}",
@@ -3570,7 +3570,7 @@
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 24,
-                    "output_name": "Busco s2 Path"
+                    "output_name": "Compleasm s2 Path"
                 }
             },
             "inputs": [],
@@ -3583,8 +3583,8 @@
                 }
             ],
             "position": {
-                "left": 1905.1126162698831,
-                "top": 1042.4646188265754
+                "left": 1911.0928053693224,
+                "top": 1004.7058778823069
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -3719,7 +3719,7 @@
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 24,
-                    "output_name": "Busco s2 Path"
+                    "output_name": "Compleasm s2 Path"
                 }
             },
             "inputs": [],
@@ -3732,8 +3732,8 @@
                 }
             ],
             "position": {
-                "left": 1908.8100287426512,
-                "top": 1337.6653890189732
+                "left": 1911.6328466002637,
+                "top": 1310.8694297765194
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -3823,7 +3823,7 @@
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 24,
-                    "output_name": "Busco s2 Path"
+                    "output_name": "Compleasm s2 Path"
                 }
             },
             "inputs": [],
@@ -3927,7 +3927,7 @@
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 24,
-                    "output_name": "Busco s2 Path"
+                    "output_name": "Compleasm s2 Path"
                 }
             },
             "inputs": [],
@@ -4389,6 +4389,6 @@
         }
     },
     "tags": [],
-    "uuid": "d0f7166a-33d7-4eb7-a375-d7665bc6bdeb",
-    "version": 11
+    "uuid": "790559b1-8589-4274-a6ed-5309b400b44a",
+    "version": 1
 }
