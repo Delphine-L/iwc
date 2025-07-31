@@ -113,8 +113,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 46.819516882967704,
-                "top": 290.89214423418406
+                "left": 30.75863195497301,
+                "top": 286.5864810969107
             },
             "tool_id": null,
             "tool_state": "{\"validators\": [], \"parameter_type\": \"directory_uri\", \"optional\": false}",
@@ -248,8 +248,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1490.5025511773356,
-                "top": 1040.769959445485
+                "left": 1476.019866854824,
+                "top": 879.5552201720392
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"fasta\"], \"tag\": \"merged_haps\"}",
@@ -260,29 +260,29 @@
             "workflow_outputs": []
         },
         "9": {
-            "annotation": "",
+            "annotation": "Select yes if the decontaminated assembly files have the format fasta, no if they have the format fasta.gz .",
             "content_id": null,
             "errors": null,
             "id": 9,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "Haplotype 1"
+                    "description": "Select yes if the decontaminated assembly files have the format fasta, no if they have the format fasta.gz .",
+                    "name": "Do you need to compress the assembly fasta files? "
                 }
             ],
-            "label": "Haplotype 1",
-            "name": "Input dataset",
+            "label": "Do you need to compress the assembly fasta files? ",
+            "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 1493.1651498856884,
-                "top": 1466.1199766916543
+                "left": 1493.703081981138,
+                "top": 1069.4479430836807
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"fasta\"], \"tag\": \"\"}",
+            "tool_state": "{\"default\": false, \"validators\": [], \"parameter_type\": \"boolean\", \"optional\": false}",
             "tool_version": null,
-            "type": "data_input",
-            "uuid": "88b8401d-f59e-4475-af19-c37d01e5e71e",
+            "type": "parameter_input",
+            "uuid": "76720b88-0e70-44c6-99e3-ded379e23a3f",
             "when": null,
             "workflow_outputs": []
         },
@@ -295,6 +295,33 @@
             "inputs": [
                 {
                     "description": "",
+                    "name": "Haplotype 1"
+                }
+            ],
+            "label": "Haplotype 1",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1496.6744931614091,
+                "top": 1536.7727075971632
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"fasta\", \" fasta.gz\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "88b8401d-f59e-4475-af19-c37d01e5e71e",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "11": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 11,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
                     "name": "Haplotype 2"
                 }
             ],
@@ -302,41 +329,14 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1511.31504886099,
-                "top": 1947.042577019014
+                "left": 1494.4115887409394,
+                "top": 1943.9454095945841
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"fasta\"], \"tag\": \"\"}",
+            "tool_state": "{\"optional\": false, \"format\": [\"fasta\", \" fasta.gz\"], \"tag\": \"\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "76cdd665-6992-4e80-995e-14fe2687b29a",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "11": {
-            "annotation": "Select yes if the decontaminated assembly files have the format fasta, no if they have the format fasta.gz .",
-            "content_id": null,
-            "errors": null,
-            "id": 11,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Select yes if the decontaminated assembly files have the format fasta, no if they have the format fasta.gz .",
-                    "name": "Do you need to compress the assembly fasta files? "
-                }
-            ],
-            "label": "Do you need to compress the assembly fasta files? ",
-            "name": "Input parameter",
-            "outputs": [],
-            "position": {
-                "left": 1503.5159029440913,
-                "top": 2045.0339782905694
-            },
-            "tool_id": null,
-            "tool_state": "{\"default\": false, \"validators\": [], \"parameter_type\": \"boolean\", \"optional\": false}",
-            "tool_version": null,
-            "type": "parameter_input",
-            "uuid": "76720b88-0e70-44c6-99e3-ded379e23a3f",
             "when": null,
             "workflow_outputs": []
         },
@@ -667,11 +667,11 @@
             "id": 14,
             "input_connections": {
                 "input": {
-                    "id": 9,
+                    "id": 10,
                     "output_name": "output"
                 },
                 "when": {
-                    "id": 11,
+                    "id": 9,
                     "output_name": "output"
                 }
             },
@@ -716,11 +716,11 @@
             "id": 15,
             "input_connections": {
                 "input": {
-                    "id": 10,
+                    "id": 11,
                     "output_name": "output"
                 },
                 "when": {
-                    "id": 11,
+                    "id": 9,
                     "output_name": "output"
                 }
             },
@@ -940,8 +940,8 @@
                 }
             ],
             "position": {
-                "left": 1487.0961373078787,
-                "top": 716.5567239403966
+                "left": 1487.0872588943155,
+                "top": 539.0295622202352
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1046,8 +1046,8 @@
                 }
             ],
             "position": {
-                "left": 1489.2100331291924,
-                "top": 1153.2030918660196
+                "left": 1500.5714820791427,
+                "top": 1219.4185695553842
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1099,8 +1099,8 @@
                 }
             ],
             "position": {
-                "left": 1504.1125314206322,
-                "top": 1607.7228820257021
+                "left": 1496.7572060804064,
+                "top": 1625.6911129075227
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1134,7 +1134,7 @@
                     "output_name": "output_file"
                 },
                 "style_cond|type_cond|pick_from_1|value": {
-                    "id": 9,
+                    "id": 10,
                     "output_name": "output"
                 }
             },
@@ -1165,7 +1165,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"ConnectedValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.2.0",
             "type": "tool",
             "uuid": "5c38a643-7dd0-46ca-b4fc-56aa2b4a209b",
@@ -1183,7 +1183,7 @@
                     "output_name": "output_file"
                 },
                 "style_cond|type_cond|pick_from_1|value": {
-                    "id": 10,
+                    "id": 11,
                     "output_name": "output"
                 }
             },
@@ -1214,7 +1214,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"ConnectedValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.2.0",
             "type": "tool",
             "uuid": "d395fa04-c14e-4f46-9e82-5141c363ca24",
@@ -1304,7 +1304,7 @@
             "post_job_actions": {
                 "RenameDatasetActionout": {
                     "action_arguments": {
-                        "newname": "Precuration files exported to ${d_uri}"
+                        "newname": "Precuration files exported to  ${Species Name}/${Assembly ID}"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "out"
@@ -1318,14 +1318,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Precuration files exported to ${d_uri}",
+                    "label": "Precuration files exported to ${Species Name}/${Assembly ID}",
                     "output_name": "out",
-                    "uuid": "d01c6ca9-fe45-4881-8ff3-c65af35a4bb1"
+                    "uuid": "71dbe566-c7a5-45e3-8dcd-f21529a547b0"
                 }
             ]
         }
     },
     "tags": [],
-    "uuid": "17891e73-9a39-4a68-8f66-e300e5b16ec7",
-    "version": 1
+    "uuid": "0047d7b4-cd78-4f4b-b579-7bf38aaccf9e",
+    "version": 6
 }
