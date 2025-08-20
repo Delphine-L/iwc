@@ -69,7 +69,7 @@
             "id": 2,
             "input_connections": {},
             "inputs": [],
-            "label": "Method : Standard",
+            "label": "Method",
             "name": "Compose text parameter value",
             "outputs": [
                 {
@@ -78,8 +78,8 @@
                 }
             ],
             "position": {
-                "left": 66.58351264837472,
-                "top": 477.088307896888
+                "left": 70,
+                "top": 480
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
@@ -118,8 +118,8 @@
                 }
             ],
             "position": {
-                "left": 106.20894456932518,
-                "top": 572.5909556415593
+                "left": 100,
+                "top": 580
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
@@ -783,7 +783,7 @@
                 "top": 2727.6875
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": \"merqury_c_qv\", \"collection_type\": \"list\"}",
+            "tool_state": "{\"optional\": false, \"tag\": \"merqury_c_qv\", \"collection_type\": \"list\", \"fields\": null}",
             "tool_version": null,
             "type": "data_collection_input",
             "uuid": "cc253a87-cb36-4cae-a867-9ffa4a8cb1de",
@@ -837,7 +837,7 @@
                 "top": 2880.203125
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": \"merqury_c_png\", \"collection_type\": \"list\"}",
+            "tool_state": "{\"optional\": false, \"tag\": \"merqury_c_png\", \"collection_type\": \"list\", \"fields\": null}",
             "tool_version": null,
             "type": "data_collection_input",
             "uuid": "ed04ef99-89f7-4d37-b80b-f99f3a52923f",
@@ -864,7 +864,7 @@
                 "top": 3044.34375
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": \"merqury_c_stats\", \"collection_type\": \"list\"}",
+            "tool_state": "{\"optional\": false, \"tag\": \"merqury_c_stats\", \"collection_type\": \"list\", \"fields\": null}",
             "tool_version": null,
             "type": "data_collection_input",
             "uuid": "4b218105-97ac-4e73-a188-36823a48c3f5",
@@ -1011,7 +1011,7 @@
                         "name": "Input parameter",
                         "outputs": [],
                         "position": {
-                            "left": 0.0,
+                            "left": 0,
                             "top": 1744.9148611636417
                         },
                         "tool_id": null,
@@ -1092,8 +1092,8 @@
                         "name": "Input parameter",
                         "outputs": [],
                         "position": {
-                            "left": 3.910500647240042,
-                            "top": 2041.5098012641213
+                            "left": 20,
+                            "top": 2060
                         },
                         "tool_id": null,
                         "tool_state": "{\"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
@@ -1408,8 +1408,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1263.6733559531033,
-                            "top": 1382.584401411765
+                            "left": 1320,
+                            "top": 1430
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1839,8 +1839,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1686.4395901180558,
-                            "top": 2547.5165528350144
+                            "left": 1660,
+                            "top": 2570
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1901,8 +1901,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1991.8492322053905,
-                            "top": 2545.1525323236765
+                            "left": 2000,
+                            "top": 2510
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1963,8 +1963,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1682.7821109186364,
-                            "top": 3067.655804645651
+                            "left": 1660,
+                            "top": 3070
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -2899,7 +2899,7 @@
                         ],
                         "position": {
                             "left": 3217.6111565511283,
-                            "top": 0.0
+                            "top": 0
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -2964,8 +2964,8 @@
                             }
                         ],
                         "position": {
-                            "left": 3212.92256007387,
-                            "top": 332.80688955083156
+                            "left": 3230,
+                            "top": 370
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -3154,8 +3154,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1685.5948295520323,
-                            "top": 2829.374554645651
+                            "left": 1670,
+                            "top": 2820
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -3220,8 +3220,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1985.6110781180817,
-                            "top": 2837.9183738190677
+                            "left": 1990,
+                            "top": 2840
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -3259,7 +3259,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "c9eeaa83-0cc8-4ec2-9f40-5e826208b45a"
+                "uuid": "01df6163-d11f-44d8-a068-e2452a655dfa"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -3630,7 +3630,7 @@
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
                     "action_arguments": {
-                        "newname": "species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_qv"
+                        "newname": "species/${Species Name}/${Species ID}/assembly_vgp_standard_2.0/evaluation/merqury/${Species ID}_qv"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output"
@@ -3722,7 +3722,7 @@
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
                     "action_arguments": {
-                        "newname": "species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_png"
+                        "newname": "species/${Species Name}/${Species ID}/assembly_vgp_standard_2.0/evaluation/merqury/${Species ID}_png"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output"
@@ -3769,7 +3769,7 @@
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
                     "action_arguments": {
-                        "newname": "species/${Species Name}/${Species ID}/assembly_vgp_trio_2.0/evaluation/merqury/${Species ID}_stats"
+                        "newname": "species/${Species Name}/${Species ID}/assembly_vgp_standard_2.0/evaluation/merqury/${Species ID}_stats"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output"
@@ -4833,7 +4833,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_c2.fasta.gz\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_c2.gfa.gz\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "6b2787ba-04f4-4cea-893c-23713b32f2fe",
@@ -5380,6 +5380,6 @@
         }
     },
     "tags": [],
-    "uuid": "c1dcd728-d7a4-4103-92a9-a075ea7012ab",
-    "version": 14
+    "uuid": "bfa68ef9-6572-4b25-8042-0a27baf7dd10",
+    "version": 7
 }
