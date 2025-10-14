@@ -198,37 +198,10 @@
             "workflow_outputs": []
         },
         "7": {
-            "annotation": "With dataset tag : busco_s2_full ",
-            "content_id": null,
-            "errors": null,
-            "id": 7,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : busco_s2_full ",
-                    "name": "Busco s2 Full Table"
-                }
-            ],
-            "label": "Busco s2 Full Table",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1289.6495168787803,
-                "top": 1180.3712867059382
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"tabular\"], \"tag\": \"busco_s2_full\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "280abb7b-9e52-42d0-8269-af8d6da75c98",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "8": {
             "annotation": "With dataset tag : s2_agp ",
             "content_id": null,
             "errors": null,
-            "id": 8,
+            "id": 7,
             "input_connections": {},
             "inputs": [
                 {
@@ -251,65 +224,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "9": {
-            "annotation": "With dataset tag : busco_s2_summ ",
-            "content_id": null,
-            "errors": null,
-            "id": 9,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : busco_s2_summ ",
-                    "name": "Busco s2 short summary"
-                }
-            ],
-            "label": "Busco s2 short summary",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1527.9822035004595,
-                "top": 1176.593514890774
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"txt\"], \"tag\": \"busco_s2_summ\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "9368cf07-dcbd-41ce-a2f5-6e33e111e585",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "10": {
-            "annotation": "With dataset tag : busco_s2_missing ",
-            "content_id": null,
-            "errors": null,
-            "id": 10,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : busco_s2_missing ",
-                    "name": "Busco s2 missing buscos"
-                }
-            ],
-            "label": "Busco s2 missing buscos",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1289.9822035004595,
-                "top": 1481.468514890774
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"tabular\"], \"tag\": \"busco_s2_missing\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "77441af5-f525-492a-8f6b-bba0b1909084",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "11": {
+        "8": {
             "annotation": "With dataset tag : pretext_s1 ",
             "content_id": null,
             "errors": null,
-            "id": 11,
+            "id": 8,
             "input_connections": {},
             "inputs": [
                 {
@@ -332,38 +251,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "12": {
-            "annotation": "With dataset tag : busco_s2_img ",
-            "content_id": null,
-            "errors": null,
-            "id": 12,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "With dataset tag : busco_s2_img ",
-                    "name": "Busco s2 Summary Image"
-                }
-            ],
-            "label": "Busco s2 Summary Image",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1537.9483291395031,
-                "top": 1468.3353945861254
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"png\"], \"tag\": \"busco_s2_img\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "9ee81438-6c8e-4bba-9ca0-c06260e71ebd",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "13": {
+        "9": {
             "annotation": "With dataset tag : compleasm_s2_busco",
             "content_id": null,
             "errors": null,
-            "id": 13,
+            "id": 9,
             "input_connections": {},
             "inputs": [
                 {
@@ -386,11 +278,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "14": {
+        "10": {
             "annotation": "With dataset tag : pretext_s2 ",
             "content_id": null,
             "errors": null,
-            "id": 14,
+            "id": 10,
             "input_connections": {},
             "inputs": [
                 {
@@ -413,11 +305,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "15": {
+        "11": {
             "annotation": "With dataset tag : compleasm_s2_full",
             "content_id": null,
             "errors": null,
-            "id": 15,
+            "id": 11,
             "input_connections": {},
             "inputs": [
                 {
@@ -429,8 +321,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1918.4802461361792,
-                "top": 1509.2681567849204
+                "left": 1918.9360462531138,
+                "top": 1492.8744516424865
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"tag\": \"compleasm_s2_full\"}",
@@ -440,11 +332,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "16": {
+        "12": {
             "annotation": "With dataset tag : pretextmap_s1 ",
             "content_id": null,
             "errors": null,
-            "id": 16,
+            "id": 12,
             "input_connections": {},
             "inputs": [
                 {
@@ -467,11 +359,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "17": {
+        "13": {
             "annotation": "With dataset tag : compleasm_s2_miniprot",
             "content_id": null,
             "errors": null,
-            "id": 17,
+            "id": 13,
             "input_connections": {},
             "inputs": [
                 {
@@ -494,11 +386,38 @@
             "when": null,
             "workflow_outputs": []
         },
-        "18": {
+        "14": {
+            "annotation": "With dataset tag : compleasm_s2_summary",
+            "content_id": null,
+            "errors": null,
+            "id": 14,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "With dataset tag : compleasm_s2_summary",
+                    "name": "Compleasm s2 Summary"
+                }
+            ],
+            "label": "Compleasm s2 Summary",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1924.6125593188412,
+                "top": 1767.4643266142607
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": \"compleasm_s2_summary\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "26874413-20ab-4f34-acea-9a50415fe474",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "15": {
             "annotation": "With dataset tag : pretextmap_s2 ",
             "content_id": null,
             "errors": null,
-            "id": 18,
+            "id": 15,
             "input_connections": {},
             "inputs": [
                 {
@@ -521,11 +440,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "19": {
+        "16": {
             "annotation": "With dataset tag : compleasm_s2_protein",
             "content_id": null,
             "errors": null,
-            "id": 19,
+            "id": 16,
             "input_connections": {},
             "inputs": [
                 {
@@ -548,11 +467,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "20": {
+        "17": {
             "annotation": "With dataset tag : merged_alignments_s1 ",
             "content_id": null,
             "errors": null,
-            "id": 20,
+            "id": 17,
             "input_connections": {},
             "inputs": [
                 {
@@ -575,11 +494,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "21": {
+        "18": {
             "annotation": "With dataset tag : gfa_stats_asm_s2",
             "content_id": null,
             "errors": null,
-            "id": 21,
+            "id": 18,
             "input_connections": {},
             "inputs": [
                 {
@@ -602,11 +521,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "22": {
+        "19": {
             "annotation": "With dataset tag : s2_log ",
             "content_id": null,
             "errors": null,
-            "id": 22,
+            "id": 19,
             "input_connections": {},
             "inputs": [
                 {
@@ -629,11 +548,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "23": {
+        "20": {
             "annotation": "With dataset tag : s2_gfa",
             "content_id": null,
             "errors": null,
-            "id": 23,
+            "id": 20,
             "input_connections": {},
             "inputs": [
                 {
@@ -656,9 +575,9 @@
             "when": null,
             "workflow_outputs": []
         },
-        "24": {
+        "21": {
             "annotation": "",
-            "id": 24,
+            "id": 21,
             "input_connections": {
                 "Assembly Method": {
                     "id": 2,
@@ -2971,9 +2890,9 @@
             "when": null,
             "workflow_outputs": []
         },
-        "25": {
+        "22": {
             "annotation": "",
-            "id": 25,
+            "id": 22,
             "input_connections": {
                 "0:Input parameter": {
                     "id": 4,
@@ -3163,11 +3082,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "26": {
+        "23": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file/0.1.0",
             "errors": null,
-            "id": 26,
+            "id": 23,
             "input_connections": {
                 "input": {
                     "id": 6,
@@ -3215,14 +3134,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "27": {
+        "24": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file/0.1.0",
             "errors": null,
-            "id": 27,
+            "id": 24,
             "input_connections": {
                 "input": {
-                    "id": 23,
+                    "id": 20,
                     "output_name": "output"
                 }
             },
@@ -3267,163 +3186,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "28": {
+        "25": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 28,
+            "id": 25,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
-                    "output_name": "Busco s2 Path"
-                }
-            },
-            "inputs": [],
-            "label": "Busco s2 Full Table path",
-            "name": "Compose text parameter value",
-            "outputs": [
-                {
-                    "name": "out1",
-                    "type": "expression.json"
-                }
-            ],
-            "position": {
-                "left": 1288.8415785004595,
-                "top": 1018.4060148907739
-            },
-            "post_job_actions": {
-                "HideDatasetActionout1": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "out1"
-                },
-                "RenameDatasetActionout1": {
-                    "action_arguments": {
-                        "newname": "Salsa AGP output path"
-                    },
-                    "action_type": "RenameDatasetAction",
-                    "output_name": "out1"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "tool_shed_repository": {
-                "changeset_revision": "e188c9826e0f",
-                "name": "compose_text_param",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_full_table.tab\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.1.1",
-            "type": "tool",
-            "uuid": "1661143a-90fd-4f17-921d-e766099f383c",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "29": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "errors": null,
-            "id": 29,
-            "input_connections": {
-                "components_0|param_type|component_value": {
-                    "id": 24,
-                    "output_name": "Busco s2 Path"
-                }
-            },
-            "inputs": [],
-            "label": "Busco s2 missing buscos path",
-            "name": "Compose text parameter value",
-            "outputs": [
-                {
-                    "name": "out1",
-                    "type": "expression.json"
-                }
-            ],
-            "position": {
-                "left": 1279.4665785004595,
-                "top": 1311.062264890774
-            },
-            "post_job_actions": {
-                "HideDatasetActionout1": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "out1"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "tool_shed_repository": {
-                "changeset_revision": "e188c9826e0f",
-                "name": "compose_text_param",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_missing_buscos.tab\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.1.1",
-            "type": "tool",
-            "uuid": "ae13803e-0047-4c8c-9d10-326069a23c15",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "30": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "errors": null,
-            "id": 30,
-            "input_connections": {
-                "components_0|param_type|component_value": {
-                    "id": 24,
-                    "output_name": "Busco s2 Path"
-                }
-            },
-            "inputs": [],
-            "label": "Busco s2 short summary path",
-            "name": "Compose text parameter value",
-            "outputs": [
-                {
-                    "name": "out1",
-                    "type": "expression.json"
-                }
-            ],
-            "position": {
-                "left": 1530.5759535004595,
-                "top": 1014.9060148907739
-            },
-            "post_job_actions": {
-                "HideDatasetActionout1": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "out1"
-                },
-                "RenameDatasetActionout1": {
-                    "action_arguments": {
-                        "newname": "Salsa AGP output path"
-                    },
-                    "action_type": "RenameDatasetAction",
-                    "output_name": "out1"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "tool_shed_repository": {
-                "changeset_revision": "e188c9826e0f",
-                "name": "compose_text_param",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_short_summary.txt\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.1.1",
-            "type": "tool",
-            "uuid": "f8d0188f-e1f1-4e0b-a4cb-6ced98d78127",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "31": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "errors": null,
-            "id": 31,
-            "input_connections": {
-                "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Yahs Path"
                 },
                 "components_1|param_type|component_value": {
@@ -3472,59 +3242,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "32": {
+        "26": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 32,
+            "id": 26,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
-                    "output_name": "Busco s2 Path"
-                }
-            },
-            "inputs": [],
-            "label": "Busco s2 Summary Image path",
-            "name": "Compose text parameter value",
-            "outputs": [
-                {
-                    "name": "out1",
-                    "type": "expression.json"
-                }
-            ],
-            "position": {
-                "left": 1535.3728285004595,
-                "top": 1300.765389890774
-            },
-            "post_job_actions": {
-                "HideDatasetActionout1": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "out1"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "tool_shed_repository": {
-                "changeset_revision": "e188c9826e0f",
-                "name": "compose_text_param",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_summary_image.png\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.1.1",
-            "type": "tool",
-            "uuid": "e6599349-b9ae-49a0-9b31-25adc7f673d0",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "33": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-            "errors": null,
-            "id": 33,
-            "input_connections": {
-                "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Pretext  s1 path"
                 }
             },
@@ -3562,14 +3287,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "34": {
+        "27": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 34,
+            "id": 27,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Compleasm s2 Path"
                 }
             },
@@ -3614,14 +3339,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "35": {
+        "28": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 35,
+            "id": 28,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Pretext s2 path"
                 }
             },
@@ -3666,14 +3391,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "36": {
+        "29": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 36,
+            "id": 29,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Pretext  s1 path"
                 }
             },
@@ -3711,14 +3436,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "37": {
+        "30": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 37,
+            "id": 30,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Compleasm s2 Path"
                 }
             },
@@ -3763,14 +3488,66 @@
             "when": null,
             "workflow_outputs": []
         },
-        "38": {
+        "31": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 38,
+            "id": 31,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
+                    "output_name": "Compleasm s2 Path"
+                }
+            },
+            "inputs": [],
+            "label": "Compleasm s2 Summary path",
+            "name": "Compose text parameter value",
+            "outputs": [
+                {
+                    "name": "out1",
+                    "type": "expression.json"
+                }
+            ],
+            "position": {
+                "left": 1922.2949529155424,
+                "top": 1597.1008942460996
+            },
+            "post_job_actions": {
+                "HideDatasetActionout1": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out1"
+                },
+                "RenameDatasetActionout1": {
+                    "action_arguments": {
+                        "newname": "Salsa AGP output path"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "out1"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "tool_shed_repository": {
+                "changeset_revision": "e188c9826e0f",
+                "name": "compose_text_param",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"_summary.txt\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.1",
+            "type": "tool",
+            "uuid": "80fb5776-ee3a-4b34-b84d-ced5bd3a31b5",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "32": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "errors": null,
+            "id": 32,
+            "input_connections": {
+                "components_0|param_type|component_value": {
+                    "id": 21,
                     "output_name": "Pretext s2 path"
                 }
             },
@@ -3815,14 +3592,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "39": {
+        "33": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 39,
+            "id": 33,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Compleasm s2 Path"
                 }
             },
@@ -3867,14 +3644,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "40": {
+        "34": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 40,
+            "id": 34,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Pretext  s1 path"
                 }
             },
@@ -3919,14 +3696,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "41": {
+        "35": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 41,
+            "id": 35,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Compleasm s2 Path"
                 }
             },
@@ -3971,14 +3748,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "42": {
+        "36": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 42,
+            "id": 36,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "gfastats s2 path"
                 }
             },
@@ -4016,14 +3793,14 @@
                 }
             ]
         },
-        "43": {
+        "37": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 43,
+            "id": 37,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Yahs Path"
                 }
             },
@@ -4068,14 +3845,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "44": {
+        "38": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 44,
+            "id": 38,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Root Path"
                 },
                 "components_1|param_type|component_value": {
@@ -4091,7 +3868,7 @@
                     "output_name": "output"
                 },
                 "components_7|param_type|component_value": {
-                    "id": 25,
+                    "id": 22,
                     "output_name": "text_param"
                 }
             },
@@ -4136,14 +3913,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "45": {
+        "39": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 45,
+            "id": 39,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 24,
+                    "id": 21,
                     "output_name": "Root Path"
                 },
                 "components_1|param_type|component_value": {
@@ -4159,7 +3936,7 @@
                     "output_name": "output"
                 },
                 "components_7|param_type|component_value": {
-                    "id": 25,
+                    "id": 22,
                     "output_name": "text_param"
                 }
             },
@@ -4204,158 +3981,134 @@
             "when": null,
             "workflow_outputs": []
         },
-        "46": {
+        "40": {
             "annotation": "",
             "content_id": "export_remote",
             "errors": null,
-            "id": 46,
+            "id": 40,
             "input_connections": {
                 "d_uri": {
                     "id": 5,
                     "output_name": "output"
                 },
                 "export_type|datasets_0|infile": {
-                    "id": 26,
+                    "id": 23,
                     "output_name": "output_file"
                 },
                 "export_type|datasets_0|name": {
-                    "id": 44,
+                    "id": 38,
                     "output_name": "out1"
                 },
                 "export_type|datasets_10|infile": {
-                    "id": 20,
-                    "output_name": "output"
-                },
-                "export_type|datasets_10|name": {
-                    "id": 40,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_11|infile": {
-                    "id": 21,
-                    "output_name": "output"
-                },
-                "export_type|datasets_11|name": {
-                    "id": 42,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_12|infile": {
-                    "id": 22,
-                    "output_name": "output"
-                },
-                "export_type|datasets_12|name": {
-                    "id": 43,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_13|infile": {
-                    "id": 27,
-                    "output_name": "output_file"
-                },
-                "export_type|datasets_13|name": {
-                    "id": 45,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_14|infile": {
-                    "id": 13,
-                    "output_name": "output"
-                },
-                "export_type|datasets_14|name": {
-                    "id": 34,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_15|infile": {
-                    "id": 15,
-                    "output_name": "output"
-                },
-                "export_type|datasets_15|name": {
-                    "id": 37,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_16|infile": {
                     "id": 17,
                     "output_name": "output"
                 },
-                "export_type|datasets_16|name": {
-                    "id": 39,
+                "export_type|datasets_10|name": {
+                    "id": 34,
                     "output_name": "out1"
                 },
-                "export_type|datasets_17|infile": {
-                    "id": 19,
-                    "output_name": "output"
-                },
-                "export_type|datasets_17|name": {
-                    "id": 41,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_1|infile": {
-                    "id": 8,
-                    "output_name": "output"
-                },
-                "export_type|datasets_1|name": {
-                    "id": 31,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_2|infile": {
-                    "id": 9,
-                    "output_name": "output"
-                },
-                "export_type|datasets_2|name": {
-                    "id": 30,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_3|infile": {
-                    "id": 7,
-                    "output_name": "output"
-                },
-                "export_type|datasets_3|name": {
-                    "id": 28,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_4|infile": {
-                    "id": 10,
-                    "output_name": "output"
-                },
-                "export_type|datasets_4|name": {
-                    "id": 29,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_5|infile": {
-                    "id": 12,
-                    "output_name": "output"
-                },
-                "export_type|datasets_5|name": {
-                    "id": 32,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_6|infile": {
-                    "id": 11,
-                    "output_name": "output"
-                },
-                "export_type|datasets_6|name": {
-                    "id": 33,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_7|infile": {
-                    "id": 14,
-                    "output_name": "output"
-                },
-                "export_type|datasets_7|name": {
-                    "id": 35,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_8|infile": {
-                    "id": 16,
-                    "output_name": "output"
-                },
-                "export_type|datasets_8|name": {
-                    "id": 36,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_9|infile": {
+                "export_type|datasets_11|infile": {
                     "id": 18,
                     "output_name": "output"
                 },
+                "export_type|datasets_11|name": {
+                    "id": 36,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_12|infile": {
+                    "id": 19,
+                    "output_name": "output"
+                },
+                "export_type|datasets_12|name": {
+                    "id": 37,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_13|infile": {
+                    "id": 24,
+                    "output_name": "output_file"
+                },
+                "export_type|datasets_13|name": {
+                    "id": 39,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_14|infile": {
+                    "id": 9,
+                    "output_name": "output"
+                },
+                "export_type|datasets_14|name": {
+                    "id": 27,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_1|infile": {
+                    "id": 7,
+                    "output_name": "output"
+                },
+                "export_type|datasets_1|name": {
+                    "id": 25,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_2|infile": {
+                    "id": 14,
+                    "output_name": "output"
+                },
+                "export_type|datasets_2|name": {
+                    "id": 31,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_3|infile": {
+                    "id": 13,
+                    "output_name": "output"
+                },
+                "export_type|datasets_3|name": {
+                    "id": 33,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_4|infile": {
+                    "id": 16,
+                    "output_name": "output"
+                },
+                "export_type|datasets_4|name": {
+                    "id": 35,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_5|infile": {
+                    "id": 11,
+                    "output_name": "output"
+                },
+                "export_type|datasets_5|name": {
+                    "id": 30,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_6|infile": {
+                    "id": 8,
+                    "output_name": "output"
+                },
+                "export_type|datasets_6|name": {
+                    "id": 26,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_7|infile": {
+                    "id": 10,
+                    "output_name": "output"
+                },
+                "export_type|datasets_7|name": {
+                    "id": 28,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_8|infile": {
+                    "id": 12,
+                    "output_name": "output"
+                },
+                "export_type|datasets_8|name": {
+                    "id": 29,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_9|infile": {
+                    "id": 15,
+                    "output_name": "output"
+                },
                 "export_type|datasets_9|name": {
-                    "id": 38,
+                    "id": 32,
                     "output_name": "out1"
                 }
             },
@@ -4374,7 +4127,7 @@
             },
             "post_job_actions": {},
             "tool_id": "export_remote",
-            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 4, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 5, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 6, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 7, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 8, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 9, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 10, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 11, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 12, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 13, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 14, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 15, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 16, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 17, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 4, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 5, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 6, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 7, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 8, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 9, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 10, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 11, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 12, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 13, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 14, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.1.0",
             "type": "tool",
             "uuid": "cc09e69a-8f63-4f2c-b4c4-f462d9d6492a",
@@ -4389,6 +4142,6 @@
         }
     },
     "tags": [],
-    "uuid": "790559b1-8589-4274-a6ed-5309b400b44a",
-    "version": 1
+    "uuid": "9d5a08fc-4c23-4769-8931-b98e89f881bb",
+    "version": 3
 }
