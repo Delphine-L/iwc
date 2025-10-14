@@ -1,6 +1,78 @@
 # Changelog
 
 
+## [3.1] - 2025-09-26
+
+### Changes
+
+- Duplications and alignments statistics now applied to alignements before filtering
+- Add duplications statistics on scaffold alignments
+- Remove BUSCO for QC, replaced by Compleasm
+
+
+### Updates
+
+- `toolshed.g2.bx.psu.edu/repos/iuc/yahs/yahs/1.2a.2+galaxy2` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/yahs/yahs/1.2a.2+galaxy3`
+- `toolshed.g2.bx.psu.edu/repos/iuc/pairtools_parse/pairtools_parse/1.1.3+galaxy5` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/pairtools_parse/pairtools_parse/1.1.3+galaxy6`
+- `toolshed.g2.bx.psu.edu/repos/iuc/compleasm/compleasm/0.2.6+galaxy2` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/compleasm/compleasm/0.2.6+galaxy3`
+
+
+
+## [3.0] - 2025-09-24
+
+### Changes
+
+- Now remove duplicated Hi-C reads
+- Duplication statistics
+- Improved report
+
+
+## [2.2] - 2025-09-01
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy4` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.3+galaxy0`
+
+
+## [2.1] - 2025-08-25
+
+### Changes
+- Better management of collections when there is only one pair of hi-C data
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy4` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.3+galaxy0`
+- `toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.5.2+galaxy2` was updated to `toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.5.2+galaxy3`
+- `toolshed.g2.bx.psu.edu/repos/iuc/samtools_merge/samtools_merge/1.20+galaxy2` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/samtools_merge/samtools_merge/1.21+galaxy0`
+- `toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.5` was updated to `toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.7`
+- `toolshed.g2.bx.psu.edu/repos/iuc/pretext_snapshot/pretext_snapshot/0.0.4+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/pretext_snapshot/pretext_snapshot/0.0.5+galaxy0`
+- `toolshed.g2.bx.psu.edu/repos/iuc/datamash_ops/datamash_ops/1.8+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/datamash_ops/datamash_ops/1.9+galaxy0`
+
+
+## [2.0] - 2025-06-09
+
+### Changes
+
+- Now ouputs merged alignment statistics
+- Add MAPQ filtering of Hi-C alignments
+- Set minimum score to output in alignments by BWA-MEM2 to default:30
+
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/5.0+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/5.1+galaxy0`
+- `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.5+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.5+galaxy2`
+- `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.5+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.5+galaxy2`
+
+
+## [1.8] - 2025-05-27
+
+### Changes
+- Add format constraint on gfa input
+- Add Samtools stats on Hi-C alignments to QC
+- Remove alignment in bed format output
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_point/ggplot2_point/3.4.0+galaxy1` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_point/ggplot2_point/3.5.1+galaxy2`
+
+
 ## [1.7] - 2025-05-14
 
 ### Changes

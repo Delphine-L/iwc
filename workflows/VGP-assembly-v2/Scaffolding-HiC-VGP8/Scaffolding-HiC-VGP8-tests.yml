@@ -1,70 +1,175 @@
-- doc: Test outline for Scaffolding-HiC-VGP8
+- doc: Test outline for Scaffolding-with-Hi-C-data-VGP8
   job:
-    Species Name: Random Name
-    Assembly Name: randName3 
-    Input GFA:
+    Assembly GFA:
       class: File
-      location: https://zenodo.org/records/10037496/files/input%20GFA.gfa1
+      location: https://zenodo.org/records/17190637/files/Assembly%20GFA.gfa1
       filetype: gfa1
+    Estimated genome size - Parameter File:
+      class: File
+      location: https://zenodo.org/records/17190637/files/Estimated%20genome%20size%20-%20Parameter%20File.expression.json
+      filetype: expression.json
     Hi-C reads:
       class: Collection
       collection_type: list:paired
       elements:
-        - class: Collection
-          type: paired
-          identifier: Hi-C reads
-          elements:
-          - identifier: forward
-            class: File
-            path: https://zenodo.org/records/10037496/files/HiC%20Forward%20reads.fastqsanger.gz
-          - identifier: reverse
-            class: File
-            path: https://zenodo.org/records/10037496/files/HiC%20reverse%20reads.fastqsanger.gz
-    Estimated genome size - Parameter File:
-      class: File
-      location: https://zenodo.org/records/10037496/files/Estimated%20genome%20size%20-%20Parameter%20File.txt
-      filetype: txt
+      - class: Collection
+        type: paired
+        identifier: bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMMCCXY_L6_R1.fq.gz
+        elements:
+        - class: File
+          identifier: forward
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMMCCXY_L6_R1.fq.gz
+        - class: File
+          identifier: reverse
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMMCCXY_L6_R2.fq.gz
+      - class: Collection
+        type: paired
+        identifier: bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L8_R1.fq.gz
+        elements:
+        - class: File
+          identifier: forward
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L8_R1.fq.gz
+        - class: File
+          identifier: reverse
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L8_R2.fq.gz
+      - class: Collection
+        type: paired
+        identifier: bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L7_R1.fq.gz
+        elements:
+        - class: File
+          identifier: forward
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L7_R1.fq.gz
+        - class: File
+          identifier: reverse
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L7_R2.fq.gz
+      - class: Collection
+        type: paired
+        identifier: bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L6_R1.fq.gz
+        elements:
+        - class: File
+          identifier: forward
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L6_R1.fq.gz
+        - class: File
+          identifier: reverse
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L6_R2.fq.gz
+      - class: Collection
+        type: paired
+        identifier: bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L5_R1.fq.gz
+        elements:
+        - class: File
+          identifier: forward
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L5_R1.fq.gz
+        - class: File
+          identifier: reverse
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L5_R2.fq.gz
+      - class: Collection
+        type: paired
+        identifier: bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L4_R1.fq.gz
+        elements:
+        - class: File
+          identifier: forward
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L4_R1.fq.gz
+        - class: File
+          identifier: reverse
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L4_R2.fq.gz
+      - class: Collection
+        type: paired
+        identifier: bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L3_R1.fq.gz
+        elements:
+        - class: File
+          identifier: forward
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L3_R1.fq.gz
+        - class: File
+          identifier: reverse
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L3_R2.fq.gz
+      - class: Collection
+        type: paired
+        identifier: bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L2_R1.fq.gz
+        elements:
+        - class: File
+          identifier: forward
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L2_R1.fq.gz
+        - class: File
+          identifier: reverse
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L2_R2.fq.gz
+      - class: Collection
+        type: paired
+        identifier: bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L1_R1.fq.gz
+        elements:
+        - class: File
+          identifier: forward
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L1_R1.fq.gz
+        - class: File
+          identifier: reverse
+          location: https://zenodo.org/records/17190637/files/bTaeGut2_ARI8_001_USPD16084394-AK5146_HJFMFCCXY_L1_R2.fq.gz
+    Species Name: test
+    Assembly Name: test
+    Haplotype: Haplotype 1
+    Trim Hi-C Data?: false
+    Minimum Mapping Quality: 10
     Database for Busco Lineage: v5
     Lineage: vertebrata_odb10
     Restriction enzymes: arima2
-    Haplotype: hap1
-    Trim Hi-C Data?: false
   outputs:
-    "Reconciliated Scaffolds: gfa":
+    Markdup Stats:
       asserts:
-        has_n_lines:
-          n: 173
-    "Reconciliated Scaffolds: fasta":
-      asserts:
-        has_n_lines:
-          n: 168
+        - has_text: 
+            text: "Unknown Library	4	16976	3251	4	0	2255	1970	0.132819	390034"
     Suffixed AGP:
       asserts:
-        has_text:
-          text: "scaffold_53.hap1"
-    Busco Summary:
+        - has_text: 
+            text: "scaffold_1.H1"
+    'Reconciliated Scaffolds: gfa':
       asserts:
-        has_text:
-          text: "C:1.1%[S:1.0%,D:0.0%],F:0.4%,M:98.5%,n:3354"
+        - has_n_lines:
+            n: 5
     Assembly Statistics for s2:
       asserts:
-        has_line:
-          line: "# scaffolds	84"
-    Nx Plot:
+        - has_text: 
+            text: "Total scaffold length	5,788,676"
+    Scaffolding Plots:
       asserts:
-        has_size: 
-          value : 47000
-          delta: 5000
-    Pretext Map After HiC scaffolding:
+        - has_size: 
+            value : 93200
+            delta: 5000
+    Hi-C Alignment Stats scaffolds:
       asserts:
-        has_size: 
-          value : 1300000
-          delta: 200000
-    Compleasm Full table:
+        - has_text: 
+            text: "SN	reads mapped and paired:	33952"
+    Hi-C alignments stats:
       asserts:
-        has_n_lines:
-          n: 3356
-    Compleasm translated proteins:
+        - has_text: 
+            text: "Hi-C Alignment Stats scaffolds	1.26353	0.0	0.033956"
+    Hi-C maps:
       asserts:
-        has_n_lines:
-          n: 39464
+        - has_size: 
+            value : 835200
+            delta: 50000
+    Hi-C Alignment Stats pre-scaffolding:
+      asserts:
+        - has_text: 
+            text: "SN	reads mapped and paired:	33952"
+    Markduplicates Summary:
+      asserts:
+        - has_text: 
+            text: "Unknown Library	4	16976	3251	4	0	2255	1970	0.132819	390034"
+    Compleasm Full Table Busco:
+      asserts:
+        - has_n_lines:
+            n: 3355
+    Summary Numbers Scaffolds:
+      asserts:
+        - has_text: 
+            text: "reads mapped and paired:	33952"
+    Merged Alignment stats:
+      asserts:
+        - has_text: 
+            text: "bases mapped:	5093400	5093400"
+    Summary Numbers Contigs:
+      asserts:
+        - has_text: 
+            text: "bases mapped:	5093400"
+    Scaffolds Compleasm Summary:
+      asserts:
+        - has_text: 
+            text: "S:0.00%, 0"

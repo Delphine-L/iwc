@@ -1,5 +1,25 @@
 # Changelog
 
+
+## [1.0] - 2025-08-29
+
+## Major Update
+
+- Replace Kraken with the NCBI FCS-Gx tool suite
+- Improve workflow report with assembly informations (Assembly ID and haplotype)
+
+
+## [0.8] - 2025-08-25
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.3+galaxy1` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.3+galaxy2`
+
+## [0.7] - 2025-06-09
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/9.5+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/9.5+galaxy2`
+- `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/9.5+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/9.5+galaxy2`
+
 ## [0.6] - 2025-05-12
 
 ### Automatic update
