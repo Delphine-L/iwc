@@ -1,5 +1,11 @@
 # Changelog
 
+
+## [0.3] - 2025-10-28
+
+### Changes
+- Add optionnal adapter removal for hifi data. 
+
 ## [0.2.2] - 2025-08-25
 
 ### Changes

@@ -15,7 +15,7 @@
     ],
     "format-version": "0.1",
     "license": "CC-BY-4.0",
-    "release": "0.2.2",
+    "release": "0.3",
     "name": "Mitogenome Assembly VGP0",
     "report": {
         "markdown": "Species : \n\n```galaxy\nhistory_dataset_embedded(output=\"Species Name for report\")\n```\n\nAssembly:\n\n\n```galaxy\nhistory_dataset_embedded(output=\"Assembly Name for report\")\n```\n\n\n## Annotation\n\n```galaxy\nhistory_dataset_as_image(output=\"Mitogenome annotation: Image\")\n```\n\n## Coverage\n\n\n\r\n```galaxy\nhistory_dataset_as_image(output=\"Mitogenome coverage: Image\")\n```\r\n\n\n## Contigs Stats\n\n\n```galaxy\nhistory_dataset_as_table(output=\"Mitogenome: Contigs Statistics\")\n```\n"
@@ -38,7 +38,7 @@
             "outputs": [],
             "position": {
                 "left": 0,
-                "top": 121.203125
+                "top": 462.8140011814012
             },
             "tool_id": null,
             "tool_state": "{\"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
@@ -46,13 +46,7 @@
             "type": "parameter_input",
             "uuid": "43d0f4b0-c794-4667-a36f-6b85f8103f6e",
             "when": null,
-            "workflow_outputs": [
-                {
-                    "label": null,
-                    "output_name": "output",
-                    "uuid": "c8b90efa-84ec-4c72-bda6-fc7e4731c48c"
-                }
-            ]
+            "workflow_outputs": []
         },
         "1": {
             "annotation": "For Workflow report. ",
@@ -71,7 +65,7 @@
             "outputs": [],
             "position": {
                 "left": 39.8125,
-                "top": 246.421875
+                "top": 588.0327511814012
             },
             "tool_id": null,
             "tool_state": "{\"multiple\": false, \"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
@@ -79,13 +73,7 @@
             "type": "parameter_input",
             "uuid": "a45ff285-f4a6-416a-871a-f18fc2435638",
             "when": null,
-            "workflow_outputs": [
-                {
-                    "label": null,
-                    "output_name": "output",
-                    "uuid": "d5ca0944-9913-4a3b-af9e-6f17101fccc5"
-                }
-            ]
+            "workflow_outputs": []
         },
         "2": {
             "annotation": "",
@@ -103,11 +91,11 @@
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
-                "left": 130.453125,
-                "top": 369.7578125
+                "left": 86.18031789529594,
+                "top": 705.4162243114918
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": \"\", \"collection_type\": \"list\", \"fields\": null}",
+            "tool_state": "{\"optional\": false, \"tag\": \"\", \"collection_type\": \"list\", \"fields\": null, \"column_definitions\": null}",
             "tool_version": null,
             "type": "data_collection_input",
             "uuid": "861c3a49-1055-4030-9a91-e53cbf1ac436",
@@ -115,10 +103,37 @@
             "workflow_outputs": []
         },
         "3": {
-            "annotation": "Required for NCBI database query",
+            "annotation": "",
             "content_id": null,
             "errors": null,
             "id": 3,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Trim adapters from HiFi reads"
+                }
+            ],
+            "label": "Trim adapters from HiFi reads",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "left": 181.31566943276917,
+                "top": 862.0893163353935
+            },
+            "tool_id": null,
+            "tool_state": "{\"default\": false, \"validators\": [], \"parameter_type\": \"boolean\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "c29bd425-8563-47c6-9f2f-fceb110d001a",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "4": {
+            "annotation": "Required for NCBI database query",
+            "content_id": null,
+            "errors": null,
+            "id": 4,
             "input_connections": {},
             "inputs": [
                 {
@@ -130,8 +145,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 203.99609375,
-                "top": 486.5234375
+                "left": 226.81892020376443,
+                "top": 1034.860889255151
             },
             "tool_id": null,
             "tool_state": "{\"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
@@ -139,19 +154,13 @@
             "type": "parameter_input",
             "uuid": "4ddb385f-ecd7-4d48-bc7b-e9c7971a1e62",
             "when": null,
-            "workflow_outputs": [
-                {
-                    "label": null,
-                    "output_name": "output",
-                    "uuid": "6bbe8abb-f6d5-49b3-bf3a-c040baa26e01"
-                }
-            ]
+            "workflow_outputs": []
         },
-        "4": {
+        "5": {
             "annotation": "Organism genetic code following NCBI table (for mitogenome annotation)",
             "content_id": null,
             "errors": null,
-            "id": 4,
+            "id": 5,
             "input_connections": {},
             "inputs": [
                 {
@@ -163,8 +172,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 260,
-                "top": 650
+                "left": 307.4798685866722,
+                "top": 1177.5639863717495
             },
             "tool_id": null,
             "tool_state": "{\"multiple\": false, \"validators\": [], \"restrictOnConnections\": true, \"parameter_type\": \"text\", \"optional\": false}",
@@ -172,19 +181,13 @@
             "type": "parameter_input",
             "uuid": "b1b0ae79-6101-4161-877d-59f852e2937c",
             "when": null,
-            "workflow_outputs": [
-                {
-                    "label": null,
-                    "output_name": "output",
-                    "uuid": "287bb080-5a98-43f9-91bf-a7d7db09f105"
-                }
-            ]
+            "workflow_outputs": []
         },
-        "5": {
+        "6": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 5,
+            "id": 6,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 0,
@@ -201,8 +204,8 @@
                 }
             ],
             "position": {
-                "left": 463.9921875,
-                "top": 0
+                "left": 527.954173874311,
+                "top": 0.0
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -219,6 +222,7 @@
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "d4355c6d-cbbf-4066-9ea6-5257a7555996",
@@ -231,11 +235,11 @@
                 }
             ]
         },
-        "6": {
+        "7": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 6,
+            "id": 7,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 1,
@@ -252,8 +256,8 @@
                 }
             ],
             "position": {
-                "left": 549.68359375,
-                "top": 247.16015625
+                "left": 539.3482034216579,
+                "top": 295.30290358121664
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -270,6 +274,7 @@
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
             "tool_version": "0.1.1",
             "type": "tool",
             "uuid": "57a0ad31-8816-471a-877b-f495443c8c89",
@@ -282,14 +287,66 @@
                 }
             ]
         },
-        "7": {
+        "8": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/5.1+galaxy0",
+            "errors": null,
+            "id": 8,
+            "input_connections": {
+                "library|input_1": {
+                    "id": 2,
+                    "output_name": "output"
+                },
+                "when": {
+                    "id": 3,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Cutadapt",
+            "outputs": [
+                {
+                    "name": "out1",
+                    "type": "fastqsanger"
+                }
+            ],
+            "position": {
+                "left": 550.4910096587307,
+                "top": 757.7051079565331
+            },
+            "post_job_actions": {
+                "RenameDatasetActionout1": {
+                    "action_arguments": {
+                        "newname": "HiFi reads without adapters"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "out1"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/5.1+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "80766b36005d",
+                "name": "cutadapt",
+                "owner": "lparsons",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"adapter_options\": {\"action\": \"trim\", \"error_rate\": \"0.1\", \"no_indels\": false, \"times\": \"1\", \"overlap\": \"3\", \"match_read_wildcards\": false, \"no_match_adapter_wildcards\": true, \"revcomp\": false}, \"filter_options\": {\"discard_trimmed\": false, \"discard_untrimmed\": false, \"minimum_length\": \"1\", \"minimum_length2\": null, \"maximum_length\": null, \"maximum_length2\": null, \"max_n\": null, \"max_expected_errors\": null, \"max_average_error_rate\": null, \"discard_casava\": false, \"pair_filter\": \"any\"}, \"library\": {\"type\": \"single\", \"__current_case__\": 0, \"input_1\": {\"__class__\": \"ConnectedValue\"}, \"r1\": {\"adapters\": [], \"front_adapters\": [], \"anywhere_adapters\": [{\"__index__\": 0, \"adapter_source\": {\"adapter_source_list\": \"user\", \"__current_case__\": 0, \"adapter_name\": \"\", \"adapter\": \"ATCTCTCTCAACAACAACAACGGAGGAGGAGGAAAAGAGAGAGAT\"}, \"single_noindels\": false}, {\"__index__\": 1, \"adapter_source\": {\"adapter_source_list\": \"user\", \"__current_case__\": 0, \"adapter_name\": \"\", \"adapter\": \"ATCTCTCTCTTTTCCTCCTCCTCCGTTGTTGTTGTTGAGAGAGAT\"}, \"single_noindels\": false}]}}, \"other_trimming_options\": {\"cut\": \"0\", \"cut2\": \"0\", \"quality_cutoff\": \"0\", \"quality_cutoff2\": \"\", \"nextseq_trim\": \"0\", \"trim_n\": false, \"poly_a\": false, \"shorten_options\": {\"shorten_values\": \"False\", \"__current_case__\": 1}, \"shorten_options_r2\": {\"shorten_values_r2\": \"False\", \"__current_case__\": 1}}, \"output_selector\": null, \"read_mod_options\": {\"strip_suffix\": null, \"length_tag\": null, \"rename\": null, \"zero_cap\": false}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "5.1+galaxy0",
+            "type": "tool",
+            "uuid": "9ea2ffc6-3379-4468-aaea-21affcef2287",
+            "when": "$(inputs.when)",
+            "workflow_outputs": []
+        },
+        "9": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi/3.2.3+galaxy0",
             "errors": null,
-            "id": 7,
+            "id": 9,
             "input_connections": {
                 "operation_mode|email": {
-                    "id": 3,
+                    "id": 4,
                     "output_name": "output"
                 },
                 "operation_mode|species": {
@@ -311,8 +368,8 @@
                 }
             ],
             "position": {
-                "left": 555.76171875,
-                "top": 589.6796875
+                "left": 831.0742956670047,
+                "top": 1029.8638139936952
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi/3.2.3+galaxy0",
@@ -323,32 +380,83 @@
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"operation_mode\": {\"command\": \"find_reference\", \"__current_case__\": 0, \"species\": {\"__class__\": \"ConnectedValue\"}, \"email\": {\"__class__\": \"ConnectedValue\"}, \"min_length\": \"15000\", \"exact_species\": false}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
             "tool_version": "3.2.3+galaxy0",
             "type": "tool",
             "uuid": "e59aea2d-9bc3-4e2e-9af2-711f0cdea373",
             "when": null,
             "workflow_outputs": []
         },
-        "8": {
+        "10": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "errors": null,
+            "id": 10,
+            "input_connections": {
+                "style_cond|type_cond|pick_from_0|value": {
+                    "id": 8,
+                    "output_name": "out1"
+                },
+                "style_cond|type_cond|pick_from_1|value": {
+                    "id": 2,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Pick parameter value",
+            "outputs": [
+                {
+                    "name": "data_param",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 765.3217584529941,
+                "top": 544.9921232036431
+            },
+            "post_job_actions": {
+                "HideDatasetActiondata_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "data_param"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "tool_shed_repository": {
+                "changeset_revision": "b19e21af9c52",
+                "name": "pick_value",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"ConnectedValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.2.0",
+            "type": "tool",
+            "uuid": "01e97c4c-1e8c-4ced-8ec9-9a606f90321a",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "11": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/mitohifi/mitohifi/3.2.3+galaxy0",
             "errors": null,
-            "id": 8,
+            "id": 11,
             "input_connections": {
                 "operation_mode|genetic_code": {
-                    "id": 4,
+                    "id": 5,
                     "output_name": "output"
                 },
                 "operation_mode|input_option|input_reads": {
-                    "id": 2,
-                    "output_name": "output"
+                    "id": 10,
+                    "output_name": "data_param"
                 },
                 "operation_mode|reference_fasta": {
-                    "id": 7,
+                    "id": 9,
                     "output_name": "fasta_reference"
                 },
                 "operation_mode|reference_genbank": {
-                    "id": 7,
+                    "id": 9,
                     "output_name": "genbank_reference"
                 }
             },
@@ -390,8 +498,8 @@
                 }
             ],
             "position": {
-                "left": 831.25390625,
-                "top": 576.49609375
+                "left": 1154.024815358495,
+                "top": 398.50577457012895
             },
             "post_job_actions": {
                 "HideDatasetActionhifiasm": {
@@ -478,17 +586,13 @@
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"operation_mode\": {\"command\": \"mitohifi\", \"__current_case__\": 1, \"input_option\": {\"input\": \"pacbio\", \"__current_case__\": 0, \"input_reads\": {\"__class__\": \"RuntimeValue\"}, \"bloom_filter\": \"0\"}, \"reference_fasta\": {\"__class__\": \"RuntimeValue\"}, \"reference_genbank\": {\"__class__\": \"RuntimeValue\"}, \"organism_selection\": \"animal\", \"genetic_code\": {\"__class__\": \"ConnectedValue\"}, \"advanced_options\": {\"query_blast\": \"70\", \"circular_size\": null, \"circular_offset\": null, \"outputs\": null}, \"output_zip\": false}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"operation_mode\": {\"command\": \"mitohifi\", \"__current_case__\": 1, \"input_option\": {\"input\": \"pacbio\", \"__current_case__\": 0, \"input_reads\": {\"__class__\": \"ConnectedValue\"}, \"bloom_filter\": \"0\"}, \"reference_fasta\": {\"__class__\": \"ConnectedValue\"}, \"reference_genbank\": {\"__class__\": \"ConnectedValue\"}, \"organism_selection\": \"animal\", \"genetic_code\": {\"__class__\": \"ConnectedValue\"}, \"advanced_options\": {\"query_blast\": \"70\", \"circular_size\": null, \"circular_offset\": null, \"outputs\": null}, \"output_zip\": false}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
             "tool_version": "3.2.3+galaxy0",
             "type": "tool",
             "uuid": "ccd83410-608a-4b9d-a43a-11cecd6c2d42",
             "when": null,
             "workflow_outputs": [
-                {
-                    "label": "Mitogenome coverage: Image",
-                    "output_name": "mitogenome_coverage",
-                    "uuid": "891c5e66-9a6d-411b-b1dc-324c19b74a39"
-                },
                 {
                     "label": "Mitogenome annotation: Image",
                     "output_name": "mitogenome_annotation",
@@ -503,17 +607,22 @@
                     "label": "Mitogenome: Contigs Statistics",
                     "output_name": "contigs_stats",
                     "uuid": "d657a420-fa6c-422e-b46b-de8494a43a2f"
+                },
+                {
+                    "label": "Mitogenome coverage: Image",
+                    "output_name": "mitogenome_coverage",
+                    "uuid": "891c5e66-9a6d-411b-b1dc-324c19b74a39"
                 }
             ]
         },
-        "9": {
+        "12": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file/0.1.0",
             "errors": null,
-            "id": 9,
+            "id": 12,
             "input_connections": {
                 "input": {
-                    "id": 8,
+                    "id": 11,
                     "output_name": "mitogenome_fasta"
                 }
             },
@@ -527,8 +636,8 @@
                 }
             ],
             "position": {
-                "left": 1116.41796875,
-                "top": 391.59373959960084
+                "left": 1419.8241371278616,
+                "top": 419.4967660136806
             },
             "post_job_actions": {
                 "RenameDatasetActionoutput_file": {
@@ -554,6 +663,7 @@
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
             "tool_version": "0.1.0",
             "type": "tool",
             "uuid": "5207adc9-f36a-42e9-8631-e01da77ac446",
@@ -571,6 +681,6 @@
         "Reviewed",
         "VGP"
     ],
-    "uuid": "7de562f8-2ef4-4277-a88b-c0d12f22f0b6",
-    "version": 1
+    "uuid": "75b60b72-3768-4cd3-93c0-8d9d9c716a1e",
+    "version": 5
 }
