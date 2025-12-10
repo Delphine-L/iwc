@@ -703,7 +703,7 @@
                 "top": 3373.7575116821786
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"tabular\"], \"tag\": \"hic_stats_scaffolds\"}",
+            "tool_state": "{\"optional\": false, \"format\": [\"tabular\", \" tsv\"], \"tag\": \"hic_stats_scaffolds\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "d27e0d7a-ad47-4d19-a570-806a0f3d8b92",
@@ -4693,6 +4693,6 @@
         }
     },
     "tags": [],
-    "uuid": "aa848a89-9c86-452e-aef0-a60217342d8a",
-    "version": 13
+    "uuid": "92e73fef-1e57-432d-8cbc-2d22364e81c6",
+    "version": 2
 }
