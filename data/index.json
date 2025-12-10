@@ -181,7 +181,7 @@
         "trsID": "#workflow/github.com/iwc-workflows/metagenomic-genes-catalogue/main",
         "iwcID": "metagenomic-genes-catalogue-main",
         "readme": "# Genes catalogue generation from metagenomic reads\n\nThis workflow generates genes catalogue from paired short reads.\n\nThe workflow supports assembly using **MEGAHIT**.\n\n## Genes catalogue Annotation and Quality Control\n\nAfter assembly, CDS are detected from resulting contigs with **Prodigal** and the potential genes are clustered with **MMseqs2linclust**\n\nThe following processing steps are then performed:\n\n- **Genes annotation** with Eggnog-mapper\n- **Taxonomic Assignment** using MMseqs2taxonomy\n- **Assembly Quality Control** via QUAST\n- **Abundance Estimation** per sample with CoverM\n- **AMR detection** with ABRicate, AMRFinderPlus and starAMR\n\n## Input Requirements\n\nInput reads must be quality-filtered, with host reads removed.\n\n- **Trimmed reads**: Quality-trimmed reads from individual samples, used solely for abundance estimation.\n",
-        "updated": "2025-10-14T00:00:00",
+        "updated": "2025-12-08T00:00:00",
         "categories": [],
         "collections": [
             "Genome Annotation",
@@ -386,7 +386,7 @@
         "trsID": "#workflow/github.com/iwc-workflows/rnaseq-de/main",
         "iwcID": "rnaseq-de-main",
         "readme": "# RNA-Seq Differential Expression Analysis with Visualization\n\nThis workflow works only with an experimental setup containing exactly 2 conditions with at least 2 replicates per condition.\n\n## Inputs dataset\n\n- Counts from changed condition: Counts from experimental condition or changed condition. For eg. counts from treatment or knockdown samples.\n- Counts from reference condition: Counts from reference condition or base condition. For eg. counts from untreated or wildtype samples.\n- Gene Annotaton: The same GTF file used for mapping and quantification. It is used to annotate the DESeq2 results table. Ideally, the GTF file should contain `gene_id`, `gene_biotype` and `gene_name` attributes.\n\n## Inputs values\n\n- Count files have header: Indicate whether your input count files have a header line. Usually, count files generated from featureCounts tool have a header line whereas count files from RNA-STAR do not have.\n- Adjusted p-value threshold: All the genes with an adjusted p-value less than this value are considered as differentially expressed. With a value of 0.05, expect 5% of false positives in the differentially expressed genes list. If empty, a default value of 0.05 is used.\n- log2 fold change threshold: All the genes with an absolute fold change (regarless of up or down regulation) more than this value are selected. A log2 FC of 3 equals to an absolute fold change of 8 (2\u00b3). If empty, a default value of 1.0 is used.\n\n## Processing\n\n- The workflow uses DESeq2 for performing differential expression analysis. In addition to the results table, it also produces normalized counts table.\n- The results table is annotated with gene positions, biotypes, gene symbols.\n- The annotated results table is further filtered with the input adjusted p-value and log2 fold change thresholds.\n- A valcano plot is generated with top 10 significantly differentially expressed genes.\n- A heatmap of log trasformed normalized counts and another heatmap of Z-scores is generated.\n",
-        "updated": "2025-03-24T00:00:00",
+        "updated": "2025-12-08T00:00:00",
         "categories": [],
         "collections": [
             "Transcriptomics"
@@ -1000,7 +1000,7 @@
         "trsID": "#workflow/github.com/iwc-workflows/kmer-profiling-hifi-VGP1/main",
         "iwcID": "kmer-profiling-hifi-vgp1-main",
         "readme": "# VGP Workflow #1\n\nThis workflow produces a Meryl database and Genomescope outputs that will be used to determine parameters for following workflows, and assess the quality of genome assemblies. Specifically, it provides information about the genomic complexity, such as the genome size and levels of heterozygosity and repeat content, as well about the data quality. It also provides statistics on the PacBio Hifi reads. \n\n## Inputs\n\n1. The name of the species being assembled\n2. The Name of the assembly\n3. A collection of Hifi long reads in FASTQ format\n4. *k*-mer length\n5. Ploidy\n\n## Outputs\n\n- Meryl Database of *k*-mer counts\n- GenomeScope\n    - Linear plot\n    - Log plot\n    - Transformed linear plot\n    - Transformed log plot\n    - Summary\n    - Model\n    - Model parameteres\n- RDeval for PacBio Hifi Reads QC\n    - Reads statistics\n    - HTML report\n- Mash QC, heatmap of distance between Hifi datasets\n  \n",
-        "updated": "2025-10-30T00:00:00",
+        "updated": "2025-11-10T00:00:00",
         "categories": [],
         "collections": [
             "Vertebrate Genome Project"
