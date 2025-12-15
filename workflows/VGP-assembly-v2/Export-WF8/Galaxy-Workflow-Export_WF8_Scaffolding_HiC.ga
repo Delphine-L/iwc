@@ -51,8 +51,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 50.95685112297137,
-                "top": 80.10982062109917
+                "left": 36.110410127218984,
+                "top": 86.80432770971639
             },
             "tool_id": null,
             "tool_state": "{\"multiple\": false, \"validators\": [{\"message\": \"Please enter the name without blank spaces\", \"expression\": \"^\\\\S+$\", \"negate\": false, \"type\": \"regex\"}], \"parameter_type\": \"text\", \"optional\": false}",
@@ -78,8 +78,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 91.1457092648395,
-                "top": 176.5282855758738
+                "left": 88.74176009656131,
+                "top": 191.36643855835246
             },
             "tool_id": null,
             "tool_state": "{\"validators\": [], \"restrictions\": [\"standard\", \"HiC\", \"trio\"], \"parameter_type\": \"text\", \"optional\": false}",
@@ -105,8 +105,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 169.13895604217714,
-                "top": 298.0152956068223
+                "left": 158.59720949402796,
+                "top": 301.3637795586437
             },
             "tool_id": null,
             "tool_state": "{\"validators\": [], \"restrictions\": [\"hap1\", \"hap2\", \"pri\", \"mat\", \"pat\"], \"parameter_type\": \"text\", \"optional\": false}",
@@ -159,8 +159,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 256.61262734966056,
-                "top": 513.3563043068993
+                "left": 259.4264762727245,
+                "top": 659.7768013312183
             },
             "tool_id": null,
             "tool_state": "{\"validators\": [], \"parameter_type\": \"directory_uri\", \"optional\": false}",
@@ -769,7 +769,7 @@
                         "name": "Input parameter",
                         "outputs": [],
                         "position": {
-                            "left": 0.0,
+                            "left": 0,
                             "top": 1675.4721202845567
                         },
                         "tool_id": null,
@@ -867,6 +867,10 @@
                         "errors": null,
                         "id": 4,
                         "input_connections": {
+                            "components_1|param_type|component_value": {
+                                "id": 0,
+                                "output_name": "output"
+                            },
                             "components_3|param_type|component_value": {
                                 "id": 1,
                                 "output_name": "output"
@@ -2686,7 +2690,7 @@
                         ],
                         "position": {
                             "left": 3172.720610607724,
-                            "top": 0.0
+                            "top": 0
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -3107,7 +3111,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "f97e9bb5-9ff3-4ff9-b147-cd699fa06d79"
+                "uuid": "1b73217c-352a-4786-962e-1d5ccf5e6e7f"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -4693,6 +4697,6 @@
         }
     },
     "tags": [],
-    "uuid": "92e73fef-1e57-432d-8cbc-2d22364e81c6",
-    "version": 2
+    "uuid": "403c4ac9-46b5-4d08-8fcd-2feb69f78b68",
+    "version": 3
 }
