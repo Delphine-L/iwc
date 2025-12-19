@@ -33,7 +33,7 @@
             "outputs": [],
             "position": {
                 "left": 0,
-                "top": 670.4436201048696
+                "top": 698.5769759801334
             },
             "tool_id": null,
             "tool_state": "{\"multiple\": false, \"validators\": [{\"message\": \"Please do not use blank spaces\", \"expression\": \"^\\\\\\\\S+$\", \"negate\": false, \"type\": \"regex\"}], \"parameter_type\": \"text\", \"optional\": false}",
@@ -60,7 +60,7 @@
             "outputs": [],
             "position": {
                 "left": 0,
-                "top": 770.4436201048696
+                "top": 798.5769759801334
             },
             "tool_id": null,
             "tool_state": "{\"multiple\": false, \"validators\": [{\"message\": \"Please do not use blank spaces\", \"expression\": \"^\\\\\\\\S+$\", \"negate\": false, \"type\": \"regex\"}], \"parameter_type\": \"text\", \"optional\": false}",
@@ -87,7 +87,7 @@
             "outputs": [],
             "position": {
                 "left": 0,
-                "top": 870.4436201048696
+                "top": 898.5769759801334
             },
             "tool_id": null,
             "tool_state": "{\"multiple\": false, \"validators\": [{\"message\": \"Please use YYYYMMDD format\", \"expression\": \"^[0-9]{8}$\", \"negate\": false, \"type\": \"regex\"}], \"parameter_type\": \"text\", \"optional\": false}",
@@ -114,7 +114,7 @@
             "outputs": [],
             "position": {
                 "left": 0,
-                "top": 970.4436201048696
+                "top": 998.5769759801334
             },
             "tool_id": null,
             "tool_state": "{\"validators\": [], \"parameter_type\": \"directory_uri\", \"optional\": false}",
@@ -141,7 +141,7 @@
             "outputs": [],
             "position": {
                 "left": 1572.6070232620602,
-                "top": 337.590668068158
+                "top": 365.7240239434217
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"\"}",
@@ -168,7 +168,7 @@
             "outputs": [],
             "position": {
                 "left": 1574.0307675378367,
-                "top": 739.6117742499066
+                "top": 767.7451301251704
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"\"}",
@@ -195,7 +195,7 @@
             "outputs": [],
             "position": {
                 "left": 1582.9428784393403,
-                "top": 1148.8942267298921
+                "top": 1177.0275826051559
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"\"}",
@@ -222,7 +222,7 @@
             "outputs": [],
             "position": {
                 "left": 2013.5578314239456,
-                "top": 326.97470346801873
+                "top": 355.10805934328243
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"\"}",
@@ -249,7 +249,7 @@
             "outputs": [],
             "position": {
                 "left": 1966.0491326667905,
-                "top": 747.910407411241
+                "top": 776.0437632865047
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"\"}",
@@ -276,7 +276,7 @@
             "outputs": [],
             "position": {
                 "left": 1570.6905392973215,
-                "top": 1608.9384488023816
+                "top": 1637.0718046776453
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bed\"], \"tag\": \"\"}",
@@ -303,7 +303,7 @@
             "outputs": [],
             "position": {
                 "left": 1955.2185406975477,
-                "top": 1169.8798505753375
+                "top": 1198.0132064506013
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"\"}",
@@ -330,7 +330,7 @@
             "outputs": [],
             "position": {
                 "left": 1929.700658363921,
-                "top": 1609.6496761125559
+                "top": 1637.7830319878196
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bed\"], \"tag\": \"\"}",
@@ -357,7 +357,7 @@
             "outputs": [],
             "position": {
                 "left": 1579.5971090201053,
-                "top": 2075.9256032183966
+                "top": 2104.05895909366
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"pretext\"], \"tag\": \"\"}",
@@ -384,7 +384,7 @@
             "outputs": [],
             "position": {
                 "left": 1929.3182983398438,
-                "top": 2048.096435546875
+                "top": 2076.2297914221385
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"pretext\"], \"tag\": \"\"}",
@@ -411,7 +411,7 @@
             "outputs": [],
             "position": {
                 "left": 1613.9277357382728,
-                "top": 2503.5036909652545
+                "top": 2531.637046840518
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"\"}",
@@ -438,7 +438,7 @@
             "outputs": [],
             "position": {
                 "left": 1922.884141611565,
-                "top": 2492.965994697151
+                "top": 2521.0993505724146
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"\"}",
@@ -465,7 +465,7 @@
             "outputs": [],
             "position": {
                 "left": 1639.9574584960938,
-                "top": 2972.6065673828125
+                "top": 3000.739923258076
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"\"}",
@@ -492,7 +492,7 @@
             "outputs": [],
             "position": {
                 "left": 1956.062422108653,
-                "top": 3015.9251063708
+                "top": 3044.0584622460638
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"\"}",
@@ -523,7 +523,7 @@
             "outputs": [],
             "position": {
                 "left": 751.0943317637231,
-                "top": 185.83581476482468
+                "top": 213.96917064008838
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -531,6 +531,9 @@
                 "comments": [],
                 "format-version": "0.1",
                 "name": "Curated Paths Creation",
+                "report": {
+                    "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+                },
                 "steps": {
                     "0": {
                         "annotation": "",
@@ -1083,8 +1086,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1200,
-                            "top": 500
+                            "left": 1196.7294616699219,
+                            "top": 547.8267211914062
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1142,8 +1145,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1200,
-                            "top": 600
+                            "left": 1193.2066345214844,
+                            "top": 700.0106811523438
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1201,8 +1204,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1200,
-                            "top": 700
+                            "left": 1200.5716247558594,
+                            "top": 877.8124389648438
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1241,7 +1244,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "63bfa9ab-0ed6-424a-9038-2f5030df70a0"
+                "uuid": "9bb83a18-5c0e-4255-a92b-58cceeb93a69"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -1278,8 +1281,8 @@
                 }
             ],
             "position": {
-                "left": 1587.3935254385617,
-                "top": 0
+                "left": 1607.7174842986171,
+                "top": 0.0
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1333,7 +1336,7 @@
             ],
             "position": {
                 "left": 1574.9771336369593,
-                "top": 428.41064462350323
+                "top": 456.54400049876693
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1387,7 +1390,7 @@
             ],
             "position": {
                 "left": 1578.3232064953136,
-                "top": 839.7313955059473
+                "top": 867.864751381211
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1431,7 +1434,7 @@
                 }
             },
             "inputs": [],
-            "label": "Hap2 Gaps Count Name",
+            "label": "Hap2 Gaps Frac Name",
             "name": "Compose text parameter value",
             "outputs": [
                 {
@@ -1440,8 +1443,8 @@
                 }
             ],
             "position": {
-                "left": 1957.0994613367395,
-                "top": 440.3274334040473
+                "left": 2011.2327472870925,
+                "top": 37.87945385234467
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1457,11 +1460,11 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".hap2.cur.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".gaps_count.bigwig\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".hap2.cur.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".gaps_frac.bigwig\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
             "tool_version": "0.1.1",
             "type": "tool",
-            "uuid": "cce1212f-226d-4a6d-b3d8-8fdffc4604b2",
+            "uuid": "1b981f5e-96b1-4ed5-a64d-0c1a40cea147",
             "when": null,
             "workflow_outputs": []
         },
@@ -1485,7 +1488,7 @@
                 }
             },
             "inputs": [],
-            "label": "Hap2 Gaps Frac Name",
+            "label": "Hap2 Gaps Count Name",
             "name": "Compose text parameter value",
             "outputs": [
                 {
@@ -1494,8 +1497,8 @@
                 }
             ],
             "position": {
-                "left": 2011.2327472870925,
-                "top": 9.74609797708095
+                "left": 1957.0994613367395,
+                "top": 468.46078927931103
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1511,11 +1514,11 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".hap2.cur.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".gaps_frac.bigwig\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".hap2.cur.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".gaps_count.bigwig\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
             "tool_version": "0.1.1",
             "type": "tool",
-            "uuid": "1b981f5e-96b1-4ed5-a64d-0c1a40cea147",
+            "uuid": "cce1212f-226d-4a6d-b3d8-8fdffc4604b2",
             "when": null,
             "workflow_outputs": []
         },
@@ -1549,7 +1552,7 @@
             ],
             "position": {
                 "left": 1567.7326111189484,
-                "top": 1282.9900400808783
+                "top": 1311.123395956142
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1603,7 +1606,7 @@
             ],
             "position": {
                 "left": 1958.490453419465,
-                "top": 861.1006575702123
+                "top": 889.2340134454761
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1657,7 +1660,7 @@
             ],
             "position": {
                 "left": 1928.9742270256065,
-                "top": 1294.6612088165684
+                "top": 1322.7945646918322
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1711,7 +1714,7 @@
             ],
             "position": {
                 "left": 1578.7666059533822,
-                "top": 1745.7676834856848
+                "top": 1773.9010393609485
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1765,7 +1768,7 @@
             ],
             "position": {
                 "left": 1922.7342783226566,
-                "top": 1735.29394743475
+                "top": 1763.4273033100137
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1819,7 +1822,7 @@
             ],
             "position": {
                 "left": 1594.6704738979445,
-                "top": 2175.808802138209
+                "top": 2203.9421580134726
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1873,7 +1876,7 @@
             ],
             "position": {
                 "left": 1917.0097045898438,
-                "top": 2152.897705078125
+                "top": 2181.0310609533885
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1927,7 +1930,7 @@
             ],
             "position": {
                 "left": 1631.0182562152067,
-                "top": 2653.015612370295
+                "top": 2681.1489682455585
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1981,7 +1984,7 @@
             ],
             "position": {
                 "left": 1966.5370547775553,
-                "top": 2705.97106504077
+                "top": 2734.1044209160336
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -2108,7 +2111,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_7|name": {
-                    "id": 23,
+                    "id": 22,
                     "output_name": "out1"
                 },
                 "export_type|datasets_8|infile": {
@@ -2116,7 +2119,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_8|name": {
-                    "id": 22,
+                    "id": 23,
                     "output_name": "out1"
                 },
                 "export_type|datasets_9|infile": {
@@ -2139,9 +2142,17 @@
             ],
             "position": {
                 "left": 2400.0000468787835,
-                "top": 871.2237977034468
+                "top": 899.3571535787106
             },
-            "post_job_actions": {},
+            "post_job_actions": {
+                "RenameDatasetActionout": {
+                    "action_arguments": {
+                        "newname": "Curated assembly exported to ${Species Name}/${Assembly ID}"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "out"
+                }
+            },
             "tool_id": "export_remote",
             "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 4, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 5, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 6, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 7, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 8, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 9, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 10, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 11, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 12, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 13, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
@@ -2149,7 +2160,13 @@
             "type": "tool",
             "uuid": "00664035-8396-47ae-8e4b-ef9a8599e9a8",
             "when": null,
-            "workflow_outputs": []
+            "workflow_outputs": [
+                {
+                    "label": "Curated assembly exported to ${Species Name}/${Assembly ID}",
+                    "output_name": "out",
+                    "uuid": "c4ae6252-8c1d-4456-8b5c-1d0971e646e0"
+                }
+            ]
         }
     },
     "tags": [
@@ -2157,6 +2174,6 @@
         "export",
         "curated"
     ],
-    "uuid": "e7eabc8d-4712-4a24-be03-10131d7696c0",
-    "version": 3
+    "uuid": "11682f88-256f-4577-8efe-91aca432fdb5",
+    "version": 6
 }
