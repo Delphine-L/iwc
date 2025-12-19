@@ -491,8 +491,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 3456.2928421971533,
-                "top": 2252.6652927844416
+                "left": 3472.4431492864805,
+                "top": 2183.7916290621365
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"merged_hic_mapping\"}",
@@ -504,7 +504,34 @@
         },
         "18": {
             "annotation": "",
+            "content_id": null,
+            "errors": null,
             "id": 18,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "HiFi Alignment"
+                }
+            ],
+            "label": "HiFi Alignment",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 3483.202084173066,
+                "top": 2651.14886456186
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "15045574-e93b-4492-95a4-5d1579fc4af7",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "19": {
+            "annotation": "",
+            "id": 19,
             "input_connections": {
                 "Species ID": {
                     "id": 1,
@@ -522,8 +549,8 @@
             "name": "TreevalGal Path creation",
             "outputs": [],
             "position": {
-                "left": 793.8356328769132,
-                "top": 619.0517639130892
+                "left": 793.8351586579134,
+                "top": 622.3742915131903
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -832,11 +859,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "19": {
+        "20": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
             "errors": null,
-            "id": 19,
+            "id": 20,
             "input_connections": {
                 "style_cond|type_cond|pick_from_0|value": {
                     "id": 5,
@@ -876,11 +903,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "20": {
+        "21": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
             "errors": null,
-            "id": 20,
+            "id": 21,
             "input_connections": {
                 "style_cond|type_cond|pick_from_0|value": {
                     "id": 6,
@@ -920,11 +947,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "21": {
+        "22": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file/0.1.0",
             "errors": null,
-            "id": 21,
+            "id": 22,
             "input_connections": {
                 "input": {
                     "id": 13,
@@ -966,11 +993,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "22": {
+        "23": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file/0.1.0",
             "errors": null,
-            "id": 22,
+            "id": 23,
             "input_connections": {
                 "input": {
                     "id": 15,
@@ -1016,11 +1043,11 @@
             "when": "$(inputs.when)",
             "workflow_outputs": []
         },
-        "23": {
+        "24": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file/0.1.0",
             "errors": null,
-            "id": 23,
+            "id": 24,
             "input_connections": {
                 "input": {
                     "id": 16,
@@ -1066,14 +1093,14 @@
             "when": "$(inputs.when)",
             "workflow_outputs": []
         },
-        "24": {
+        "25": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 24,
+            "id": 25,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Tracks path"
                 },
                 "components_1|param_type|component_value": {
@@ -1120,14 +1147,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "25": {
+        "26": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 25,
+            "id": 26,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Tracks path"
                 },
                 "components_1|param_type|component_value": {
@@ -1174,14 +1201,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "26": {
+        "27": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 26,
+            "id": 27,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Tracks path"
                 },
                 "components_1|param_type|component_value": {
@@ -1228,14 +1255,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "27": {
+        "28": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 27,
+            "id": 28,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Tracks path"
                 },
                 "components_1|param_type|component_value": {
@@ -1282,14 +1309,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "28": {
+        "29": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 28,
+            "id": 29,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Tracks path"
                 },
                 "components_1|param_type|component_value": {
@@ -1330,14 +1357,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "29": {
+        "30": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 29,
+            "id": 30,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Pretextmap path"
                 },
                 "components_1|param_type|component_value": {
@@ -1384,14 +1411,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "30": {
+        "31": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 30,
+            "id": 31,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Tracks path"
                 },
                 "components_1|param_type|component_value": {
@@ -1438,14 +1465,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "31": {
+        "32": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 31,
+            "id": 32,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Root Path"
                 },
                 "components_1|param_type|component_value": {
@@ -1492,14 +1519,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "32": {
+        "33": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 32,
+            "id": 33,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Pretextmap path"
                 },
                 "components_1|param_type|component_value": {
@@ -1521,8 +1548,8 @@
                 }
             ],
             "position": {
-                "left": 2989.785832648699,
-                "top": 2082.494995123955
+                "left": 2989.772782332746,
+                "top": 2082.958257357239
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1538,7 +1565,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".HiC.combined.decontam.multimap.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".pretext\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".HiC.combined.decontam.multimapping.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".pretext\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
             "tool_version": "0.1.1",
             "type": "tool",
@@ -1546,14 +1573,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "33": {
+        "34": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 33,
+            "id": 34,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Root Path"
                 },
                 "components_1|param_type|component_value": {
@@ -1600,14 +1627,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "34": {
+        "35": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 34,
+            "id": 35,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Root Path"
                 },
                 "components_1|param_type|component_value": {
@@ -1654,27 +1681,27 @@
             "when": null,
             "workflow_outputs": []
         },
-        "35": {
+        "36": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 35,
+            "id": 36,
             "input_connections": {
                 "components_0|param_type|component_value": {
-                    "id": 18,
+                    "id": 19,
                     "output_name": "Alignments path"
                 },
-                "components_1|param_type|component_value": {
+                "components_2|param_type|component_value": {
                     "id": 1,
                     "output_name": "output"
                 },
-                "components_3|param_type|component_value": {
+                "components_4|param_type|component_value": {
                     "id": 2,
                     "output_name": "output"
                 }
             },
             "inputs": [],
-            "label": "Alignment path",
+            "label": "Hi-C Alignment path",
             "name": "Compose text parameter value",
             "outputs": [
                 {
@@ -1683,8 +1710,8 @@
                 }
             ],
             "position": {
-                "left": 3459.589993978635,
-                "top": 2345.925487403574
+                "left": 3478.939261135371,
+                "top": 2285.3999240414414
             },
             "post_job_actions": {
                 "HideDatasetActionout1": {
@@ -1700,7 +1727,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".HiC.combined.decontam.multimap.\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".pretext\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"HiC/\"}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".HiC.combined.decontam.alignment.\"}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 5, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".bam\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
             "tool_version": "0.1.1",
             "type": "tool",
@@ -1708,14 +1735,68 @@
             "when": null,
             "workflow_outputs": []
         },
-        "36": {
+        "37": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "errors": null,
+            "id": 37,
+            "input_connections": {
+                "components_0|param_type|component_value": {
+                    "id": 19,
+                    "output_name": "Alignments path"
+                },
+                "components_2|param_type|component_value": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "components_4|param_type|component_value": {
+                    "id": 2,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "HiFi Alignment path",
+            "name": "Compose text parameter value",
+            "outputs": [
+                {
+                    "name": "out1",
+                    "type": "expression.json"
+                }
+            ],
+            "position": {
+                "left": 3486.5192071442248,
+                "top": 2751.3493838176446
+            },
+            "post_job_actions": {
+                "HideDatasetActionout1": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out1"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+            "tool_shed_repository": {
+                "changeset_revision": "e188c9826e0f",
+                "name": "compose_text_param",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \"HiFi/\"}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".HiFi.combined.decontam.alignment.\"}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 5, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".bam\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.1.1",
+            "type": "tool",
+            "uuid": "864940ed-0651-4ad6-986c-9819a4cb30d8",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "38": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
             "errors": null,
-            "id": 36,
+            "id": 38,
             "input_connections": {
                 "style_cond|type_cond|pick_from_0|value": {
-                    "id": 22,
+                    "id": 23,
                     "output_name": "output_file"
                 },
                 "style_cond|type_cond|pick_from_1|value": {
@@ -1758,14 +1839,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "37": {
+        "39": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
             "errors": null,
-            "id": 37,
+            "id": 39,
             "input_connections": {
                 "style_cond|type_cond|pick_from_0|value": {
-                    "id": 23,
+                    "id": 24,
                     "output_name": "output_file"
                 },
                 "style_cond|type_cond|pick_from_1|value": {
@@ -1808,30 +1889,30 @@
             "when": null,
             "workflow_outputs": []
         },
-        "38": {
+        "40": {
             "annotation": "",
             "content_id": "export_remote",
             "errors": null,
-            "id": 38,
+            "id": 40,
             "input_connections": {
                 "d_uri": {
                     "id": 3,
                     "output_name": "output"
                 },
                 "export_type|datasets_0|infile": {
-                    "id": 19,
-                    "output_name": "data_param"
-                },
-                "export_type|datasets_0|name": {
-                    "id": 24,
-                    "output_name": "out1"
-                },
-                "export_type|datasets_1|infile": {
                     "id": 20,
                     "output_name": "data_param"
                 },
-                "export_type|datasets_1|name": {
+                "export_type|datasets_0|name": {
                     "id": 25,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_1|infile": {
+                    "id": 21,
+                    "output_name": "data_param"
+                },
+                "export_type|datasets_1|name": {
+                    "id": 26,
                     "output_name": "out1"
                 },
                 "when": {
@@ -1862,11 +1943,11 @@
             "when": "$(inputs.when)",
             "workflow_outputs": []
         },
-        "39": {
+        "41": {
             "annotation": "",
             "content_id": "export_remote",
             "errors": null,
-            "id": 39,
+            "id": 41,
             "input_connections": {
                 "d_uri": {
                     "id": 3,
@@ -1877,7 +1958,15 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_0|name": {
-                    "id": 29,
+                    "id": 30,
+                    "output_name": "out1"
+                },
+                "export_type|datasets_10|infile": {
+                    "id": 18,
+                    "output_name": "output"
+                },
+                "export_type|datasets_10|name": {
+                    "id": 37,
                     "output_name": "out1"
                 },
                 "export_type|datasets_1|infile": {
@@ -1885,7 +1974,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_1|name": {
-                    "id": 26,
+                    "id": 27,
                     "output_name": "out1"
                 },
                 "export_type|datasets_2|infile": {
@@ -1893,7 +1982,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_2|name": {
-                    "id": 27,
+                    "id": 28,
                     "output_name": "out1"
                 },
                 "export_type|datasets_3|infile": {
@@ -1901,31 +1990,31 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_3|name": {
-                    "id": 28,
+                    "id": 29,
                     "output_name": "out1"
                 },
                 "export_type|datasets_4|infile": {
-                    "id": 21,
+                    "id": 22,
                     "output_name": "output_file"
                 },
                 "export_type|datasets_4|name": {
-                    "id": 31,
+                    "id": 32,
                     "output_name": "out1"
                 },
                 "export_type|datasets_5|infile": {
-                    "id": 36,
+                    "id": 38,
                     "output_name": "data_param"
                 },
                 "export_type|datasets_5|name": {
-                    "id": 33,
+                    "id": 34,
                     "output_name": "out1"
                 },
                 "export_type|datasets_6|infile": {
-                    "id": 37,
+                    "id": 39,
                     "output_name": "data_param"
                 },
                 "export_type|datasets_6|name": {
-                    "id": 34,
+                    "id": 35,
                     "output_name": "out1"
                 },
                 "export_type|datasets_7|infile": {
@@ -1933,7 +2022,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_7|name": {
-                    "id": 32,
+                    "id": 33,
                     "output_name": "out1"
                 },
                 "export_type|datasets_8|infile": {
@@ -1941,7 +2030,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_8|name": {
-                    "id": 30,
+                    "id": 31,
                     "output_name": "out1"
                 },
                 "export_type|datasets_9|infile": {
@@ -1949,7 +2038,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_9|name": {
-                    "id": 35,
+                    "id": 36,
                     "output_name": "out1"
                 }
             },
@@ -1976,7 +2065,7 @@
                 }
             },
             "tool_id": "export_remote",
-            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 4, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 5, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 6, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 7, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 8, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 9, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 4, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 5, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 6, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 7, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 8, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 9, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 10, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
             "tool_version": "0.1.0",
             "type": "tool",
@@ -1992,6 +2081,6 @@
         }
     },
     "tags": [],
-    "uuid": "45ec3379-6354-4e2d-a269-a0ad1ff33e6e",
-    "version": 9
+    "uuid": "c4eb8bf1-72cc-44f4-b70b-9da7be400a75",
+    "version": 11
 }
