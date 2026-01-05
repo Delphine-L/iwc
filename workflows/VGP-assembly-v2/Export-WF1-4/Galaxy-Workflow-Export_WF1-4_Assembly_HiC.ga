@@ -1219,6 +1219,10 @@
                         "errors": null,
                         "id": 4,
                         "input_connections": {
+                            "components_1|param_type|component_value": {
+                                "id": 0,
+                                "output_name": "output"
+                            },
                             "components_3|param_type|component_value": {
                                 "id": 1,
                                 "output_name": "output"
@@ -1708,8 +1712,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1654.6142878476303,
-                            "top": 1632.0886918831698
+                            "left": 1658.7790301797697,
+                            "top": 1630.7115772968953
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1771,8 +1775,8 @@
                             }
                         ],
                         "position": {
-                            "left": 2021.5569513497367,
-                            "top": 1710.7585841382138
+                            "left": 1992.552391688582,
+                            "top": 1611.8571236559796
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -3454,7 +3458,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "9bfc5009-221f-4298-ae6a-3f52342dbbc5"
+                "uuid": "44176b64-812d-4731-b900-7e83f909c0e0"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -5781,6 +5785,6 @@
         }
     },
     "tags": [],
-    "uuid": "03d9d0b2-e03d-4592-9917-c6cbcbc7e234",
-    "version": 1
+    "uuid": "21c14da0-1010-402a-b637-42070c6a7a31",
+    "version": 2
 }
