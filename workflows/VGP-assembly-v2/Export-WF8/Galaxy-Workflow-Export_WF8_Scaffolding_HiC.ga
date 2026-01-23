@@ -796,8 +796,8 @@
                         "name": "Input parameter",
                         "outputs": [],
                         "position": {
-                            "left": 3.025103718310447,
-                            "top": 1788.351786656025
+                            "left": 1.8145034966600875,
+                            "top": 1758.8513674650662
                         },
                         "tool_id": null,
                         "tool_state": "{\"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
@@ -823,8 +823,8 @@
                         "name": "Input parameter",
                         "outputs": [],
                         "position": {
-                            "left": 5.577193124793666,
-                            "top": 1868.6295968239356
+                            "left": 3.690500027835398,
+                            "top": 1831.9085782922045
                         },
                         "tool_id": null,
                         "tool_state": "{\"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
@@ -850,8 +850,8 @@
                         "name": "Input parameter",
                         "outputs": [],
                         "position": {
-                            "left": 3.910500647240042,
-                            "top": 1972.0670603850367
+                            "left": 5.574931737745428,
+                            "top": 1934.0832592771617
                         },
                         "tool_id": null,
                         "tool_state": "{\"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
@@ -3178,7 +3178,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "e2610141-577b-426b-9c84-6d1e3b8a3f10"
+                "uuid": "4b1af923-ab7f-4823-b0b8-cc3813dedc7e"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -4581,7 +4581,7 @@
             "post_job_actions": {
                 "RenameDatasetActionout": {
                     "action_arguments": {
-                        "newname": "Scaffolded ${Haplotype} exported to  ${Species Name}/${Assembly ID}"
+                        "newname": "Scaffolded ${Haplotype} exported to  ${Species Name}/${Species ID}"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "out"
@@ -4596,14 +4596,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Scaffolded ${Haplotype} exported to  ${Species Name}/${Assembly ID}",
+                    "label": "Scaffolded ${Haplotype} exported to  ${Species Name}/${Species ID}",
                     "output_name": "out",
-                    "uuid": "5a3c4a52-2c3a-4985-8f7f-8fa869936846"
+                    "uuid": "38f68d70-7056-4f79-ba97-5ef7a1c0d67f"
                 }
             ]
         }
     },
     "tags": [],
-    "uuid": "754983bb-621f-4a0e-9915-9c817c842bff",
-    "version": 16
+    "uuid": "acf75713-b046-4093-8295-638330b7414c",
+    "version": 18
 }
