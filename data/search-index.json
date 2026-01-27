@@ -96,6 +96,28 @@
         "updated": "2024-10-11T00:00:00"
     },
     {
+        "iwcID": "cgmlst-bacterial-genome-main",
+        "trsID": "#workflow/github.com/iwc-workflows/cgmlst-bacterial-genome/main",
+        "uuid": "89d3386f-e826-417b-b078-6d9ed20aa5cf",
+        "name": "core genome Multilocus Sequence Typing (cgMLST) of bacterial genome",
+        "annotation": "This workflow performs core genome multilocus sequence typing (cgMLST) on contigs corresponding to one bacterial genome to characterize bacterial strains using curated reference schemes.",
+        "tags": [
+            "Genomics",
+            "fasta",
+            "ABRomics",
+            "bacterial-genomics",
+            "cgMLST",
+            "allele-calling",
+            "typing",
+            "core-genome MLST",
+            "genotyping",
+            "core genome multilocus sequence typing"
+        ],
+        "release": "1.0",
+        "collections": [],
+        "updated": "2025-12-18T00:00:00"
+    },
+    {
         "iwcID": "bacterial_genome_annotation-main",
         "trsID": "#workflow/github.com/iwc-workflows/bacterial_genome_annotation/main",
         "uuid": "47a7aa1d-8cb6-4eab-a6d8-86909bca0d43",
@@ -265,6 +287,24 @@
         "updated": "2025-12-08T00:00:00"
     },
     {
+        "iwcID": "metagenomic-raw-reads-amr-analysis-main",
+        "trsID": "#workflow/github.com/iwc-workflows/metagenomic-raw-reads-amr-analysis/main",
+        "uuid": "b3e1711f-9230-4770-bea1-b0b1de4760c5",
+        "name": "Metagenomics Taxonomic and Antibiotic Resistance Gene (ARG) Profiling",
+        "annotation": "This workflow starts from metagenomics short-read data and performs, taxonomic profiling (using Sylph), predicts Antibiotic Resistance Genes (ARGs) (using Groot and deepARG), and standardizes ARG annotations (using argNorm).",
+        "tags": [
+            "metagenomics",
+            "paired-collection(s)",
+            "taxonomy",
+            "AntibioticResistanceGenes",
+            "ABRomics",
+            "short-reads"
+        ],
+        "release": "1.0",
+        "collections": [],
+        "updated": "2025-11-12T00:00:00"
+    },
+    {
         "iwcID": "gene-based-pathogen-identification-main",
         "trsID": "#workflow/github.com/iwc-workflows/gene-based-pathogen-identification/main",
         "uuid": "d6795753-1562-4ccc-8f9c-f598acd5404e",
@@ -358,7 +398,7 @@
     {
         "iwcID": "host-contamination-removal-short-reads-main",
         "trsID": "#workflow/github.com/iwc-workflows/host-contamination-removal-short-reads/main",
-        "uuid": "d31ffe9d-0fdc-470d-a70c-2e6b121e77d3",
+        "uuid": "faf66550-4b78-468b-bcf6-09227662f1ce",
         "name": "Host or Contamination Removal on Short-Reads",
         "annotation": "This workflow takes paired-end Illumina fastq(.gz) files and runs Bowtie to map the reads against a reference genome (human, by default) and keep only the reads that do not align. MultiQC is used to aggregate the mapping reports.",
         "tags": [
@@ -366,14 +406,14 @@
             "contamination",
             "short_reads"
         ],
-        "release": "0.2",
+        "release": "0.3",
         "collections": [],
-        "updated": "2025-12-08T00:00:00"
+        "updated": "2026-01-19T00:00:00"
     },
     {
         "iwcID": "host-contamination-removal-long-reads-main",
         "trsID": "#workflow/github.com/iwc-workflows/host-contamination-removal-long-reads/main",
-        "uuid": "01c0f5e3-07cb-42c6-af3a-e77249c6b6ba",
+        "uuid": "dd1fa1e1-99f1-4094-bb87-d797ae61c74e",
         "name": "Host or Contamination Removal on Long-Reads",
         "annotation": "This workflow takes Nanopore fastq(.gz) files and runs Minimap2 to map the reads against a reference genome (human, by default). It filters the output to keep only the unmapped reads and generates mapping statistics that are aggregated into a MultiQC report.",
         "tags": [
@@ -381,9 +421,9 @@
             "contamination",
             "long_reads"
         ],
-        "release": "0.2",
+        "release": "0.3",
         "collections": [],
-        "updated": "2025-12-08T00:00:00"
+        "updated": "2026-01-19T00:00:00"
     },
     {
         "iwcID": "sars-cov-2-pe-illumina-artic-ivar-analysis-sars-cov-2-illumina-amplicon-ivar-pangolin-nextclade",
@@ -538,18 +578,18 @@
     {
         "iwcID": "rnaseq-de-main",
         "trsID": "#workflow/github.com/iwc-workflows/rnaseq-de/main",
-        "uuid": "7a32e152-5491-461e-8936-2bbbd84baf20",
+        "uuid": "2b317c5b-3757-4a0b-9fe3-a2a4db686e9c",
         "name": "RNA-Seq Differential Expression Analysis with Visualization",
         "annotation": "Identifies differentially expressed genes between exactly two experimental conditions from count tables. The workflow performs statistical testing, applies filters based on adjusted p-value and log2 fold change thresholds, and generates publication-quality visualizations including volcano plots, MA plots, and heatmaps. Takes two collections of count tables as input and produces filtered gene lists and interactive plots for interpreting expression differences. Optimal for simple two-condition experimental designs.",
         "tags": [
             "transcriptomics",
             "RNAseq"
         ],
-        "release": "0.5",
+        "release": "0.6",
         "collections": [
             "Transcriptomics"
         ],
-        "updated": "2025-12-08T00:00:00"
+        "updated": "2026-01-12T00:00:00"
     },
     {
         "iwcID": "rnaseq-pe-main",
