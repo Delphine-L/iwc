@@ -17,10 +17,64 @@
     },
     "steps": {
         "0": {
-            "annotation": "Species name without spaces. e.g. Dermatemys_mawii",
+            "annotation": "If set to yes, all inputs need to be provided. If Hap2 inputs are missing, they will contain the data from hap1. ",
             "content_id": null,
             "errors": null,
             "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "If set to yes, all inputs need to be provided. If Hap2 inputs are missing, they will contain the data from hap1. ",
+                    "name": "Export both haplotypes?"
+                }
+            ],
+            "label": "Export both haplotypes?",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "left": 10.510513023606952,
+                "top": 328.76600251999685
+            },
+            "tool_id": null,
+            "tool_state": "{\"default\": true, \"validators\": [], \"parameter_type\": \"boolean\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "ef973e1d-6cf2-4560-8101-57bd67c2dfa5",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "Root directory for export. Files will be exported to species/ folder.",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Root directory for export. Files will be exported to species/ folder.",
+                    "name": "Root Directory for Export"
+                }
+            ],
+            "label": "Root Directory for Export",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "left": 4.255011619212909,
+                "top": 437.51133332451514
+            },
+            "tool_id": null,
+            "tool_state": "{\"validators\": [], \"parameter_type\": \"directory_uri\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "4b93b542-ea8d-457b-b1ff-7aec7413a04c",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "2": {
+            "annotation": "Species name without spaces. e.g. Dermatemys_mawii",
+            "content_id": null,
+            "errors": null,
+            "id": 2,
             "input_connections": {},
             "inputs": [
                 {
@@ -33,7 +87,7 @@
             "outputs": [],
             "position": {
                 "left": 1.3436279296875,
-                "top": 174.1870841414941
+                "top": 537.7034460487009
             },
             "tool_id": null,
             "tool_state": "{\"multiple\": false, \"validators\": [{\"message\": \"Please do not use blank spaces\", \"expression\": \"^\\\\\\\\S+$\", \"negate\": false, \"type\": \"regex\"}], \"parameter_type\": \"text\", \"optional\": false}",
@@ -43,11 +97,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "1": {
+        "3": {
             "annotation": "Assembly ID without spaces. e.g. rDerMaw1",
             "content_id": null,
             "errors": null,
-            "id": 1,
+            "id": 3,
             "input_connections": {},
             "inputs": [
                 {
@@ -60,7 +114,7 @@
             "outputs": [],
             "position": {
                 "left": 1.34368896484375,
-                "top": 269.16405401811187
+                "top": 632.6804159253187
             },
             "tool_id": null,
             "tool_state": "{\"multiple\": false, \"validators\": [{\"message\": \"Please do not use blank spaces\", \"expression\": \"^\\\\\\\\S+$\", \"negate\": false, \"type\": \"regex\"}], \"parameter_type\": \"text\", \"optional\": false}",
@@ -70,11 +124,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "2": {
+        "4": {
             "annotation": "Date in YYYYMMDD format. e.g. 20251106",
             "content_id": null,
             "errors": null,
-            "id": 2,
+            "id": 4,
             "input_connections": {},
             "inputs": [
                 {
@@ -87,7 +141,7 @@
             "outputs": [],
             "position": {
                 "left": 1.34368896484375,
-                "top": 369.16405401811187
+                "top": 732.6804159253187
             },
             "tool_id": null,
             "tool_state": "{\"multiple\": false, \"validators\": [{\"message\": \"Please use YYYYMMDD format\", \"expression\": \"^[0-9]{8}$\", \"negate\": false, \"type\": \"regex\"}], \"parameter_type\": \"text\", \"optional\": false}",
@@ -97,11 +151,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "3": {
+        "5": {
             "annotation": "",
             "content_id": null,
             "errors": null,
-            "id": 3,
+            "id": 5,
             "input_connections": {},
             "inputs": [
                 {
@@ -114,156 +168,21 @@
             "outputs": [],
             "position": {
                 "left": 0.0,
-                "top": 461.9308280379785
+                "top": 825.4471899451853
             },
             "tool_id": null,
             "tool_state": "{\"default\": \"hap1/hap2\", \"multiple\": false, \"validators\": [], \"restrictOnConnections\": true, \"parameter_type\": \"text\", \"optional\": false}",
             "tool_version": null,
             "type": "parameter_input",
-            "uuid": "4d7598a6-0627-4029-aa17-32f6c14f6125",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "4": {
-            "annotation": "Root directory for export. Files will be exported to species/ folder.",
-            "content_id": null,
-            "errors": null,
-            "id": 4,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Root directory for export. Files will be exported to species/ folder.",
-                    "name": "Root Directory for Export"
-                }
-            ],
-            "label": "Root Directory for Export",
-            "name": "Input parameter",
-            "outputs": [],
-            "position": {
-                "left": 0.75,
-                "top": 568.3807792098535
-            },
-            "tool_id": null,
-            "tool_state": "{\"validators\": [], \"parameter_type\": \"directory_uri\", \"optional\": false}",
-            "tool_version": null,
-            "type": "parameter_input",
-            "uuid": "4b93b542-ea8d-457b-b1ff-7aec7413a04c",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "5": {
-            "annotation": "Gaps in sequence for haplotype 1",
-            "content_id": null,
-            "errors": null,
-            "id": 5,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Gaps in sequence for haplotype 1",
-                    "name": "Gaps Sequence Hap1"
-                }
-            ],
-            "label": "Gaps Sequence Hap1",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 978.5480522140583,
-                "top": 37.74955090787478
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "2a1f3e60-7382-4cb6-84df-c03c1c1e4315",
+            "uuid": "48a5e9db-acef-43f7-9472-c3dc621c756a",
             "when": null,
             "workflow_outputs": []
         },
         "6": {
-            "annotation": "Gaps in coverage for haplotype 1",
-            "content_id": null,
-            "errors": null,
-            "id": 6,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Gaps in coverage for haplotype 1",
-                    "name": "Gaps in coverage Hap1"
-                }
-            ],
-            "label": "Gaps in coverage Hap1",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 977.4978940782256,
-                "top": 156.58106311426525
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "95f0a15d-7d47-4344-bffb-5346de9cc1db",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "7": {
-            "annotation": "Genome coverage bigwig for haplotype 1",
-            "content_id": null,
-            "errors": null,
-            "id": 7,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Genome coverage bigwig for haplotype 1",
-                    "name": "Genome Coverage Hap1"
-                }
-            ],
-            "label": "Genome Coverage Hap1",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 971.6682464148045,
-                "top": 337.62201822027725
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "50e5e6a7-126b-4ab0-b852-a06a3441051e",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "8": {
-            "annotation": "Telomeres bed file for haplotype 1",
-            "content_id": null,
-            "errors": null,
-            "id": 8,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Telomeres bed file for haplotype 1",
-                    "name": "Telomeres Hap1"
-                }
-            ],
-            "label": "Telomeres Hap1",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 993.4060701580881,
-                "top": 474.18644893570035
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bed\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "bf2b574a-9dbc-4dfc-a3a6-564070b3869e",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "9": {
             "annotation": "Pretext contact map for haplotype 1",
             "content_id": null,
             "errors": null,
-            "id": 9,
+            "id": 6,
             "input_connections": {},
             "inputs": [
                 {
@@ -275,8 +194,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1007.3726507770012,
-                "top": 595.351497349257
+                "left": 1151.8358699002706,
+                "top": 0.0
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"pretext\"], \"tag\": \"\"}",
@@ -286,146 +205,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "10": {
-            "annotation": "Hi-C alignment BAM for haplotype 1",
-            "content_id": null,
-            "errors": null,
-            "id": 10,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Hi-C alignment BAM for haplotype 1",
-                    "name": "HiC Alignment Hap1"
-                }
-            ],
-            "label": "HiC Alignment Hap1",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1054.9847619033326,
-                "top": 673.3428445658512
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "7f574d42-9af7-4109-af3d-cd5a2ec65fae",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "11": {
-            "annotation": "Gaps in sequence for haplotype 2",
-            "content_id": null,
-            "errors": null,
-            "id": 11,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Gaps in sequence for haplotype 2",
-                    "name": "Gaps Sequence Hap2"
-                }
-            ],
-            "label": "Gaps Sequence Hap2",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1292.9337511458339,
-                "top": 50.01173617480879
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "76a4296f-0b55-4009-b5d5-0f9bd57baf76",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "12": {
-            "annotation": "Gaps in coverage for haplotype 2",
-            "content_id": null,
-            "errors": null,
-            "id": 12,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Gaps in coverage for haplotype 2",
-                    "name": "Gaps in coverage Hap2"
-                }
-            ],
-            "label": "Gaps in coverage Hap2",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1299.3570826992614,
-                "top": 166.66986098591747
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "671406b4-ec5e-4c0c-9250-58bbe83b2d0e",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "13": {
-            "annotation": "HiFi alignment BAM for haplotype 1",
-            "content_id": null,
-            "errors": null,
-            "id": 13,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "HiFi alignment BAM for haplotype 1",
-                    "name": "HiFi Alignment Hap1"
-                }
-            ],
-            "label": "HiFi Alignment Hap1",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1042.9537001446522,
-                "top": 834.2136781474403
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "59eeab0f-e999-4cc5-8d97-5e0ff73857d4",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "14": {
-            "annotation": "Genome coverage bigwig for haplotype 2",
-            "content_id": null,
-            "errors": null,
-            "id": 14,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Genome coverage bigwig for haplotype 2",
-                    "name": "Genome Coverage Hap2"
-                }
-            ],
-            "label": "Genome Coverage Hap2",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1332.6580699460517,
-                "top": 349.440885081936
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "1b1a486e-c9de-4be1-965d-0095f579becd",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "15": {
+        "7": {
             "annotation": "",
             "content_id": null,
             "errors": null,
-            "id": 15,
+            "id": 7,
             "input_connections": {},
             "inputs": [
                 {
@@ -437,76 +221,22 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1038.1738460210208,
-                "top": 961.2582631163009
+                "left": 1153.2869905080174,
+                "top": 70.3053706720022
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"fasta.gz\"], \"tag\": \"\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "a96bc8a2-e009-46fc-8916-1a549a6d292d",
+            "uuid": "75c1665f-f2ed-43d6-8d91-00f9f7564f2f",
             "when": null,
             "workflow_outputs": []
         },
-        "16": {
-            "annotation": "Telomeres bed file for haplotype 2",
-            "content_id": null,
-            "errors": null,
-            "id": 16,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Telomeres bed file for haplotype 2",
-                    "name": "Telomeres Hap2"
-                }
-            ],
-            "label": "Telomeres Hap2",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1330.9194329490347,
-                "top": 495.0448062572789
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bed\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "82d8c545-7509-40e7-b55e-569e36eb5212",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "17": {
-            "annotation": "Pretext contact map for haplotype 2",
-            "content_id": null,
-            "errors": null,
-            "id": 17,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "Pretext contact map for haplotype 2",
-                    "name": "Pretext Hap2"
-                }
-            ],
-            "label": "Pretext Hap2",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 1328.8845009010795,
-                "top": 609.4093485109327
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"pretext\"], \"tag\": \"\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "7840423d-e5d3-432d-83e5-d91701400f80",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "18": {
+        "8": {
             "annotation": "",
             "content_id": null,
             "errors": null,
-            "id": 18,
+            "id": 8,
             "input_connections": {},
             "inputs": [
                 {
@@ -518,76 +248,211 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1037.050890208604,
-                "top": 1111.4048686893088
+                "left": 1156.6365127101224,
+                "top": 174.14897115222655
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"csv\"], \"tag\": \"\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "d38cbb47-711b-4be7-8e76-70ac3ab24b3b",
+            "uuid": "a76b80b5-c4ac-4b3a-956c-74428274cc4c",
             "when": null,
             "workflow_outputs": []
         },
-        "19": {
-            "annotation": "Hi-C alignment BAM for haplotype 2",
+        "9": {
+            "annotation": "Hi-C alignment BAM for haplotype 1",
             "content_id": null,
             "errors": null,
-            "id": 19,
+            "id": 9,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "Hi-C alignment BAM for haplotype 2",
-                    "name": "HiC Alignment Hap2"
+                    "description": "Hi-C alignment BAM for haplotype 1",
+                    "name": "HiC Alignment Hap1"
                 }
             ],
-            "label": "HiC Alignment Hap2",
+            "label": "HiC Alignment Hap1",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1357.5368885997154,
-                "top": 705.2558146769693
+                "left": 1145.478940271016,
+                "top": 269.9624497396634
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "09770b36-2af5-42d1-bb22-321d06dd5c92",
+            "uuid": "7f574d42-9af7-4109-af3d-cd5a2ec65fae",
             "when": null,
             "workflow_outputs": []
         },
-        "20": {
-            "annotation": "HiFi alignment BAM for haplotype 2",
+        "10": {
+            "annotation": "HiFi alignment BAM for haplotype 1",
             "content_id": null,
             "errors": null,
-            "id": 20,
+            "id": 10,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "HiFi alignment BAM for haplotype 2",
-                    "name": "HiFi Alignment Hap2"
+                    "description": "HiFi alignment BAM for haplotype 1",
+                    "name": "HiFi Alignment Hap1"
                 }
             ],
-            "label": "HiFi Alignment Hap2",
+            "label": "HiFi Alignment Hap1",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1318.631087916016,
-                "top": 797.6976829935422
+                "left": 1152.4257528076248,
+                "top": 382.9371985132557
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"bam\"], \"tag\": \"\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "95b3753d-b287-44d3-b46a-0ce88e14d47c",
+            "uuid": "59eeab0f-e999-4cc5-8d97-5e0ff73857d4",
             "when": null,
             "workflow_outputs": []
         },
-        "21": {
+        "11": {
+            "annotation": "Gaps in coverage for haplotype 1",
+            "content_id": null,
+            "errors": null,
+            "id": 11,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Gaps in coverage for haplotype 1",
+                    "name": "Gaps in coverage Hap1"
+                }
+            ],
+            "label": "Gaps in coverage Hap1",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1143.2459976000735,
+                "top": 481.3904626187333
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "95f0a15d-7d47-4344-bffb-5346de9cc1db",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "12": {
+            "annotation": "Genome coverage bigwig for haplotype 1",
+            "content_id": null,
+            "errors": null,
+            "id": 12,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Genome coverage bigwig for haplotype 1",
+                    "name": "Genome Coverage Hap1"
+                }
+            ],
+            "label": "Genome Coverage Hap1",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1142.0036946759642,
+                "top": 579.5673408315408
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"bigwig\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "50e5e6a7-126b-4ab0-b852-a06a3441051e",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "13": {
+            "annotation": "Telomeres bed file for haplotype 1",
+            "content_id": null,
+            "errors": null,
+            "id": 13,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Telomeres bed file for haplotype 1",
+                    "name": "Telomeres Hap1"
+                }
+            ],
+            "label": "Telomeres Hap1",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1147.4021186786138,
+                "top": 686.9758540857364
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"bed\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "bf2b574a-9dbc-4dfc-a3a6-564070b3869e",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "14": {
+            "annotation": "Gaps in sequence for haplotype 1",
+            "content_id": null,
+            "errors": null,
+            "id": 14,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Gaps in sequence for haplotype 1",
+                    "name": "Gaps Sequence Hap1"
+                }
+            ],
+            "label": "Gaps Sequence Hap1",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1154.7086818878113,
+                "top": 802.532747122987
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"bedgraph\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "2a1f3e60-7382-4cb6-84df-c03c1c1e4315",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "15": {
+            "annotation": "Pretext contact map for haplotype 2",
+            "content_id": null,
+            "errors": null,
+            "id": 15,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Pretext contact map for haplotype 2",
+                    "name": "Pretext Hap2"
+                }
+            ],
+            "label": "Pretext Hap2",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1107.109365927675,
+                "top": 1039.3719507302656
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": true, \"format\": [\"pretext\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "7840423d-e5d3-432d-83e5-d91701400f80",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "16": {
             "annotation": "",
             "content_id": null,
             "errors": null,
-            "id": 21,
+            "id": 16,
             "input_connections": {},
             "inputs": [
                 {
@@ -599,22 +464,22 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1326.0173176189865,
-                "top": 968.1837649529432
+                "left": 1109.9700837320238,
+                "top": 1122.4559083329636
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"fasta.gz\"], \"tag\": \"\"}",
+            "tool_state": "{\"optional\": true, \"format\": [\"fasta.gz\"], \"tag\": \"\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "a45ea43b-249a-4e18-85c4-6744ec0565a3",
+            "uuid": "420e2fbe-8019-44c7-8a5a-21f45b80b86d",
             "when": null,
             "workflow_outputs": []
         },
-        "22": {
+        "17": {
             "annotation": "",
             "content_id": null,
             "errors": null,
-            "id": 22,
+            "id": 17,
             "input_connections": {},
             "inputs": [
                 {
@@ -626,38 +491,200 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1337.9140865018312,
-                "top": 1162.2350260231062
+                "left": 1098.6350904074927,
+                "top": 1220.2099372415407
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"csv\"], \"tag\": \"\"}",
+            "tool_state": "{\"optional\": true, \"format\": [\"csv\"], \"tag\": \"\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "ccd97a68-0fb9-4370-8d33-11270092198b",
+            "uuid": "fababf26-a728-4169-96e0-112671142daf",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "18": {
+            "annotation": "Hi-C alignment BAM for haplotype 2",
+            "content_id": null,
+            "errors": null,
+            "id": 18,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Hi-C alignment BAM for haplotype 2",
+                    "name": "HiC Alignment Hap2"
+                }
+            ],
+            "label": "HiC Alignment Hap2",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1100.2219618332617,
+                "top": 1317.911147169172
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": true, \"format\": [\"bam\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "09770b36-2af5-42d1-bb22-321d06dd5c92",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "19": {
+            "annotation": "HiFi alignment BAM for haplotype 2",
+            "content_id": null,
+            "errors": null,
+            "id": 19,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "HiFi alignment BAM for haplotype 2",
+                    "name": "HiFi Alignment Hap2"
+                }
+            ],
+            "label": "HiFi Alignment Hap2",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1095.6642585415527,
+                "top": 1425.2937149564225
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": true, \"format\": [\"bam\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "95b3753d-b287-44d3-b46a-0ce88e14d47c",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "20": {
+            "annotation": "Gaps in coverage for haplotype 2",
+            "content_id": null,
+            "errors": null,
+            "id": 20,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Gaps in coverage for haplotype 2",
+                    "name": "Gaps in coverage Hap2"
+                }
+            ],
+            "label": "Gaps in coverage Hap2",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1097.8331258231567,
+                "top": 1526.7761015277024
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": true, \"format\": [\"bedgraph\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "3421c353-6065-493f-810e-a15b77ce2c05",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "21": {
+            "annotation": "Genome coverage bigwig for haplotype 2",
+            "content_id": null,
+            "errors": null,
+            "id": 21,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Genome coverage bigwig for haplotype 2",
+                    "name": "Genome Coverage Hap2"
+                }
+            ],
+            "label": "Genome Coverage Hap2",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1095.8833863495677,
+                "top": 1647.7782936334181
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": true, \"format\": [\"bigwig\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "3e417667-7dad-49dd-9f0d-7ebb9edcf925",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "22": {
+            "annotation": "Telomeres bed file for haplotype 2",
+            "content_id": null,
+            "errors": null,
+            "id": 22,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Telomeres bed file for haplotype 2",
+                    "name": "Telomeres Hap2"
+                }
+            ],
+            "label": "Telomeres Hap2",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1098.7855192327534,
+                "top": 1759.322735580396
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": true, \"format\": [\"bed\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "82d8c545-7509-40e7-b55e-569e36eb5212",
             "when": null,
             "workflow_outputs": []
         },
         "23": {
-            "annotation": "",
+            "annotation": "Gaps in sequence for haplotype 2. (Non optional if \"Export both haplotypes?\" is Yes)",
+            "content_id": null,
+            "errors": null,
             "id": 23,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Gaps in sequence for haplotype 2. (Non optional if \"Export both haplotypes?\" is Yes)",
+                    "name": "Gaps Sequence Hap2"
+                }
+            ],
+            "label": "Gaps Sequence Hap2",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1098.9590390998658,
+                "top": 1847.4780362250926
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": true, \"format\": [\"bedgraph\"], \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "76a4296f-0b55-4009-b5d5-0f9bd57baf76",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "24": {
+            "annotation": "",
+            "id": 24,
             "input_connections": {
                 "Assembly Date": {
-                    "id": 2,
+                    "id": 4,
                     "input_subworkflow_step_id": 2,
                     "output_name": "output"
                 },
                 "Assembly ID": {
-                    "id": 1,
+                    "id": 3,
                     "input_subworkflow_step_id": 1,
                     "output_name": "output"
                 },
                 "Assembly type": {
-                    "id": 3,
+                    "id": 5,
                     "input_subworkflow_step_id": 3,
                     "output_name": "output"
                 },
                 "Species Name": {
-                    "id": 0,
+                    "id": 2,
                     "input_subworkflow_step_id": 0,
                     "output_name": "output"
                 }
@@ -667,8 +694,8 @@
             "name": "Curated Paths Creation",
             "outputs": [],
             "position": {
-                "left": 508.199951171875,
-                "top": 71.54334634852535
+                "left": 545.0598283310154,
+                "top": 285.98230883439703
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -2396,167 +2423,545 @@
             },
             "tool_id": null,
             "type": "subworkflow",
-            "uuid": "eda24e99-1b4b-4f9f-85fc-9e6e93652ed0",
+            "uuid": "050efcd8-c3bb-430d-bf29-722c78633d6d",
             "when": null,
             "workflow_outputs": []
         },
-        "24": {
-            "annotation": "Export all datasets for both haplotypes (hap1 and hap2)",
-            "content_id": "export_remote",
+        "25": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
             "errors": null,
-            "id": 24,
+            "id": 25,
             "input_connections": {
-                "d_uri": {
-                    "id": 4,
-                    "output_name": "output"
-                },
-                "export_type|datasets_0|infile": {
-                    "id": 5,
-                    "output_name": "output"
-                },
-                "export_type|datasets_0|name": {
-                    "id": 23,
-                    "output_name": "Hap1 gaps_seq Path"
-                },
-                "export_type|datasets_10|infile": {
-                    "id": 10,
-                    "output_name": "output"
-                },
-                "export_type|datasets_10|name": {
-                    "id": 23,
-                    "output_name": "Hap1 HiC Path"
-                },
-                "export_type|datasets_11|infile": {
-                    "id": 19,
-                    "output_name": "output"
-                },
-                "export_type|datasets_11|name": {
-                    "id": 23,
-                    "output_name": "Hap2 HiC Path"
-                },
-                "export_type|datasets_12|infile": {
-                    "id": 13,
-                    "output_name": "output"
-                },
-                "export_type|datasets_12|name": {
-                    "id": 23,
-                    "output_name": "Hap1 HiFi Path"
-                },
-                "export_type|datasets_13|infile": {
-                    "id": 20,
-                    "output_name": "output"
-                },
-                "export_type|datasets_13|name": {
-                    "id": 23,
-                    "output_name": "Hap2 HiFi Path"
-                },
-                "export_type|datasets_14|infile": {
+                "style_cond|type_cond|pick_from_0|value": {
                     "id": 15,
                     "output_name": "output"
                 },
-                "export_type|datasets_14|name": {
-                    "id": 23,
-                    "output_name": "Hap1 Fasta Path"
-                },
-                "export_type|datasets_15|infile": {
-                    "id": 21,
-                    "output_name": "output"
-                },
-                "export_type|datasets_15|name": {
-                    "id": 23,
-                    "output_name": "Hap2 Fasta Path"
-                },
-                "export_type|datasets_16|infile": {
-                    "id": 18,
-                    "output_name": "output"
-                },
-                "export_type|datasets_16|name": {
-                    "id": 23,
-                    "output_name": "Hap1 chromosomes Path"
-                },
-                "export_type|datasets_17|infile": {
-                    "id": 22,
-                    "output_name": "output"
-                },
-                "export_type|datasets_17|name": {
-                    "id": 23,
-                    "output_name": "Hap2 chromosomes Path"
-                },
-                "export_type|datasets_1|infile": {
-                    "id": 11,
-                    "output_name": "output"
-                },
-                "export_type|datasets_1|name": {
-                    "id": 23,
-                    "output_name": "Hap2 gaps_seq Path"
-                },
-                "export_type|datasets_2|infile": {
+                "style_cond|type_cond|pick_from_1|value": {
                     "id": 6,
                     "output_name": "output"
-                },
-                "export_type|datasets_2|name": {
-                    "id": 23,
-                    "output_name": "Hap1 gaps_cov Path"
-                },
-                "export_type|datasets_3|infile": {
-                    "id": 12,
-                    "output_name": "output"
-                },
-                "export_type|datasets_3|name": {
-                    "id": 23,
-                    "output_name": "Hap2 gaps_cov Path"
-                },
-                "export_type|datasets_4|infile": {
-                    "id": 7,
-                    "output_name": "output"
-                },
-                "export_type|datasets_4|name": {
-                    "id": 23,
-                    "output_name": "Hap1 Coverage Path"
-                },
-                "export_type|datasets_5|infile": {
-                    "id": 14,
-                    "output_name": "output"
-                },
-                "export_type|datasets_5|name": {
-                    "id": 23,
-                    "output_name": "Hap2 Coverage Path"
-                },
-                "export_type|datasets_6|infile": {
-                    "id": 8,
-                    "output_name": "output"
-                },
-                "export_type|datasets_6|name": {
-                    "id": 23,
-                    "output_name": "Hap1 telomeres Path"
-                },
-                "export_type|datasets_7|infile": {
-                    "id": 16,
-                    "output_name": "output"
-                },
-                "export_type|datasets_7|name": {
-                    "id": 23,
-                    "output_name": "Hap2 telomeres Path"
-                },
-                "export_type|datasets_8|infile": {
-                    "id": 9,
-                    "output_name": "output"
-                },
-                "export_type|datasets_8|name": {
-                    "id": 23,
-                    "output_name": "Hap1 Pretext Path"
-                },
-                "export_type|datasets_9|infile": {
-                    "id": 17,
-                    "output_name": "output"
-                },
-                "export_type|datasets_9|name": {
-                    "id": 23,
-                    "output_name": "Hap2 Pretext Path"
                 }
             },
             "inputs": [],
-            "label": "Export all datasets",
+            "label": "Pretext",
+            "name": "Pick parameter value",
+            "outputs": [
+                {
+                    "name": "data_param",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1618.7025466210764,
+                "top": 1017.6130465380534
+            },
+            "post_job_actions": {
+                "HideDatasetActiondata_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "data_param"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "tool_shed_repository": {
+                "changeset_revision": "b19e21af9c52",
+                "name": "pick_value",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.2.0",
+            "type": "tool",
+            "uuid": "bc38d0f1-2d42-436c-8dbc-977f2610763b",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "26": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "errors": null,
+            "id": 26,
+            "input_connections": {
+                "style_cond|type_cond|pick_from_0|value": {
+                    "id": 16,
+                    "output_name": "output"
+                },
+                "style_cond|type_cond|pick_from_1|value": {
+                    "id": 7,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "Fasta",
+            "name": "Pick parameter value",
+            "outputs": [
+                {
+                    "name": "data_param",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1611.6915052230047,
+                "top": 1195.6899726076635
+            },
+            "post_job_actions": {
+                "HideDatasetActiondata_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "data_param"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "tool_shed_repository": {
+                "changeset_revision": "b19e21af9c52",
+                "name": "pick_value",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.2.0",
+            "type": "tool",
+            "uuid": "2c9390c0-8ff9-4fb5-8a0c-239188f829f8",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "27": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "errors": null,
+            "id": 27,
+            "input_connections": {
+                "style_cond|type_cond|pick_from_0|value": {
+                    "id": 17,
+                    "output_name": "output"
+                },
+                "style_cond|type_cond|pick_from_1|value": {
+                    "id": 8,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "Chromosomes",
+            "name": "Pick parameter value",
+            "outputs": [
+                {
+                    "name": "data_param",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1611.6757783468315,
+                "top": 1336.3865385733393
+            },
+            "post_job_actions": {
+                "HideDatasetActiondata_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "data_param"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "tool_shed_repository": {
+                "changeset_revision": "b19e21af9c52",
+                "name": "pick_value",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.2.0",
+            "type": "tool",
+            "uuid": "b175b564-a7fd-4263-b4de-756d2afd0c9a",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "28": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "errors": null,
+            "id": 28,
+            "input_connections": {
+                "style_cond|type_cond|pick_from_0|value": {
+                    "id": 18,
+                    "output_name": "output"
+                },
+                "style_cond|type_cond|pick_from_1|value": {
+                    "id": 9,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "Hic alignments",
+            "name": "Pick parameter value",
+            "outputs": [
+                {
+                    "name": "data_param",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1616.0255701817723,
+                "top": 1528.2092131189972
+            },
+            "post_job_actions": {
+                "HideDatasetActiondata_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "data_param"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "tool_shed_repository": {
+                "changeset_revision": "b19e21af9c52",
+                "name": "pick_value",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.2.0",
+            "type": "tool",
+            "uuid": "22051ad7-3f62-48a6-acfc-e53a05bc3835",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "29": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "errors": null,
+            "id": 29,
+            "input_connections": {
+                "style_cond|type_cond|pick_from_0|value": {
+                    "id": 19,
+                    "output_name": "output"
+                },
+                "style_cond|type_cond|pick_from_1|value": {
+                    "id": 10,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "HiFi alignments",
+            "name": "Pick parameter value",
+            "outputs": [
+                {
+                    "name": "data_param",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1618.1812006759303,
+                "top": 1698.2611729779112
+            },
+            "post_job_actions": {
+                "HideDatasetActiondata_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "data_param"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "tool_shed_repository": {
+                "changeset_revision": "b19e21af9c52",
+                "name": "pick_value",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.2.0",
+            "type": "tool",
+            "uuid": "0c46be1e-7478-4164-8079-8f070debbd82",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "30": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "errors": null,
+            "id": 30,
+            "input_connections": {
+                "style_cond|type_cond|pick_from_0|value": {
+                    "id": 20,
+                    "output_name": "output"
+                },
+                "style_cond|type_cond|pick_from_1|value": {
+                    "id": 11,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "Gaps Coverage",
+            "name": "Pick parameter value",
+            "outputs": [
+                {
+                    "name": "data_param",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1609.1524010648202,
+                "top": 1873.4982839111726
+            },
+            "post_job_actions": {
+                "HideDatasetActiondata_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "data_param"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "tool_shed_repository": {
+                "changeset_revision": "b19e21af9c52",
+                "name": "pick_value",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.2.0",
+            "type": "tool",
+            "uuid": "0266c98b-e822-4db4-ba86-2e68df0b3eab",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "31": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "errors": null,
+            "id": 31,
+            "input_connections": {
+                "style_cond|type_cond|pick_from_0|value": {
+                    "id": 21,
+                    "output_name": "output"
+                },
+                "style_cond|type_cond|pick_from_1|value": {
+                    "id": 12,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "Coverage",
+            "name": "Pick parameter value",
+            "outputs": [
+                {
+                    "name": "data_param",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1606.539642703224,
+                "top": 2043.2360994185244
+            },
+            "post_job_actions": {
+                "HideDatasetActiondata_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "data_param"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "tool_shed_repository": {
+                "changeset_revision": "b19e21af9c52",
+                "name": "pick_value",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.2.0",
+            "type": "tool",
+            "uuid": "1587972e-b9b7-4bfd-aa4c-f2d1a1b1fb1b",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "32": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "errors": null,
+            "id": 32,
+            "input_connections": {
+                "style_cond|type_cond|pick_from_0|value": {
+                    "id": 22,
+                    "output_name": "output"
+                },
+                "style_cond|type_cond|pick_from_1|value": {
+                    "id": 13,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "Telomeres",
+            "name": "Pick parameter value",
+            "outputs": [
+                {
+                    "name": "data_param",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1610.9685931482372,
+                "top": 2199.6803796684626
+            },
+            "post_job_actions": {
+                "HideDatasetActiondata_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "data_param"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "tool_shed_repository": {
+                "changeset_revision": "b19e21af9c52",
+                "name": "pick_value",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.2.0",
+            "type": "tool",
+            "uuid": "d470185e-2a9f-4423-80bc-a6e57d7ff579",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "33": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "errors": null,
+            "id": 33,
+            "input_connections": {
+                "style_cond|type_cond|pick_from_0|value": {
+                    "id": 23,
+                    "output_name": "output"
+                },
+                "style_cond|type_cond|pick_from_1|value": {
+                    "id": 14,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "Gaps sequence",
+            "name": "Pick parameter value",
+            "outputs": [
+                {
+                    "name": "data_param",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1599.9922820376628,
+                "top": 2375.30817241733
+            },
+            "post_job_actions": {
+                "HideDatasetActiondata_param": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "data_param"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
+            "tool_shed_repository": {
+                "changeset_revision": "b19e21af9c52",
+                "name": "pick_value",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"style_cond\": {\"pick_style\": \"first\", \"__current_case__\": 0, \"type_cond\": {\"param_type\": \"data\", \"__current_case__\": 4, \"pick_from\": [{\"__index__\": 0, \"value\": {\"__class__\": \"RuntimeValue\"}}, {\"__index__\": 1, \"value\": {\"__class__\": \"RuntimeValue\"}}]}}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.2.0",
+            "type": "tool",
+            "uuid": "20f8b4ee-d043-407e-b54a-069c94248f22",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "34": {
+            "annotation": "",
+            "content_id": "export_remote",
+            "errors": null,
+            "id": 34,
+            "input_connections": {
+                "d_uri": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "export_type|datasets_0|infile": {
+                    "id": 6,
+                    "output_name": "output"
+                },
+                "export_type|datasets_0|name": {
+                    "id": 24,
+                    "output_name": "Hap1 Pretext Path"
+                },
+                "export_type|datasets_1|infile": {
+                    "id": 7,
+                    "output_name": "output"
+                },
+                "export_type|datasets_1|name": {
+                    "id": 24,
+                    "output_name": "Hap1 Fasta Path"
+                },
+                "export_type|datasets_2|infile": {
+                    "id": 8,
+                    "output_name": "output"
+                },
+                "export_type|datasets_2|name": {
+                    "id": 24,
+                    "output_name": "Hap1 chromosomes Path"
+                },
+                "export_type|datasets_3|infile": {
+                    "id": 9,
+                    "output_name": "output"
+                },
+                "export_type|datasets_3|name": {
+                    "id": 24,
+                    "output_name": "Hap1 HiC Path"
+                },
+                "export_type|datasets_4|infile": {
+                    "id": 10,
+                    "output_name": "output"
+                },
+                "export_type|datasets_4|name": {
+                    "id": 24,
+                    "output_name": "Hap1 HiFi Path"
+                },
+                "export_type|datasets_5|infile": {
+                    "id": 11,
+                    "output_name": "output"
+                },
+                "export_type|datasets_5|name": {
+                    "id": 24,
+                    "output_name": "Hap1 gaps_cov Path"
+                },
+                "export_type|datasets_6|infile": {
+                    "id": 12,
+                    "output_name": "output"
+                },
+                "export_type|datasets_6|name": {
+                    "id": 24,
+                    "output_name": "Hap1 Coverage Path"
+                },
+                "export_type|datasets_7|infile": {
+                    "id": 13,
+                    "output_name": "output"
+                },
+                "export_type|datasets_7|name": {
+                    "id": 24,
+                    "output_name": "Hap1 telomeres Path"
+                },
+                "export_type|datasets_8|infile": {
+                    "id": 14,
+                    "output_name": "output"
+                },
+                "export_type|datasets_8|name": {
+                    "id": 24,
+                    "output_name": "Hap1 gaps_seq Path"
+                }
+            },
+            "inputs": [],
+            "label": null,
             "name": "Export datasets",
             "outputs": [
                 {
@@ -2565,32 +2970,128 @@
                 }
             ],
             "position": {
-                "left": 1791.2079906759298,
-                "top": 0.0
+                "left": 1714.8602471670292,
+                "top": 127.7753359553428
             },
-            "post_job_actions": {
-                "RenameDatasetActionout": {
-                    "action_arguments": {
-                        "newname": "Curated assembly exported to ${Species Name}/${Assembly ID}"
-                    },
-                    "action_type": "RenameDatasetAction",
-                    "output_name": "out"
-                }
-            },
+            "post_job_actions": {},
             "tool_id": "export_remote",
-            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 4, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 5, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 6, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 7, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 8, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 9, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 10, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 11, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 12, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 13, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 14, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 15, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 16, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 17, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 4, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 5, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 6, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 7, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 8, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": true, \"invalid_chars\": \"/\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
             "tool_version": "0.1.0",
             "type": "tool",
-            "uuid": "00664035-8396-47ae-8e4b-ef9a8599e9a8",
+            "uuid": "08fac809-93e3-415a-9af5-1a5509162b24",
             "when": null,
-            "workflow_outputs": [
-                {
-                    "label": "Curated assembly exported to ${Species Name}/${Assembly ID}",
-                    "output_name": "out",
-                    "uuid": "c4ae6252-8c1d-4456-8b5c-1d0971e646e0"
+            "workflow_outputs": []
+        },
+        "35": {
+            "annotation": "",
+            "content_id": "export_remote",
+            "errors": null,
+            "id": 35,
+            "input_connections": {
+                "d_uri": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "export_type|datasets_0|infile": {
+                    "id": 25,
+                    "output_name": "data_param"
+                },
+                "export_type|datasets_0|name": {
+                    "id": 24,
+                    "output_name": "Hap2 Pretext Path"
+                },
+                "export_type|datasets_1|infile": {
+                    "id": 26,
+                    "output_name": "data_param"
+                },
+                "export_type|datasets_1|name": {
+                    "id": 24,
+                    "output_name": "Hap2 Fasta Path"
+                },
+                "export_type|datasets_2|infile": {
+                    "id": 27,
+                    "output_name": "data_param"
+                },
+                "export_type|datasets_2|name": {
+                    "id": 24,
+                    "output_name": "Hap2 chromosomes Path"
+                },
+                "export_type|datasets_3|infile": {
+                    "id": 28,
+                    "output_name": "data_param"
+                },
+                "export_type|datasets_3|name": {
+                    "id": 24,
+                    "output_name": "Hap2 HiC Path"
+                },
+                "export_type|datasets_4|infile": {
+                    "id": 29,
+                    "output_name": "data_param"
+                },
+                "export_type|datasets_4|name": {
+                    "id": 24,
+                    "output_name": "Hap2 HiFi Path"
+                },
+                "export_type|datasets_5|infile": {
+                    "id": 30,
+                    "output_name": "data_param"
+                },
+                "export_type|datasets_5|name": {
+                    "id": 24,
+                    "output_name": "Hap2 gaps_cov Path"
+                },
+                "export_type|datasets_6|infile": {
+                    "id": 31,
+                    "output_name": "data_param"
+                },
+                "export_type|datasets_6|name": {
+                    "id": 24,
+                    "output_name": "Hap2 Coverage Path"
+                },
+                "export_type|datasets_7|infile": {
+                    "id": 32,
+                    "output_name": "data_param"
+                },
+                "export_type|datasets_7|name": {
+                    "id": 24,
+                    "output_name": "Hap2 telomeres Path"
+                },
+                "export_type|datasets_8|infile": {
+                    "id": 33,
+                    "output_name": "data_param"
+                },
+                "export_type|datasets_8|name": {
+                    "id": 24,
+                    "output_name": "Hap2 gaps_seq Path"
+                },
+                "when": {
+                    "id": 0,
+                    "output_name": "output"
                 }
-            ]
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Export datasets",
+            "outputs": [
+                {
+                    "name": "out",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "left": 2262.5983395455214,
+                "top": 1030.942688082015
+            },
+            "post_job_actions": {},
+            "tool_id": "export_remote",
+            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"datasets_named\", \"__current_case__\": 2, \"datasets\": [{\"__index__\": 0, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 1, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 2, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 3, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 4, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 5, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 6, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 7, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}, {\"__index__\": 8, \"infile\": {\"__class__\": \"RuntimeValue\"}, \"name\": {\"__class__\": \"ConnectedValue\"}}]}, \"include_metadata_files\": true, \"invalid_chars\": \"/\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "0.1.0",
+            "type": "tool",
+            "uuid": "5c8dd611-1aec-4c89-9f7a-a65ac736cd34",
+            "when": "$(inputs.when)",
+            "workflow_outputs": []
         }
     },
     "tags": [
@@ -2598,6 +3099,6 @@
         "export",
         "curated"
     ],
-    "uuid": "5235ba89-dbe2-4432-b7b2-ea29cdfc2bfe",
-    "version": 5
+    "uuid": "9284ad05-6df0-4d59-a700-8112c8fbe3a6",
+    "version": 9
 }
