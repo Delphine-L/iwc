@@ -530,14 +530,14 @@
             "workflow_outputs": []
         },
         "19": {
-            "annotation": "With the tag : hic_dup_stats",
+            "annotation": "With the tag : hic_dup_stats_scaffolds",
             "content_id": null,
             "errors": null,
             "id": 19,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "With the tag : hic_dup_stats",
+                    "description": "With the tag : hic_dup_stats_scaffolds",
                     "name": "Hi-C duplication stats on Scaffolds"
                 }
             ],
@@ -549,7 +549,7 @@
                 "top": 2663.290546582065
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"tabular\"], \"tag\": \"hic_dup_stats_scaffolds\"}",
+            "tool_state": "{\"optional\": false, \"format\": [\"txt\"], \"tag\": \"hic_dup_stats_scaffolds\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "d2c105a9-a3f3-43d0-9d7e-c2f033768704",
@@ -2342,6 +2342,6 @@
         }
     },
     "tags": [],
-    "uuid": "a1db8fb3-36b3-4346-a916-6c107d7dc349",
-    "version": 8
+    "uuid": "b4b2f0cf-639b-4afa-9e34-30a125e9a76c",
+    "version": 9
 }
