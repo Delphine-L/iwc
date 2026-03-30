@@ -759,6 +759,7 @@
     "updated": "2023-11-20T00:00:00",
     "trsID": "#workflow/github.com/iwc-workflows/protein-ligand-complex-parameterization/main",
     "iwcID": "protein-ligand-complex-parameterization-main",
+    "repoPath": "./workflows/computational-chemistry/protein-ligand-complex-parameterization",
     "dockstore_id": 17279,
     "categories": [
         "Structural Biology"
@@ -780,7 +781,7 @@
                         }
                     ],
                     "location": "https://raw.githubusercontent.com/galaxyproject/iwc/main/workflows/computational-chemistry/protein-ligand-complex-parameterization/test-data/mpro.pdb",
-                    "filetype": "auto"
+                    "filetype": "pdb"
                 },
                 "Force field": "amber99sb",
                 "Ligand SDF": {
@@ -792,7 +793,7 @@
                         }
                     ],
                     "location": "https://raw.githubusercontent.com/galaxyproject/iwc/main/workflows/computational-chemistry/protein-ligand-complex-parameterization/test-data/lig.sdf",
-                    "filetype": "auto"
+                    "filetype": "sdf"
                 },
                 "Water model": "tip3p"
             },
