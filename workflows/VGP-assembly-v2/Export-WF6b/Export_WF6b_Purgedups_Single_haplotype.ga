@@ -244,7 +244,7 @@
                 "top": 1096.834150691104
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"fasta\"], \"tag\": \"removed_haplotigs\"}",
+            "tool_state": "{\"optional\": false, \"tag\": \"removed_haplotigs\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "cfbd6b9f-88ee-492e-8ad8-36e7b63e3e2c",
@@ -294,11 +294,11 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1455.437397779551,
-                "top": 1553.2098485982817
+                "left": 1458.9577374749354,
+                "top": 1551.2186930844746
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"fasta\"], \"tag\": \"purged_assembly_fasta\"}",
+            "tool_state": "{\"optional\": false, \"tag\": \"purged_assembly_fasta\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "7f936fe3-a0d5-42db-b1ca-013f047eca3c",
@@ -4540,6 +4540,6 @@
         }
     },
     "tags": [],
-    "uuid": "4c4aa1f9-bc7b-4774-89b1-832ab11c376d",
-    "version": 5
+    "uuid": "c3179064-2126-416d-bb8a-4b08d38f0c13",
+    "version": 7
 }
