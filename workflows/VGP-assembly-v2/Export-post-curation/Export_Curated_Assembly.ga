@@ -723,7 +723,7 @@
                         "name": "Input parameter",
                         "outputs": [],
                         "position": {
-                            "left": 0.0,
+                            "left": 0,
                             "top": 633.7762097611551
                         },
                         "tool_id": null,
@@ -750,7 +750,7 @@
                         "name": "Input parameter",
                         "outputs": [],
                         "position": {
-                            "left": 0.0,
+                            "left": 0,
                             "top": 733.7762097611551
                         },
                         "tool_id": null,
@@ -1220,8 +1220,8 @@
                             }
                         ],
                         "position": {
-                            "left": 814.4362568012067,
-                            "top": 1531.9442305463413
+                            "left": 844.5580516674013,
+                            "top": 1541.5505515821749
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1291,8 +1291,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1201.1525799042392,
-                            "top": 1510.632505581602
+                            "left": 1165.8099506264489,
+                            "top": 1552.3263244311981
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1345,77 +1345,6 @@
                             },
                             "components_3|param_type|component_value": {
                                 "id": 5,
-                                "output_name": "Name Hap2"
-                            },
-                            "components_5|param_type|component_value": {
-                                "id": 2,
-                                "output_name": "output"
-                            }
-                        },
-                        "inputs": [],
-                        "label": "Hap2 Pretext",
-                        "name": "Compose text parameter value",
-                        "outputs": [
-                            {
-                                "name": "out1",
-                                "type": "expression.json"
-                            }
-                        ],
-                        "position": {
-                            "left": 825.050843617739,
-                            "top": 1928.5080265014062
-                        },
-                        "post_job_actions": {
-                            "HideDatasetActionout1": {
-                                "action_arguments": {},
-                                "action_type": "HideDatasetAction",
-                                "output_name": "out1"
-                            },
-                            "RenameDatasetActionout1": {
-                                "action_arguments": {
-                                    "newname": "Hap2 Pretext Path"
-                                },
-                                "action_type": "RenameDatasetAction",
-                                "output_name": "out1"
-                            }
-                        },
-                        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-                        "tool_shed_repository": {
-                            "changeset_revision": "e188c9826e0f",
-                            "name": "compose_text_param",
-                            "owner": "iuc",
-                            "tool_shed": "toolshed.g2.bx.psu.edu"
-                        },
-                        "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".cur.\"}}, {\"__index__\": 5, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 6, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".pretext\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
-                        "tool_uuid": null,
-                        "tool_version": "0.1.1",
-                        "type": "tool",
-                        "uuid": "bc01eede-bfda-40a1-a067-32cf4a4ba2b8",
-                        "when": null,
-                        "workflow_outputs": [
-                            {
-                                "label": "Hap2 Pretext Path",
-                                "output_name": "out1",
-                                "uuid": "3936aedb-a97c-4a3f-929e-445d55552fbf"
-                            }
-                        ]
-                    },
-                    "11": {
-                        "annotation": "",
-                        "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
-                        "errors": null,
-                        "id": 11,
-                        "input_connections": {
-                            "components_0|param_type|component_value": {
-                                "id": 4,
-                                "output_name": "out1"
-                            },
-                            "components_1|param_type|component_value": {
-                                "id": 1,
-                                "output_name": "output"
-                            },
-                            "components_3|param_type|component_value": {
-                                "id": 5,
                                 "output_name": "Name Hap1"
                             },
                             "components_5|param_type|component_value": {
@@ -1433,8 +1362,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1453.8939378370326,
-                            "top": 1515.3151458611944
+                            "left": 1479.6382097906771,
+                            "top": 1486.0456542055992
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1471,6 +1400,77 @@
                             }
                         ]
                     },
+                    "11": {
+                        "annotation": "",
+                        "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+                        "errors": null,
+                        "id": 11,
+                        "input_connections": {
+                            "components_0|param_type|component_value": {
+                                "id": 4,
+                                "output_name": "out1"
+                            },
+                            "components_1|param_type|component_value": {
+                                "id": 1,
+                                "output_name": "output"
+                            },
+                            "components_3|param_type|component_value": {
+                                "id": 5,
+                                "output_name": "Name Hap2"
+                            },
+                            "components_5|param_type|component_value": {
+                                "id": 2,
+                                "output_name": "output"
+                            }
+                        },
+                        "inputs": [],
+                        "label": "Hap2 Pretext",
+                        "name": "Compose text parameter value",
+                        "outputs": [
+                            {
+                                "name": "out1",
+                                "type": "expression.json"
+                            }
+                        ],
+                        "position": {
+                            "left": 865.0368562939448,
+                            "top": 1957.4261515406283
+                        },
+                        "post_job_actions": {
+                            "HideDatasetActionout1": {
+                                "action_arguments": {},
+                                "action_type": "HideDatasetAction",
+                                "output_name": "out1"
+                            },
+                            "RenameDatasetActionout1": {
+                                "action_arguments": {
+                                    "newname": "Hap2 Pretext Path"
+                                },
+                                "action_type": "RenameDatasetAction",
+                                "output_name": "out1"
+                            }
+                        },
+                        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
+                        "tool_shed_repository": {
+                            "changeset_revision": "e188c9826e0f",
+                            "name": "compose_text_param",
+                            "owner": "iuc",
+                            "tool_shed": "toolshed.g2.bx.psu.edu"
+                        },
+                        "tool_state": "{\"components\": [{\"__index__\": 0, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 1, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 2, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".\"}}, {\"__index__\": 3, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 4, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".cur.\"}}, {\"__index__\": 5, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": {\"__class__\": \"ConnectedValue\"}}}, {\"__index__\": 6, \"param_type\": {\"select_param_type\": \"text\", \"__current_case__\": 0, \"component_value\": \".pretext\"}}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+                        "tool_uuid": null,
+                        "tool_version": "0.1.1",
+                        "type": "tool",
+                        "uuid": "bc01eede-bfda-40a1-a067-32cf4a4ba2b8",
+                        "when": null,
+                        "workflow_outputs": [
+                            {
+                                "label": "Hap2 Pretext Path",
+                                "output_name": "out1",
+                                "uuid": "3936aedb-a97c-4a3f-929e-445d55552fbf"
+                            }
+                        ]
+                    },
                     "12": {
                         "annotation": "",
                         "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
@@ -1504,8 +1504,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1196.9723161924724,
-                            "top": 1928.731696269676
+                            "left": 1217.1041042762056,
+                            "top": 1964.9315787024375
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1558,7 +1558,7 @@
                             },
                             "components_3|param_type|component_value": {
                                 "id": 5,
-                                "output_name": "Name Hap1"
+                                "output_name": "Name Hap2"
                             },
                             "components_5|param_type|component_value": {
                                 "id": 2,
@@ -1575,8 +1575,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1469.3836403951034,
-                            "top": 1968.492264639282
+                            "left": 1469.096309118781,
+                            "top": 1938.4151324580732
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1643,7 +1643,7 @@
                         ],
                         "position": {
                             "left": 1215.8609643803197,
-                            "top": 0.0
+                            "top": 0
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -1977,8 +1977,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1218.4885888383778,
-                            "top": 1137.288894780938
+                            "left": 1218.6669428265297,
+                            "top": 1142.3788984525
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -2111,8 +2111,8 @@
                             }
                         ],
                         "position": {
-                            "left": 1501.513913841559,
-                            "top": 1144.6648577098263
+                            "left": 1505.7383029765203,
+                            "top": 1116.893202830686
                         },
                         "post_job_actions": {
                             "HideDatasetActionout1": {
@@ -2419,7 +2419,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "195b7704-6244-4ef9-ba46-88f02a6b046c"
+                "uuid": "ef45fc5a-60da-4a40-a2ee-d2884e23fe15"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -2552,8 +2552,8 @@
                 }
             ],
             "position": {
-                "left": 1611.6757783468315,
-                "top": 1336.3865385733393
+                "left": 1616.6610593684866,
+                "top": 1362.69206414926
             },
             "post_job_actions": {
                 "HideDatasetActiondata_param": {
@@ -3099,6 +3099,6 @@
         "export",
         "curated"
     ],
-    "uuid": "169a89b3-2169-4210-a667-fb48468d1171",
-    "version": 1
+    "uuid": "80f74aef-ca0c-4bb2-a7af-a15b86eb1f00",
+    "version": 3
 }
