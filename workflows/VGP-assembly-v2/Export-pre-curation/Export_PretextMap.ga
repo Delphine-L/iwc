@@ -356,11 +356,11 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 3469.5895491733886,
-                "top": 982.6644803259708
+                "left": 3442.941785720487,
+                "top": 1004.9231881199969
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"fasta\"], \"tag\": \"merged_haps\"}",
+            "tool_state": "{\"optional\": false, \"format\": [\"fasta.gz\"], \"tag\": \"merged_haps\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "87f53bf4-9266-406b-9450-45be413eacf8",
@@ -1023,52 +1023,6 @@
             "id": 23,
             "input_connections": {
                 "input": {
-                    "id": 12,
-                    "output_name": "output"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "Compress file(s)",
-            "outputs": [
-                {
-                    "name": "output_file",
-                    "type": "gz"
-                }
-            ],
-            "position": {
-                "left": 3907.716228736143,
-                "top": 951.1130376384369
-            },
-            "post_job_actions": {
-                "HideDatasetActionoutput_file": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "output_file"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file/0.1.0",
-            "tool_shed_repository": {
-                "changeset_revision": "09ea79f9f260",
-                "name": "compress_file",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
-            "tool_uuid": null,
-            "tool_version": "0.1.0",
-            "type": "tool",
-            "uuid": "dff7aa9f-1300-47a5-9d04-0070f79440a4",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "24": {
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file/0.1.0",
-            "errors": null,
-            "id": 24,
-            "input_connections": {
-                "input": {
                     "id": 13,
                     "output_name": "output"
                 },
@@ -1112,11 +1066,11 @@
             "when": "$(inputs.when)",
             "workflow_outputs": []
         },
-        "25": {
+        "24": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compress_file/compress_file/0.1.0",
             "errors": null,
-            "id": 25,
+            "id": 24,
             "input_connections": {
                 "input": {
                     "id": 14,
@@ -1137,8 +1091,8 @@
                 }
             ],
             "position": {
-                "left": 3877.124665518852,
-                "top": 1889.816405350453
+                "left": 3867.5542714850867,
+                "top": 1841.5380381590314
             },
             "post_job_actions": {
                 "HideDatasetActionoutput_file": {
@@ -1162,11 +1116,11 @@
             "when": "$(inputs.when)",
             "workflow_outputs": []
         },
-        "26": {
+        "25": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 26,
+            "id": 25,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1216,11 +1170,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "27": {
+        "26": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 27,
+            "id": 26,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1270,11 +1224,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "28": {
+        "27": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 28,
+            "id": 27,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1324,11 +1278,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "29": {
+        "28": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 29,
+            "id": 28,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1378,11 +1332,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "30": {
+        "29": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 30,
+            "id": 29,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1432,11 +1386,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "31": {
+        "30": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 31,
+            "id": 30,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1486,11 +1440,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "32": {
+        "31": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 32,
+            "id": 31,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1540,11 +1494,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "33": {
+        "32": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 33,
+            "id": 32,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1594,11 +1548,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "34": {
+        "33": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 34,
+            "id": 33,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1648,11 +1602,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "35": {
+        "34": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 35,
+            "id": 34,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1702,11 +1656,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "36": {
+        "35": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 36,
+            "id": 35,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1756,11 +1710,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "37": {
+        "36": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 37,
+            "id": 36,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1810,11 +1764,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "38": {
+        "37": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 38,
+            "id": 37,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1864,11 +1818,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "39": {
+        "38": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 39,
+            "id": 38,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1918,11 +1872,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "40": {
+        "39": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/compose_text_param/compose_text_param/0.1.1",
             "errors": null,
-            "id": 40,
+            "id": 39,
             "input_connections": {
                 "components_0|param_type|component_value": {
                     "id": 21,
@@ -1972,14 +1926,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "41": {
+        "40": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
             "errors": null,
-            "id": 41,
+            "id": 40,
             "input_connections": {
                 "style_cond|type_cond|pick_from_0|value": {
-                    "id": 24,
+                    "id": 23,
                     "output_name": "output_file"
                 },
                 "style_cond|type_cond|pick_from_1|value": {
@@ -2022,14 +1976,14 @@
             "when": null,
             "workflow_outputs": []
         },
-        "42": {
+        "41": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/pick_value/pick_value/0.2.0",
             "errors": null,
-            "id": 42,
+            "id": 41,
             "input_connections": {
                 "style_cond|type_cond|pick_from_0|value": {
-                    "id": 25,
+                    "id": 24,
                     "output_name": "output_file"
                 },
                 "style_cond|type_cond|pick_from_1|value": {
@@ -2072,11 +2026,11 @@
             "when": null,
             "workflow_outputs": []
         },
-        "43": {
+        "42": {
             "annotation": "",
             "content_id": "export_remote",
             "errors": null,
-            "id": 43,
+            "id": 42,
             "input_connections": {
                 "d_uri": {
                     "id": 3,
@@ -2087,7 +2041,7 @@
                     "output_name": "data_param"
                 },
                 "export_type|datasets_0|name": {
-                    "id": 26,
+                    "id": 25,
                     "output_name": "out1"
                 },
                 "when": {
@@ -2132,11 +2086,11 @@
                 }
             ]
         },
-        "44": {
+        "43": {
             "annotation": "",
             "content_id": "export_remote",
             "errors": null,
-            "id": 44,
+            "id": 43,
             "input_connections": {
                 "d_uri": {
                     "id": 3,
@@ -2147,7 +2101,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_0|name": {
-                    "id": 39,
+                    "id": 38,
                     "output_name": "out1"
                 },
                 "export_type|datasets_1|infile": {
@@ -2155,7 +2109,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_1|name": {
-                    "id": 40,
+                    "id": 39,
                     "output_name": "out1"
                 }
             },
@@ -2196,11 +2150,11 @@
                 }
             ]
         },
-        "45": {
+        "44": {
             "annotation": "",
             "content_id": "export_remote",
             "errors": null,
-            "id": 45,
+            "id": 44,
             "input_connections": {
                 "d_uri": {
                     "id": 3,
@@ -2211,7 +2165,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_0|name": {
-                    "id": 29,
+                    "id": 28,
                     "output_name": "out1"
                 },
                 "export_type|datasets_10|infile": {
@@ -2219,7 +2173,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_10|name": {
-                    "id": 35,
+                    "id": 34,
                     "output_name": "out1"
                 },
                 "export_type|datasets_11|infile": {
@@ -2227,7 +2181,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_11|name": {
-                    "id": 38,
+                    "id": 37,
                     "output_name": "out1"
                 },
                 "export_type|datasets_1|infile": {
@@ -2235,7 +2189,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_1|name": {
-                    "id": 27,
+                    "id": 26,
                     "output_name": "out1"
                 },
                 "export_type|datasets_2|infile": {
@@ -2243,7 +2197,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_2|name": {
-                    "id": 28,
+                    "id": 27,
                     "output_name": "out1"
                 },
                 "export_type|datasets_3|infile": {
@@ -2251,31 +2205,31 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_3|name": {
-                    "id": 37,
+                    "id": 36,
                     "output_name": "out1"
                 },
                 "export_type|datasets_4|infile": {
-                    "id": 23,
-                    "output_name": "output_file"
+                    "id": 12,
+                    "output_name": "output"
                 },
                 "export_type|datasets_4|name": {
-                    "id": 31,
+                    "id": 30,
                     "output_name": "out1"
                 },
                 "export_type|datasets_5|infile": {
-                    "id": 41,
+                    "id": 40,
                     "output_name": "data_param"
                 },
                 "export_type|datasets_5|name": {
-                    "id": 32,
+                    "id": 31,
                     "output_name": "out1"
                 },
                 "export_type|datasets_6|infile": {
-                    "id": 42,
+                    "id": 41,
                     "output_name": "data_param"
                 },
                 "export_type|datasets_6|name": {
-                    "id": 34,
+                    "id": 33,
                     "output_name": "out1"
                 },
                 "export_type|datasets_7|infile": {
@@ -2283,7 +2237,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_7|name": {
-                    "id": 33,
+                    "id": 32,
                     "output_name": "out1"
                 },
                 "export_type|datasets_8|infile": {
@@ -2291,7 +2245,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_8|name": {
-                    "id": 30,
+                    "id": 29,
                     "output_name": "out1"
                 },
                 "export_type|datasets_9|infile": {
@@ -2299,7 +2253,7 @@
                     "output_name": "output"
                 },
                 "export_type|datasets_9|name": {
-                    "id": 36,
+                    "id": 35,
                     "output_name": "out1"
                 }
             },
@@ -2342,6 +2296,6 @@
         }
     },
     "tags": [],
-    "uuid": "fe091c79-b1ea-4b92-841d-1492724410ff",
-    "version": 3
+    "uuid": "f36b2ae3-bbcc-42f4-a617-8f59d5a717e2",
+    "version": 5
 }
