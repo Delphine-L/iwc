@@ -1169,7 +1169,7 @@
                 "top": 3584.3020695383366
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": \"gfastats_p1\"}",
+            "tool_state": "{\"optional\": false, \"tag\": \"gfastats_p2\"}",
             "tool_version": null,
             "type": "data_input",
             "uuid": "8e488e3f-a2d0-4750-9822-a73fed8933b9",
