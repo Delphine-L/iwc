@@ -1097,114 +1097,6 @@
             "workflow_outputs": []
         },
         "40": {
-            "annotation": " With the dataset tag  : compleasm_p2_miniprot",
-            "content_id": null,
-            "errors": null,
-            "id": 40,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": " With the dataset tag  : compleasm_p2_miniprot",
-                    "name": "Compleasm on purged alternate/hap2 assembly : Miniprot"
-                }
-            ],
-            "label": "Compleasm on purged alternate/hap2 assembly : Miniprot",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 3040.6510311432635,
-                "top": 3101.098438053922
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": \"compleasm_p2_miniprot\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "351485fb-e119-44b6-b43d-80cc467e1d95",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "41": {
-            "annotation": " With the dataset tag  : compleasm_p2_full",
-            "content_id": null,
-            "errors": null,
-            "id": 41,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": " With the dataset tag  : compleasm_p2_full",
-                    "name": "Compleasm on purged alternate/hap2 assembly : Full Table "
-                }
-            ],
-            "label": "Compleasm on purged alternate/hap2 assembly : Full Table ",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 3409.0183787212777,
-                "top": 2745.490934289027
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": \"compleasm_p2_full\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "e4043d38-f6dd-4794-b73b-5e76518aa5c3",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "42": {
-            "annotation": "",
-            "content_id": null,
-            "errors": null,
-            "id": 42,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "",
-                    "name": "gfastats on Alternate assembly"
-                }
-            ],
-            "label": "gfastats on Alternate assembly",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 2618.412654534941,
-                "top": 3584.3020695383366
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": \"gfastats_p2\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "8e488e3f-a2d0-4750-9822-a73fed8933b9",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "43": {
-            "annotation": " With the dataset tag  : compleasm_p2_proteins",
-            "content_id": null,
-            "errors": null,
-            "id": 43,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": " With the dataset tag  : compleasm_p2_proteins",
-                    "name": "Compleasm on purged alternate/hap2 assembly : Translated Proteins"
-                }
-            ],
-            "label": "Compleasm on purged alternate/hap2 assembly : Translated Proteins",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "left": 3416.8751642100774,
-                "top": 3126.171601212033
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": \"compleasm_p2_proteins\"}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "58f7ab67-ff99-4975-b93e-19b392cac307",
-            "when": null,
-            "workflow_outputs": []
-        },
-        "44": {
             "annotation": "",
             "id": 40,
             "input_connections": {
@@ -5545,7 +5437,7 @@
             },
             "post_job_actions": {},
             "tool_id": "export_remote",
-            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"collection_auto\", \"__current_case__\": 1, \"incollection\": {\"__class__\": \"ConnectedValue\"}, \"include_collection_name\": true}, \"include_metadata_files\": true, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"collection_auto\", \"__current_case__\": 1, \"incollection\": {\"__class__\": \"RuntimeValue\"}, \"include_collection_name\": true}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
             "tool_version": "0.1.0",
             "type": "tool",
@@ -5594,7 +5486,7 @@
             },
             "post_job_actions": {},
             "tool_id": "export_remote",
-            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"collection_auto\", \"__current_case__\": 1, \"incollection\": {\"__class__\": \"ConnectedValue\"}, \"include_collection_name\": true}, \"include_metadata_files\": true, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"collection_auto\", \"__current_case__\": 1, \"incollection\": {\"__class__\": \"RuntimeValue\"}, \"include_collection_name\": true}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
             "tool_version": "0.1.0",
             "type": "tool",
@@ -5643,7 +5535,7 @@
             },
             "post_job_actions": {},
             "tool_id": "export_remote",
-            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"collection_auto\", \"__current_case__\": 1, \"incollection\": {\"__class__\": \"ConnectedValue\"}, \"include_collection_name\": true}, \"include_metadata_files\": true, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"d_uri\": {\"__class__\": \"ConnectedValue\"}, \"export_type\": {\"export_type_selector\": \"collection_auto\", \"__current_case__\": 1, \"incollection\": {\"__class__\": \"RuntimeValue\"}, \"include_collection_name\": true}, \"include_metadata_files\": false, \"invalid_chars\": \"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
             "tool_version": "0.1.0",
             "type": "tool",
@@ -5955,6 +5847,6 @@
         }
     },
     "tags": [],
-    "uuid": "cc4fb9e4-59e9-4b3e-9b09-743d5b912e8a",
-    "version": 5
+    "uuid": "6346575c-2688-4739-b74e-54ea28fa9526",
+    "version": 2
 }
