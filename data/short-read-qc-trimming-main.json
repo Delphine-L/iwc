@@ -385,7 +385,20 @@
     "iwcID": "short-read-qc-trimming-main",
     "repoPath": "./workflows/read-preprocessing/short-read-qc-trimming",
     "dockstore_id": 34575,
-    "categories": [],
+    "categories": [
+        "Read pre-processing",
+        "Sequencing quality control",
+        "Data quality management",
+        "Genome resequencing",
+        "Metagenomic sequencing",
+        "RNA-Seq",
+        "Sequencing",
+        "Short-read sequencing",
+        "FASTQ-sanger",
+        "Short-read sequencing data",
+        "FASTQ-sanger",
+        "Quality control report"
+    ],
     "collections": [
         "Quality Control and Pre-processing"
     ],
@@ -400,7 +413,7 @@
                     "elements": [
                         {
                             "class": "Collection",
-                            "type": "paired",
+                            "collection_type": "paired",
                             "identifier": "pair",
                             "elements": [
                                 {
@@ -427,20 +440,39 @@
             },
             "outputs": {
                 "MultiQC HTML report": {
-                    "asserts": {
-                        "has_text": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "Filtered Reads"
+                        },
+                        {
+                            "that": "has_text",
                             "text": "pair"
                         }
-                    }
+                    ]
                 },
                 "fastp JSON report": {
+                    "class": "Collection",
                     "element_tests": {
                         "pair": {
-                            "asserts": {
-                                "has_text": {
+                            "asserts": [
+                                {
+                                    "that": "has_text",
+                                    "text": "paired end (301 cycles + 301 cycles)"
+                                },
+                                {
+                                    "that": "has_text",
+                                    "text": "300000"
+                                },
+                                {
+                                    "that": "has_text",
+                                    "text": "295680"
+                                },
+                                {
+                                    "that": "has_text",
                                     "text": "59230948"
                                 }
-                            }
+                            ]
                         }
                     }
                 }

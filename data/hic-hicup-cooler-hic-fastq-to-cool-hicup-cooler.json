@@ -1298,7 +1298,30 @@
     "iwcID": "hic-hicup-cooler-hic-fastq-to-cool-hicup-cooler",
     "repoPath": "./workflows/epigenetics/hic-hicup-cooler",
     "dockstore_id": 20777,
-    "categories": [],
+    "categories": [
+        "Chromatin conformation analysis",
+        "Contact matrix normalization",
+        "Genome visualization",
+        "Sequence alignment validation",
+        "Chromosome conformation capture",
+        "Developmental biology",
+        "Epigenomics",
+        "Gene regulation",
+        "Hi-C",
+        "FASTQ",
+        "FASTQ-illumina",
+        "FASTQ-sanger",
+        "FASTQ-solexa",
+        "Sequence coordinates",
+        "Cooler",
+        "Pairs",
+        "PNG",
+        "tabix",
+        "Chromatin contact matrix",
+        "Image",
+        "Plot",
+        "Quality control report"
+    ],
     "collections": [
         "Epigenetics"
     ],
@@ -1313,7 +1336,7 @@
                     "elements": [
                         {
                             "class": "Collection",
-                            "type": "paired",
+                            "collection_type": "paired",
                             "identifier": "test_dataset",
                             "elements": [
                                 {
@@ -1354,6 +1377,7 @@
             },
             "outputs": {
                 "HiCUP report (html)": {
+                    "class": "Collection",
                     "element_tests": {
                         "test_dataset": {
                             "asserts": {
@@ -1366,6 +1390,7 @@
                     }
                 },
                 "HiCUP report (txt)": {
+                    "class": "Collection",
                     "element_tests": {
                         "test_dataset": {
                             "asserts": {
@@ -1377,6 +1402,7 @@
                     }
                 },
                 "valid pairs in juicebox format": {
+                    "class": "Collection",
                     "element_tests": {
                         "test_dataset": {
                             "asserts": [
@@ -1397,6 +1423,7 @@
                     }
                 },
                 "valid pairs in juicebox format MAPQ filtered": {
+                    "class": "Collection",
                     "element_tests": {
                         "test_dataset": {
                             "asserts": [
@@ -1417,6 +1444,7 @@
                     }
                 },
                 "valid pairs filtered and sorted": {
+                    "class": "Collection",
                     "element_tests": {
                         "test_dataset": {
                             "asserts": {
@@ -1429,6 +1457,7 @@
                     }
                 },
                 "matrix with raw values": {
+                    "class": "Collection",
                     "element_tests": {
                         "test_dataset": {
                             "asserts": {
@@ -1441,6 +1470,7 @@
                     }
                 },
                 "matrix with iced values": {
+                    "class": "Collection",
                     "element_tests": {
                         "test_dataset": {
                             "asserts": {

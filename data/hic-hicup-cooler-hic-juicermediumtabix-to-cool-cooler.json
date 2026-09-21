@@ -339,7 +339,18 @@
     "iwcID": "hic-hicup-cooler-hic-juicermediumtabix-to-cool-cooler",
     "repoPath": "./workflows/epigenetics/hic-hicup-cooler",
     "dockstore_id": 20779,
-    "categories": [],
+    "categories": [
+        "Chromatin conformation analysis",
+        "Contact matrix normalization",
+        "Chromosome conformation capture",
+        "Comparative genomics",
+        "Hi-C",
+        "tabix",
+        "Chromatin contact matrix",
+        "Cooler",
+        "HDF5",
+        "Chromatin contact matrix"
+    ],
     "collections": [
         "Epigenetics"
     ],
@@ -372,6 +383,7 @@
             },
             "outputs": {
                 "matrix with raw values": {
+                    "class": "Collection",
                     "element_tests": {
                         "test_dataset": {
                             "asserts": {
@@ -384,6 +396,7 @@
                     }
                 },
                 "matrix with iced values": {
+                    "class": "Collection",
                     "element_tests": {
                         "test_dataset": {
                             "asserts": {

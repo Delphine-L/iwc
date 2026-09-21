@@ -10,6 +10,7 @@
       collection_type: list:paired
       elements:
       - class: Collection
+        collection_type: paired
         elements:
         - class: File
           filetype: fastqsanger.gz
@@ -20,15 +21,23 @@
           identifier: reverse
           location: https://zenodo.org/records/11484215/files/paired_r2.fastq.gz
         identifier: pair
-        type: paired
   outputs:
     MultiQC HTML report:
       asserts:
-        has_text:
-          text: pair
+      - text: Filtered Reads
+        that: has_text
+      - text: pair
+        that: has_text
     fastp JSON report:
+      class: Collection
       element_tests:
         pair:
           asserts:
-            has_text:
-              text: '59230948'
+          - text: paired end (301 cycles + 301 cycles)
+            that: has_text
+          - text: '300000'
+            that: has_text
+          - text: '295680'
+            that: has_text
+          - text: '59230948'
+            that: has_text

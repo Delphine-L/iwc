@@ -380,7 +380,25 @@
     "iwcID": "clinicalmp-database-generation-main",
     "repoPath": "./workflows/proteomics/clinicalmp/clinicalmp-database-generation",
     "dockstore_id": 29491,
-    "categories": [],
+    "categories": [
+        "de Novo sequencing",
+        "Protein identification",
+        "PTM localization",
+        "Sequence redundancy removal",
+        "Infectious disease",
+        "Metaproteomics",
+        "Microbiology",
+        "Proteomics",
+        "FASTA",
+        "MGF",
+        "Mass spectrometry data",
+        "Mass spectrum",
+        "Protein sequence",
+        "CSV",
+        "FASTA",
+        "Protein sequence",
+        "Sequence set (protein)"
+    ],
     "collections": [
         "Proteomics",
         "Metaproteomics"

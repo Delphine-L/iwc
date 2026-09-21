@@ -1518,7 +1518,29 @@
     "repoPath": "./workflows/sars-cov-2-variant-calling/sars-cov-2-ont-artic-variant-calling",
     "dockstore_id": 16246,
     "categories": [
-        "COVID-19"
+        "COVID-19",
+        "Sequencing quality control",
+        "Variant calling",
+        "Variant filtering",
+        "Genome resequencing",
+        "Long-read sequencing",
+        "Nanopore sequencing",
+        "Public health and epidemiology",
+        "Sequencing",
+        "Variant annotation",
+        "Virology",
+        "bed6",
+        "FASTA",
+        "FASTQ",
+        "FASTQ-sanger",
+        "Basecalled sequence data",
+        "DNA sequence",
+        "BAM",
+        "HDF5",
+        "VCF",
+        "Quality control report",
+        "Sequence alignment",
+        "Variant call data"
     ],
     "collections": [
         "SARS-COV-2",
@@ -1559,11 +1581,11 @@
                             "identifier": "SRR12447380",
                             "class": "File",
                             "filetype": "fastqsanger.gz",
-                            "location": "https://www.be-md.ncbi.nlm.nih.gov/Traces/sra-reads-be/fastq?acc=SRR12447380",
+                            "location": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR124/080/SRR12447380/SRR12447380_1.fastq.gz",
                             "hashes": [
                                 {
                                     "hash_function": "SHA-1",
-                                    "hash_value": "e26a9711e1d1201ed49cd3e98bbc0837f4c90533"
+                                    "hash_value": "cd93c6dcbcf46b795d7cc2f41a81c9d87f8601d6"
                                 }
                             ]
                         }
@@ -1572,6 +1594,7 @@
             },
             "outputs": {
                 "annotated_softfiltered_variants": {
+                    "class": "Collection",
                     "attributes": {},
                     "element_tests": {
                         "SRR12447380": {

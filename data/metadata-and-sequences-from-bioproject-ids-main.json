@@ -727,7 +727,7 @@
                                 }
                             },
                             "tool_id": "__APPLY_RULES__",
-                            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"rules\": {\"mapping\": [{\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"columns\": [1], \"connectable\": true, \"editing\": false, \"is_workflow\": false, \"type\": \"list_identifiers\"}, {\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"columns\": [2], \"connectable\": true, \"is_workflow\": false, \"type\": \"paired_identifier\"}], \"rules\": [{\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"connectable\": true, \"error\": null, \"is_workflow\": false, \"type\": \"add_column_metadata\", \"value\": \"identifier0\", \"warn\": null}, {\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"connectable\": true, \"error\": null, \"is_workflow\": false, \"type\": \"add_column_metadata\", \"value\": \"identifier1\", \"warn\": null}, {\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"connectable\": true, \"error\": null, \"is_workflow\": false, \"type\": \"add_column_metadata\", \"value\": \"identifier2\", \"warn\": null}]}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+                            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"rules\": {\"mapping\": [{\"columns\": [1], \"type\": \"list_identifiers\"}, {\"columns\": [2], \"type\": \"paired_identifier\"}], \"rules\": [{\"type\": \"add_column_metadata\", \"value\": \"identifier0\"}, {\"type\": \"add_column_metadata\", \"value\": \"identifier1\"}, {\"type\": \"add_column_metadata\", \"value\": \"identifier2\"}]}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
                             "tool_uuid": null,
                             "tool_version": "1.1.0",
                             "type": "tool",
@@ -775,7 +775,7 @@
                                 }
                             },
                             "tool_id": "__APPLY_RULES__",
-                            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"rules\": {\"mapping\": [{\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"columns\": [1], \"connectable\": true, \"editing\": false, \"is_workflow\": false, \"type\": \"list_identifiers\"}], \"rules\": [{\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"connectable\": true, \"error\": null, \"is_workflow\": false, \"type\": \"add_column_metadata\", \"value\": \"identifier0\", \"warn\": null}, {\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"connectable\": true, \"error\": null, \"is_workflow\": false, \"type\": \"add_column_metadata\", \"value\": \"identifier1\", \"warn\": null}]}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+                            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"rules\": {\"mapping\": [{\"columns\": [1], \"type\": \"list_identifiers\"}], \"rules\": [{\"type\": \"add_column_metadata\", \"value\": \"identifier0\"}, {\"type\": \"add_column_metadata\", \"value\": \"identifier1\"}]}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
                             "tool_uuid": null,
                             "tool_version": "1.1.0",
                             "type": "tool",
@@ -831,8 +831,19 @@
     "iwcID": "metadata-and-sequences-from-bioproject-ids-main",
     "repoPath": "./workflows/data-fetching/metadata-and-sequences-from-bioproject-ids",
     "dockstore_id": 37620,
-    "categories": [],
-    "collections": [],
+    "categories": [
+        "Data retrieval",
+        "Query and retrieval",
+        "Comparative genomics",
+        "RNA-Seq",
+        "Sequencing",
+        "ID list",
+        "Short-read sequencing data",
+        "Short-read sequencing data"
+    ],
+    "collections": [
+        "Data Fetching"
+    ],
     "doi": "10.5281/zenodo.21162258",
     "tests": [
         {
@@ -850,6 +861,7 @@
             },
             "outputs": {
                 "SRA metadata table": {
+                    "class": "Collection",
                     "element_tests": {
                         "PRJNA1417618": {
                             "path": "test-data/test1_metadata_file_split_file_000000.txt.tsv"
@@ -857,6 +869,7 @@
                     }
                 },
                 "Paired End Reads": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR37073390": {
                             "forward": {
@@ -889,6 +902,7 @@
             },
             "outputs": {
                 "SRA metadata table": {
+                    "class": "Collection",
                     "element_tests": {
                         "PRJNA1425250": {
                             "path": "test-data/test2_metadata_file_split_file_000000.txt.tsv",
@@ -901,6 +915,7 @@
                     }
                 },
                 "Paired End Reads": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR37273408": {
                             "forward": {
@@ -929,6 +944,7 @@
                     }
                 },
                 "Single End Reads": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR37273407": {
                             "path": "test-data/test2_SRR37273407_forward.fastq",
@@ -954,6 +970,7 @@
             },
             "outputs": {
                 "SRA metadata table": {
+                    "class": "Collection",
                     "element_tests": {
                         "PRJNA1417618": {
                             "path": "test-data/test3_metadata.tsv"
@@ -961,6 +978,7 @@
                     }
                 },
                 "Paired End Reads": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR37073390": {
                             "forward": {

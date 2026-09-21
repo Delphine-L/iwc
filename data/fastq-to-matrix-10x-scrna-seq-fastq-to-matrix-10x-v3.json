@@ -1049,7 +1049,7 @@
                                 }
                             },
                             "tool_id": "__APPLY_RULES__",
-                            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"rules\": {\"mapping\": [{\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"columns\": [1, 2], \"connectable\": true, \"editing\": false, \"is_workflow\": false, \"type\": \"list_identifiers\"}], \"rules\": [{\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"connectable\": true, \"error\": null, \"is_workflow\": false, \"type\": \"add_column_metadata\", \"value\": \"identifier0\", \"warn\": null}, {\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"connectable\": true, \"error\": null, \"expression\": \"(.*)_(.*)\", \"group_count\": null, \"is_workflow\": false, \"replacement\": \"\\\\1\", \"target_column\": 0, \"type\": \"add_column_regex\", \"warn\": null}, {\"collapsible_value\": {\"__class__\": \"RuntimeValue\"}, \"connectable\": true, \"error\": null, \"expression\": \"(.*)_(.*)\", \"group_count\": null, \"is_workflow\": false, \"replacement\": \"\\\\2\", \"target_column\": 0, \"type\": \"add_column_regex\", \"warn\": null}]}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+                            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"rules\": {\"mapping\": [{\"columns\": [1, 2], \"type\": \"list_identifiers\"}], \"rules\": [{\"type\": \"add_column_metadata\", \"value\": \"identifier0\"}, {\"expression\": \"(.*)_(.*)\", \"group_count\": null, \"replacement\": \"\\\\1\", \"target_column\": 0, \"type\": \"add_column_regex\"}, {\"expression\": \"(.*)_(.*)\", \"group_count\": null, \"replacement\": \"\\\\2\", \"target_column\": 0, \"type\": \"add_column_regex\"}]}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
                             "tool_uuid": null,
                             "tool_version": "1.1.0",
                             "type": "tool",
@@ -1119,7 +1119,26 @@
     "iwcID": "fastq-to-matrix-10x-scrna-seq-fastq-to-matrix-10x-v3",
     "repoPath": "./workflows/scRNAseq/fastq-to-matrix-10x",
     "dockstore_id": 24784,
-    "categories": [],
+    "categories": [
+        "Ambient RNA correction",
+        "Read summarization",
+        "RNA-Seq quantification",
+        "Sequencing quality control",
+        "UMI deduplication",
+        "Microfluidics",
+        "RNA-Seq",
+        "Sequencing",
+        "Single-cell sequencing",
+        "Transcriptomics",
+        "FASTQ",
+        "GTF",
+        "Short-read sequencing data",
+        "MTX",
+        "PNG",
+        "Count matrix",
+        "Quality control report",
+        "Single-cell count matrix"
+    ],
     "collections": [
         "Transcriptomics",
         "Single Cell"
@@ -1135,7 +1154,7 @@
                     "elements": [
                         {
                             "class": "Collection",
-                            "type": "paired",
+                            "collection_type": "paired",
                             "identifier": "subsample",
                             "elements": [
                                 {
@@ -1201,11 +1220,13 @@
                     }
                 },
                 "Seurat input for gene expression (filtered)": {
+                    "class": "Collection",
                     "attributes": {
                         "collection_type": "list:list"
                     },
                     "element_tests": {
                         "subsample": {
+                            "class": "Collection",
                             "elements": {
                                 "matrix": {
                                     "asserts": {

@@ -674,7 +674,22 @@
     "iwcID": "baredsc-baredsc-1d-lognorm",
     "repoPath": "./workflows/scRNAseq/baredsc",
     "dockstore_id": 24061,
-    "categories": [],
+    "categories": [
+        "Cell clustering",
+        "Expression analysis",
+        "Gene expression profiling",
+        "Machine learning model training",
+        "Statistical modeling",
+        "Gene expression",
+        "Machine learning",
+        "Single-cell sequencing",
+        "Transcriptomics",
+        "CSV",
+        "Count matrix",
+        "PNG",
+        "Histogram",
+        "Plot"
+    ],
     "collections": [
         "Transcriptomics",
         "Single Cell"
@@ -701,6 +716,7 @@
             },
             "outputs": {
                 "baredsc_numpy": {
+                    "class": "Collection",
                     "element_tests": {
                         "split_file_000000.tabular": {
                             "asserts": {
@@ -737,8 +753,10 @@
                     }
                 },
                 "baredsc_qc_plots": {
+                    "class": "Collection",
                     "element_tests": {
                         "split_file_000000.tabular": {
+                            "class": "Collection",
                             "element_tests": {
                                 "convergence": {
                                     "asserts": {
@@ -767,6 +785,7 @@
                             }
                         },
                         "split_file_000001.tabular": {
+                            "class": "Collection",
                             "element_tests": {
                                 "convergence": {
                                     "asserts": {
@@ -795,6 +814,7 @@
                             }
                         },
                         "split_file_000002.tabular": {
+                            "class": "Collection",
                             "element_tests": {
                                 "convergence": {
                                     "asserts": {
@@ -823,6 +843,7 @@
                             }
                         },
                         "split_file_000003.tabular": {
+                            "class": "Collection",
                             "element_tests": {
                                 "convergence": {
                                     "asserts": {
@@ -853,6 +874,7 @@
                     }
                 },
                 "baredsc_neff": {
+                    "class": "Collection",
                     "element_tests": {
                         "split_file_000000.tabular": {
                             "asserts": {
@@ -897,6 +919,7 @@
                     }
                 },
                 "combined_other_outputs": {
+                    "class": "Collection",
                     "element_tests": {
                         "individuals": {
                             "asserts": {

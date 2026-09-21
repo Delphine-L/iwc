@@ -1349,7 +1349,24 @@
     "iwcID": "functional-annotation-of-sequences-main",
     "repoPath": "./workflows/genome_annotation/functional-annotation/functional-annotation-of-sequences",
     "dockstore_id": 36105,
-    "categories": [],
+    "categories": [
+        "Gene functional annotation",
+        "Gene prediction",
+        "Metabolic pathway prediction",
+        "Protein function prediction",
+        "Sequence feature detection",
+        "Comparative genomics",
+        "Functional genomics",
+        "Genome annotation",
+        "Metagenomics",
+        "Sequence analysis",
+        "Systems biology",
+        "FASTA",
+        "Sequence set (nucleic acid)",
+        "Sequence set (protein)",
+        "Database search results",
+        "Sequence features"
+    ],
     "collections": [],
     "doi": "10.5281/zenodo.19187248",
     "tests": [
@@ -1381,6 +1398,7 @@
             },
             "outputs": {
                 "interproscan xml": {
+                    "class": "Collection",
                     "element_tests": {
                         "test-sequence": {
                             "location": "https://zenodo.org/records/13951790/files/interProScan.xml?download=1&preview=1",
@@ -1390,6 +1408,7 @@
                     }
                 },
                 "interproscan tabular": {
+                    "class": "Collection",
                     "element_tests": {
                         "test-sequence": {
                             "location": "https://zenodo.org/records/13951790/files/interProScan.tabular?download=1&preview=1",
@@ -1499,6 +1518,7 @@
             },
             "outputs": {
                 "interproscan xml": {
+                    "class": "Collection",
                     "element_tests": {
                         "test-sequence": {
                             "location": "https://zenodo.org/records/13951790/files/interProScan.xml?download=1&preview=1",
@@ -1508,6 +1528,7 @@
                     }
                 },
                 "interproscan tabular": {
+                    "class": "Collection",
                     "element_tests": {
                         "test-sequence": {
                             "location": "https://zenodo.org/records/13951790/files/interProScan.tabular?download=1&preview=1",

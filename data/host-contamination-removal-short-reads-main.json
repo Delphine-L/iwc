@@ -636,7 +636,22 @@
     "iwcID": "host-contamination-removal-short-reads-main",
     "repoPath": "./workflows/microbiome/host-contamination-removal/host-contamination-removal-short-reads",
     "dockstore_id": 34596,
-    "categories": [],
+    "categories": [
+        "Sequence contamination filtering",
+        "Data quality management",
+        "Metagenomic sequencing",
+        "Metagenomics",
+        "Microbial ecology",
+        "Microbiome",
+        "Sequencing",
+        "Short-read sequencing",
+        "FASTQ-sanger",
+        "DNA sequence",
+        "Short-read sequencing data",
+        "BAM",
+        "FASTQ-sanger",
+        "Quality control report"
+    ],
     "collections": [
         "Metagenomics",
         "Microbiome"
@@ -652,7 +667,7 @@
                     "elements": [
                         {
                             "class": "Collection",
-                            "type": "paired",
+                            "collection_type": "paired",
                             "identifier": "pair",
                             "elements": [
                                 {
@@ -691,6 +706,7 @@
                     ]
                 },
                 "Bowtie2 Mapping Statistics from Local Index": {
+                    "class": "Collection",
                     "element_tests": {
                         "pair": {
                             "asserts": {
@@ -720,7 +736,7 @@
                     "elements": [
                         {
                             "class": "Collection",
-                            "type": "paired",
+                            "collection_type": "paired",
                             "identifier": "pair",
                             "elements": [
                                 {
@@ -758,6 +774,7 @@
                     ]
                 },
                 "Bowtie2 Mapping Statistics from Reference Input": {
+                    "class": "Collection",
                     "element_tests": {
                         "pair": {
                             "asserts": {

@@ -3335,7 +3335,33 @@
     "iwcID": "rnaseq-pe-main",
     "repoPath": "./workflows/transcriptomics/rnaseq-pe",
     "dockstore_id": 19869,
-    "categories": [],
+    "categories": [
+        "Expression analysis",
+        "Genome visualization",
+        "RNA-Seq analysis",
+        "RNA-Seq quantification",
+        "Sequencing quality control",
+        "Standardization and normalization",
+        "Differential expression",
+        "Functional genomics",
+        "Gene expression",
+        "Mapping",
+        "RNA-Seq",
+        "Sequence analysis",
+        "Transcriptomics",
+        "FASTQ-sanger",
+        "GTF",
+        "Nucleic acid sequence",
+        "Short-read sequencing data",
+        "BAM",
+        "bedgraph",
+        "bigWig",
+        "GTF",
+        "Count matrix",
+        "Expression data",
+        "Quality control report",
+        "Report"
+    ],
     "collections": [
         "Transcriptomics"
     ],
@@ -3361,7 +3387,7 @@
                     "elements": [
                         {
                             "class": "Collection",
-                            "type": "paired",
+                            "collection_type": "paired",
                             "identifier": "SRR5085167",
                             "elements": [
                                 {
@@ -3420,6 +3446,7 @@
                     ]
                 },
                 "Stranded Coverage": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR5085167_forward": {
                             "asserts": {
@@ -3440,6 +3467,7 @@
                     }
                 },
                 "Gene Abundance Estimates from StringTie": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR5085167": {
                             "asserts": {
@@ -3451,6 +3479,7 @@
                     }
                 },
                 "Unstranded Coverage": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR5085167": {
                             "asserts": {
@@ -3463,6 +3492,7 @@
                     }
                 },
                 "Mapped Reads": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR5085167": {
                             "asserts": {
@@ -3475,6 +3505,7 @@
                     }
                 },
                 "Genes Expression from Cufflinks": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR5085167": {
                             "asserts": {
@@ -3486,6 +3517,7 @@
                     }
                 },
                 "Transcripts Expression from Cufflinks": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR5085167": {
                             "asserts": {
@@ -3497,6 +3529,7 @@
                     }
                 },
                 "Counts Table": {
+                    "class": "Collection",
                     "element_tests": {
                         "SRR5085167": {
                             "asserts": {

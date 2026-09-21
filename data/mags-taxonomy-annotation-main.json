@@ -1398,7 +1398,24 @@
     "iwcID": "mags-taxonomy-annotation-main",
     "repoPath": "./workflows/microbiome/mags-taxonomy-annotation",
     "dockstore_id": 35592,
-    "categories": [],
+    "categories": [
+        "ID mapping",
+        "Metagenome-assembled genome (MAG) analysis",
+        "Multiple sample visualization",
+        "Taxonomic classification",
+        "Functional genomics",
+        "Metagenomic sequencing",
+        "Metagenomics",
+        "Microbial ecology",
+        "Taxonomy",
+        "FASTA",
+        "Metagenome-assembled genome",
+        "Sequence set (nucleic acid)",
+        "CSV",
+        "Database cross-mapping",
+        "Report",
+        "Taxonomy"
+    ],
     "collections": [
         "Microbiome"
     ],
@@ -1455,6 +1472,7 @@
                         }
                     ],
                     "GTDB-Tk summary files": {
+                        "class": "Collection",
                         "element_tests": {
                             "gtdbtk.bac120.summary": {
                                 "asserts": [
@@ -1475,6 +1493,7 @@
                         }
                     },
                     "GTDB-NCBI mapping": {
+                        "class": "Collection",
                         "element_tests": {
                             "gtdbtk.bac120.summary": {
                                 "asserts": [
@@ -1495,6 +1514,7 @@
                         }
                     },
                     "NCBI names to taxIDs mapping": {
+                        "class": "Collection",
                         "element_tests": {
                             "gtdbtk.bac120.summary": {
                                 "asserts": [
@@ -1515,6 +1535,7 @@
                         }
                     },
                     "full GTDB to NCBI mapping": {
+                        "class": "Collection",
                         "element_tests": {
                             "gtdbtk.bac120.summary": {
                                 "asserts": [

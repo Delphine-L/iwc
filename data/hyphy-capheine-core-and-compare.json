@@ -2186,7 +2186,26 @@
     "iwcID": "hyphy-capheine-core-and-compare",
     "repoPath": "./workflows/comparative_genomics/hyphy",
     "dockstore_id": 35925,
-    "categories": [],
+    "categories": [
+        "DNA substitution modeling",
+        "Gene tree construction",
+        "Multiple sequence alignment",
+        "Phylogenetic inference (from molecular sequences)",
+        "Protein property calculation",
+        "Selection detection",
+        "Sequence alignment",
+        "Comparative genomics",
+        "Molecular evolution",
+        "Phylogenetics",
+        "FASTA",
+        "GTF",
+        "Nucleic acid sequence",
+        "Regular expression",
+        "FASTA",
+        "newick",
+        "Nucleic acid sequence alignment",
+        "Phylogenetic tree"
+    ],
     "collections": [
         "Comparative Genomics"
     ],
@@ -2244,14 +2263,36 @@
             },
             "outputs": {
                 "combined_summary": {
-                    "asserts": {
-                        "has_text": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "gene"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "BUSTED"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "pval"
+                        },
+                        {
+                            "that": "has_text",
                             "text": "omega"
                         },
-                        "has_n_columns": {
+                        {
+                            "that": "has_n_columns",
                             "n": 9
                         }
-                    }
+                    ]
+                },
+                "combined_sites": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "meme_marker"
+                        }
+                    ]
                 }
             }
         },
@@ -2308,24 +2349,60 @@
             },
             "outputs": {
                 "combined_summary": {
-                    "asserts": {
-                        "has_text": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "gene"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "BUSTED"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "RELAX"
+                        },
+                        {
+                            "that": "has_text",
                             "text": "pval"
                         },
-                        "has_n_columns": {
+                        {
+                            "that": "has_n_columns",
                             "n": 12
                         }
-                    }
+                    ]
+                },
+                "combined_sites": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "meme_marker"
+                        }
+                    ]
                 },
                 "combined_comparison_summary": {
-                    "asserts": {
-                        "has_text": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "gene"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "comparison_group"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "Foreground"
+                        },
+                        {
+                            "that": "has_text",
                             "text": "Reference"
                         },
-                        "has_n_columns": {
+                        {
+                            "that": "has_n_columns",
                             "n": 6
                         }
-                    }
+                    ]
                 }
             }
         },
@@ -2387,24 +2464,60 @@
             },
             "outputs": {
                 "combined_summary": {
-                    "asserts": {
-                        "has_text": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "gene"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "BUSTED"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "RELAX"
+                        },
+                        {
+                            "that": "has_text",
                             "text": "pval"
                         },
-                        "has_n_columns": {
+                        {
+                            "that": "has_n_columns",
                             "n": 12
                         }
-                    }
+                    ]
+                },
+                "combined_sites": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "meme_marker"
+                        }
+                    ]
                 },
                 "combined_comparison_summary": {
-                    "asserts": {
-                        "has_text": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "gene"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "comparison_group"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "Foreground"
+                        },
+                        {
+                            "that": "has_text",
                             "text": "Reference"
                         },
-                        "has_n_columns": {
+                        {
+                            "that": "has_n_columns",
                             "n": 6
                         }
-                    }
+                    ]
                 }
             }
         },
@@ -2484,24 +2597,60 @@
             },
             "outputs": {
                 "combined_summary": {
-                    "asserts": {
-                        "has_text": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "gene"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "BUSTED"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "RELAX"
+                        },
+                        {
+                            "that": "has_text",
                             "text": "pval"
                         },
-                        "has_n_columns": {
+                        {
+                            "that": "has_n_columns",
                             "n": 12
                         }
-                    }
+                    ]
+                },
+                "combined_sites": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "meme_marker"
+                        }
+                    ]
                 },
                 "combined_comparison_summary": {
-                    "asserts": {
-                        "has_text": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "gene"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "comparison_group"
+                        },
+                        {
+                            "that": "has_text",
+                            "text": "Foreground"
+                        },
+                        {
+                            "that": "has_text",
                             "text": "Reference"
                         },
-                        "has_n_columns": {
+                        {
+                            "that": "has_n_columns",
                             "n": 6
                         }
-                    }
+                    ]
                 }
             }
         }

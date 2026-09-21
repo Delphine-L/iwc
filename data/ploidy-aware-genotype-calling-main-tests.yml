@@ -9,6 +9,7 @@
       collection_type: list:paired
       elements:
       - class: Collection
+        collection_type: paired
         elements:
         - class: File
           filetype: fastqsanger.gz
@@ -19,7 +20,6 @@
           identifier: reverse
           location: https://raw.githubusercontent.com/galaxyproject/iwc/main/workflows/variant-calling/ploidy-aware-genotype-calling/test-data/sample1_R2.fastq.gz
         identifier: sample1
-        type: paired
     Reference Genome fasta:
       class: File
       filetype: fasta
@@ -41,15 +41,21 @@
           text: MultiQC Report
     SnpEff eff reports:
       asserts:
-        has_text:
-          text: <td> 2 </td>
+      - text: <td valign=top> <b> Number of variants processed <br> (i.e. after filter
+          and non-variants) </b> </td>
+        that: has_text
+      - text: <td> 2 </td>
+        that: has_text
     SnpEff variants:
       asserts:
-        has_n_lines:
-          n: 71
-        has_text:
-          text: '##contig=<ID=chr1,length=2000>'
+      - text: '##fileformat=VCFv4.2'
+        that: has_text
+      - text: '##contig=<ID=chr1,length=2000>'
+        that: has_text
+      - n: 71
+        that: has_n_lines
     fastp HTML report:
+      class: Collection
       element_tests:
         sample1:
           asserts:

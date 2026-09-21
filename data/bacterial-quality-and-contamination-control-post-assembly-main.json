@@ -1170,7 +1170,24 @@
     "iwcID": "bacterial-quality-and-contamination-control-post-assembly-main",
     "repoPath": "./workflows/bacterial_genomics/bacterial-quality-and-contamination-control-post-assembly",
     "dockstore_id": 33298,
-    "categories": [],
+    "categories": [
+        "Sequence assembly validation",
+        "Taxonomic classification",
+        "Antimicrobial resistance",
+        "Comparative genomics",
+        "Metagenomics",
+        "Microbiology",
+        "Sequence assembly",
+        "FASTA",
+        "FASTQ",
+        "FASTQ-sanger",
+        "Nucleic acid sequence",
+        "Sequence assembly",
+        "PDF",
+        "Quality control report",
+        "Report",
+        "Taxonomic profile"
+    ],
     "collections": [
         "Metagenomics",
         "Microbiome",
@@ -1222,11 +1239,16 @@
                     }
                 },
                 "Kraken2 sequence assignation": {
-                    "asserts": {
-                        "has_text": {
+                    "asserts": [
+                        {
+                            "that": "has_text",
+                            "text": "contig00001"
+                        },
+                        {
+                            "that": "has_text",
                             "text": "contig00359"
                         }
-                    }
+                    ]
                 },
                 "Kraken2 tabular report": {
                     "asserts": {
@@ -1249,6 +1271,7 @@
                     }
                 },
                 "Checkm2 diamond files": {
+                    "class": "Collection",
                     "element_tests": {
                         "DIAMOND_RESULTS": {
                             "asserts": {
@@ -1263,13 +1286,19 @@
                     }
                 },
                 "Checkm2 protein files": {
+                    "class": "Collection",
                     "element_tests": {
                         "E-coli3_S194.fasta": {
-                            "asserts": {
-                                "has_text": {
+                            "asserts": [
+                                {
+                                    "that": "has_text",
+                                    "text": ">contig00001_1"
+                                },
+                                {
+                                    "that": "has_text",
                                     "text": ">contig00358_1"
                                 }
-                            }
+                            ]
                         }
                     }
                 },
