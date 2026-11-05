@@ -1,0 +1,192 @@
+- doc: Test for multi-sample-binning (Both)
+  job:
+    Assemblies:
+      class: Collection
+      collection_type: list
+      elements:
+      - class: File
+        filetype: fasta
+        identifier: Mock1
+        location: https://zenodo.org/records/22982485/files/Mock1.fasta
+      - class: File
+        filetype: fasta
+        identifier: Mock2
+        location: https://zenodo.org/records/22982485/files/Mock2.fasta
+    Bin refinement tool: Both
+    CheckM2 Database: 1.0.2
+    Contamination weight (Binette): 2
+    Minimum MAG completeness percentage: 40
+    Paired-end reads:
+      class: Collection
+      collection_type: list:paired
+      elements:
+      - class: Collection
+        collection_type: paired
+        elements:
+        - class: File
+          filetype: fastqsanger.gz
+          identifier: forward
+          location: https://zenodo.org/records/22982485/files/Mock1_R1.fastq.gz
+        - class: File
+          filetype: fastqsanger.gz
+          identifier: reverse
+          location: https://zenodo.org/records/22982485/files/Mock1_R2.fastq.gz
+        identifier: Mock1
+      - class: Collection
+        collection_type: paired
+        elements:
+        - class: File
+          filetype: fastqsanger.gz
+          identifier: forward
+          location: https://zenodo.org/records/22982485/files/Mock2_R1.fastq.gz
+        - class: File
+          filetype: fastqsanger.gz
+          identifier: reverse
+          location: https://zenodo.org/records/22982485/files/Mock2_R2.fastq.gz
+        identifier: Mock2
+    Run COMEBin?: 'No'
+  outputs:
+    Binette bins:
+      class: Collection
+      element_tests:
+        Mock1:
+          class: Collection
+          min: 1
+        Mock2:
+          class: Collection
+          min: 1
+    Binette final bin quality report:
+      class: Collection
+      element_tests:
+        Mock1:
+          asserts:
+          - has_text:
+              text: completeness
+          - has_n_lines:
+              min: 2
+        Mock2:
+          asserts:
+          - has_text:
+              text: completeness
+          - has_n_lines:
+              min: 2
+    Binette input bin quality reports:
+      class: Collection
+      element_tests:
+        Mock1:
+          class: Collection
+          elements:
+            input_bins_1.bin_table_0:
+              asserts:
+              - has_text:
+                  text: completeness
+              - has_n_lines:
+                  min: 2
+        Mock2:
+          class: Collection
+          elements:
+            input_bins_1.bin_table_0:
+              asserts:
+              - has_text:
+                  text: completeness
+              - has_n_lines:
+                  min: 2
+    COMEBin bins:
+      class: Collection
+      element_tests:
+        Mock1:
+          class: Collection
+          count: 0
+        Mock2:
+          class: Collection
+          count: 0
+    CONCOCT bins:
+      class: Collection
+      element_tests:
+        Mock1:
+          class: Collection
+          min: 1
+        Mock2:
+          class: Collection
+          min: 1
+    Coverage depth matrices:
+      class: Collection
+      element_tests:
+        Mock1:
+          asserts:
+          - text: contigName
+            that: has_text
+          - n: 7
+            that: has_n_columns
+        Mock2:
+          asserts:
+          - text: contigName
+            that: has_text
+          - n: 7
+            that: has_n_columns
+    DAS Tool bins:
+      class: Collection
+      element_tests:
+        Mock1:
+          class: Collection
+          min: 1
+        Mock2:
+          class: Collection
+          min: 1
+    DAS Tool contigs2bin report:
+      class: Collection
+      element_tests:
+        Mock1:
+          asserts:
+          - has_n_lines:
+              min: 100
+          - has_line_matching:
+              expression: ^\S+\t\S+$
+        Mock2:
+          asserts:
+          - has_n_lines:
+              min: 100
+          - has_line_matching:
+              expression: ^\S+\t\S+$
+    DAS Tool summary:
+      class: Collection
+      element_tests:
+        Mock1:
+          asserts:
+          - has_text:
+              text: SCG_completeness
+          - has_n_lines:
+              min: 2
+        Mock2:
+          asserts:
+          - has_text:
+              text: SCG_completeness
+          - has_n_lines:
+              min: 2
+    MaxBin2 bins:
+      class: Collection
+      element_tests:
+        Mock1:
+          class: Collection
+          min: 1
+        Mock2:
+          class: Collection
+          min: 1
+    MetaBAT2 bins:
+      class: Collection
+      element_tests:
+        Mock1:
+          class: Collection
+          min: 1
+        Mock2:
+          class: Collection
+          min: 1
+    SemiBin bins:
+      class: Collection
+      element_tests:
+        Mock1:
+          class: Collection
+          min: 1
+        Mock2:
+          class: Collection
+          min: 1
